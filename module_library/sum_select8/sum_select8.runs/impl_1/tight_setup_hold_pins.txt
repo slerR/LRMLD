@@ -1,0 +1,28 @@
++====================+===================+=================================+
+| Launch Setup Clock | Launch Hold Clock | Pin                             |
++====================+===================+=================================+
+| sys_clk_pin        | sys_clk_pin       | out_labels_r_reg[322]/D         |
+| sys_clk_pin        | sys_clk_pin       | out_labels_r_reg[258]/D         |
+| sys_clk_pin        | sys_clk_pin       | out_labels_r_reg[86]/D          |
+| sys_clk_pin        | sys_clk_pin       | out_labels_r_reg[386]/D         |
+| sys_clk_pin        | sys_clk_pin       | out_labels_r_reg[2]/D           |
+| sys_clk_pin        | sys_clk_pin       | out_labels_r_reg[75]/D          |
+| sys_clk_pin        | sys_clk_pin       | out_labels_r_reg[200]/D         |
+| sys_clk_pin        | sys_clk_pin       | out_labels_r_reg[66]/D          |
+| sys_clk_pin        | sys_clk_pin       | dut/conc_d_reg[4][5][0]_srl5/D  |
+| sys_clk_pin        | sys_clk_pin       | dut/conc_d_reg[4][1][7]_srl5/D  |
+| sys_clk_pin        | sys_clk_pin       | dut/conc_d_reg[4][6][39]_srl5/D |
+| sys_clk_pin        | sys_clk_pin       | dut/l0_d_reg[4][55]_srl5/D      |
+| sys_clk_pin        | sys_clk_pin       | dut/l0_d_reg[4][38]_srl5/D      |
+| sys_clk_pin        | sys_clk_pin       | dut/conc_d_reg[4][5][23]_srl5/D |
+| sys_clk_pin        | sys_clk_pin       | dut/conc_d_reg[4][7][51]_srl5/D |
+| sys_clk_pin        | sys_clk_pin       | dut/conc_d_reg[4][6][35]_srl5/D |
+| sys_clk_pin        | sys_clk_pin       | dut/conc_d_reg[4][2][39]_srl5/D |
+| sys_clk_pin        | sys_clk_pin       | dut/conc_d_reg[4][6][55]_srl5/D |
+| sys_clk_pin        | sys_clk_pin       | dut/l0_d_reg[4][37]_srl5/D      |
+| sys_clk_pin        | sys_clk_pin       | dut/conc_d_reg[4][4][23]_srl5/D |
+| sys_clk_pin        | sys_clk_pin       | dut/conc_d_reg[4][2][38]_srl5/D |
+| sys_clk_pin        | sys_clk_pin       | dut/conc_d_reg[4][5][7]_srl5/D  |
+| sys_clk_pin        | sys_clk_pin       | dut/conc_d_reg[4][4][22]_srl5/D |
+| sys_clk_pin        | sys_clk_pin       | dut/conc_d_reg[4][4][7]_srl5/D  |
++--------------------+-------------------+---------------------------------+

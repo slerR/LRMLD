@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_sum_select_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_sum_select" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="41.210 ns"></ZoomStartTime>
+      <ZoomEndTime time="45.781 ns"></ZoomEndTime>
+      <Cursor1Time time="43.320 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="340"></NameColumnWidth>
+      <ValueColumnWidth column_width="150"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="8" />
+   <wvobject fp_name="/tb_sum_select/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sum_select/dut/i_metrics" type="array">
+      <obj_property name="ElementShortName">i_metrics[23:0]</obj_property>
+      <obj_property name="ObjectShortName">i_metrics[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sum_select/dut/i_labels" type="array">
+      <obj_property name="ElementShortName">i_labels[15:0]</obj_property>
+      <obj_property name="ObjectShortName">i_labels[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sum_select/dut/i_metrics1" type="array">
+      <obj_property name="ElementShortName">i_metrics1[23:0]</obj_property>
+      <obj_property name="ObjectShortName">i_metrics1[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sum_select/dut/i_labels1" type="array">
+      <obj_property name="ElementShortName">i_labels1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">i_labels1[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sum_select/dut/o_metrics" type="array">
+      <obj_property name="ElementShortName">o_metrics[0:3][5:0]</obj_property>
+      <obj_property name="ObjectShortName">o_metrics[0:3][5:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">4</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sum_select/dut/o_labels" type="array">
+      <obj_property name="ElementShortName">o_labels[0:3][7:0]</obj_property>
+      <obj_property name="ObjectShortName">o_labels[0:3][7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <wvobject fp_name="/tb_sum_select/dut/o_labels[0]" type="array">
+         <obj_property name="ElementShortName">[0][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][7:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sum_select/dut/o_labels[1]" type="array">
+         <obj_property name="ElementShortName">[1][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][7:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sum_select/dut/o_labels[2]" type="array">
+         <obj_property name="ElementShortName">[2][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][7:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sum_select/dut/o_labels[3]" type="array">
+         <obj_property name="ElementShortName">[3][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][7:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb_sum_select/dut/l_final" type="array">
+      <obj_property name="ElementShortName">l_final[0:2][2:0]</obj_property>
+      <obj_property name="ObjectShortName">l_final[0:2][2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

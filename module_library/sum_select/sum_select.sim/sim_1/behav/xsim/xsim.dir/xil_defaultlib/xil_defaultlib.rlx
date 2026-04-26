@@ -1,0 +1,8 @@
+0.7
+2020.2
+Apr 18 2022
+16:05:34
+C:/LRMLD/sum_select/sum_select.sim/sim_1/behav/xsim/glbl.v,1649976174,verilog,,,,glbl,,uvm,,,,,,
+C:/LRMLD/sum_select/sum_select.srcs/sim_1/new/tb_sum_select.sv,1777134463,systemVerilog,,,,tb_sum_select,,uvm,,,,,,
+C:/LRMLD/sum_select/sum_select.srcs/sources_1/new/comparator.sv,1777127287,systemVerilog,,C:/LRMLD/sum_select/sum_select.srcs/sources_1/new/sum_select.sv,,comparator,,uvm,,,,,,
+C:/LRMLD/sum_select/sum_select.srcs/sources_1/new/sum_select.sv,1777129754,systemVerilog,,C:/LRMLD/sum_select/sum_select.srcs/sim_1/new/tb_sum_select.sv,,sum_select,,uvm,,,,,,

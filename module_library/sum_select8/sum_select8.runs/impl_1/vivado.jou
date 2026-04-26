@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sun Apr 26 00:22:21 2026
+# Process ID: 35736
+# Current directory: C:/LRMLD/sum_select8/sum_select8.runs/impl_1
+# Command line: vivado.exe -log wp_SS8.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source wp_SS8.tcl -notrace
+# Log file: C:/LRMLD/sum_select8/sum_select8.runs/impl_1/wp_SS8.vdi
+# Journal file: C:/LRMLD/sum_select8/sum_select8.runs/impl_1\vivado.jou
+# Running On: feduuk, OS: Windows, CPU Frequency: 3294 MHz, CPU Physical cores: 12, Host memory: 16487 MB
+#-----------------------------------------------------------
+source wp_SS8.tcl -notrace

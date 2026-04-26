@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_sum_select_16_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_sum_select_16" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="125,016 ps"></ZoomStartTime>
+      <ZoomEndTime time="126,053 ps"></ZoomEndTime>
+      <Cursor1Time time="125,000 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="222"></NameColumnWidth>
+      <ValueColumnWidth column_width="145"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="25" />
+   <wvobject fp_name="/tb_sum_select_16/dut/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sum_select_16/dut/i_valid" type="logic">
+      <obj_property name="ElementShortName">i_valid</obj_property>
+      <obj_property name="ObjectShortName">i_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sum_select_16/dut/i_labels" type="array">
+      <obj_property name="ElementShortName">i_labels[95:0]</obj_property>
+      <obj_property name="ObjectShortName">i_labels[95:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sum_select_16/dut/i_labels1" type="array">
+      <obj_property name="ElementShortName">i_labels1[95:0]</obj_property>
+      <obj_property name="ObjectShortName">i_labels1[95:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sum_select_16/dut/i_metrics" type="array">
+      <obj_property name="ElementShortName">i_metrics[159:0]</obj_property>
+      <obj_property name="ObjectShortName">i_metrics[159:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sum_select_16/dut/i_metrics1" type="array">
+      <obj_property name="ElementShortName">i_metrics1[159:0]</obj_property>
+      <obj_property name="ObjectShortName">i_metrics1[159:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sum_select_16/dut/AB_m_0b" type="array">
+      <obj_property name="ElementShortName">AB_m_0b[0:2][0:3][9:0]</obj_property>
+      <obj_property name="ObjectShortName">AB_m_0b[0:2][0:3][9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sum_select_16/dut/AB_m_a0" type="array">
+      <obj_property name="ElementShortName">AB_m_a0[0:2][0:3][9:0]</obj_property>
+      <obj_property name="ObjectShortName">AB_m_a0[0:2][0:3][9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sum_select_16/dut/AB_m_11" type="array">
+      <obj_property name="ElementShortName">AB_m_11[0:3][9:0]</obj_property>
+      <obj_property name="ObjectShortName">AB_m_11[0:3][9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sum_select_16/dut/ss_idx_r" type="array">
+      <obj_property name="ElementShortName">ss_idx_r[0:2][2:0]</obj_property>
+      <obj_property name="ObjectShortName">ss_idx_r[0:2][2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sum_select_16/dut/AB_m_00" type="array">
+      <obj_property name="ElementShortName">AB_m_00[0:7][9:0]</obj_property>
+      <obj_property name="ObjectShortName">AB_m_00[0:7][9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sum_select_16/dut/SS_00/i_labels" type="array">
+      <obj_property name="ElementShortName">i_labels[23:0]</obj_property>
+      <obj_property name="ObjectShortName">i_labels[23:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sum_select_16/dut/SS_00/i_labels1" type="array">
+      <obj_property name="ElementShortName">i_labels1[23:0]</obj_property>
+      <obj_property name="ObjectShortName">i_labels1[23:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sum_select_16/dut/SS_00/o_labels" type="array">
+      <obj_property name="ElementShortName">o_labels[0:7][11:0]</obj_property>
+      <obj_property name="ObjectShortName">o_labels[0:7][11:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sum_select_16/dut/AB_m_3" type="array">
+      <obj_property name="ElementShortName">AB_m_3[0:3][9:0]</obj_property>
+      <obj_property name="ObjectShortName">AB_m_3[0:3][9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sum_select_16/dut/AB_m_2" type="array">
+      <obj_property name="ElementShortName">AB_m_2[0:3][9:0]</obj_property>
+      <obj_property name="ObjectShortName">AB_m_2[0:3][9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sum_select_16/dut/AB_m_1" type="array">
+      <obj_property name="ElementShortName">AB_m_1[0:3][9:0]</obj_property>
+      <obj_property name="ObjectShortName">AB_m_1[0:3][9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sum_select_16/dut/AB_m_0" type="array">
+      <obj_property name="ElementShortName">AB_m_0[0:3][9:0]</obj_property>
+      <obj_property name="ObjectShortName">AB_m_0[0:3][9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sum_select_16/dut/m_mrg1" type="array">
+      <obj_property name="ElementShortName">m_mrg1[0:7][9:0]</obj_property>
+      <obj_property name="ObjectShortName">m_mrg1[0:7][9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sum_select_16/dut/m_mrg2" type="array">
+      <obj_property name="ElementShortName">m_mrg2[0:7][9:0]</obj_property>
+      <obj_property name="ObjectShortName">m_mrg2[0:7][9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sum_select_16/dut/merge1/i_m1" type="array">
+      <obj_property name="ElementShortName">i_m1[0:3][9:0]</obj_property>
+      <obj_property name="ObjectShortName">i_m1[0:3][9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sum_select_16/dut/m_mrg12" type="array">
+      <obj_property name="ElementShortName">m_mrg12[0:15][9:0]</obj_property>
+      <obj_property name="ObjectShortName">m_mrg12[0:15][9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sum_select_16/dut/o_metrics" type="array">
+      <obj_property name="ElementShortName">o_metrics[0:15][9:0]</obj_property>
+      <obj_property name="ObjectShortName">o_metrics[0:15][9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <wvobject fp_name="/tb_sum_select_16/dut/o_metrics[0]" type="array">
+         <obj_property name="ElementShortName">[0][9:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][9:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sum_select_16/dut/o_metrics[1]" type="array">
+         <obj_property name="ElementShortName">[1][9:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][9:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sum_select_16/dut/o_metrics[2]" type="array">
+         <obj_property name="ElementShortName">[2][9:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][9:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sum_select_16/dut/o_metrics[3]" type="array">
+         <obj_property name="ElementShortName">[3][9:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][9:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sum_select_16/dut/o_metrics[4]" type="array">
+         <obj_property name="ElementShortName">[4][9:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][9:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sum_select_16/dut/o_metrics[5]" type="array">
+         <obj_property name="ElementShortName">[5][9:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][9:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sum_select_16/dut/o_metrics[6]" type="array">
+         <obj_property name="ElementShortName">[6][9:0]</obj_property>
+         <obj_property name="ObjectShortName">[6][9:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sum_select_16/dut/o_metrics[7]" type="array">
+         <obj_property name="ElementShortName">[7][9:0]</obj_property>
+         <obj_property name="ObjectShortName">[7][9:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sum_select_16/dut/o_metrics[8]" type="array">
+         <obj_property name="ElementShortName">[8][9:0]</obj_property>
+         <obj_property name="ObjectShortName">[8][9:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sum_select_16/dut/o_metrics[9]" type="array">
+         <obj_property name="ElementShortName">[9][9:0]</obj_property>
+         <obj_property name="ObjectShortName">[9][9:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sum_select_16/dut/o_metrics[10]" type="array">
+         <obj_property name="ElementShortName">[10][9:0]</obj_property>
+         <obj_property name="ObjectShortName">[10][9:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sum_select_16/dut/o_metrics[11]" type="array">
+         <obj_property name="ElementShortName">[11][9:0]</obj_property>
+         <obj_property name="ObjectShortName">[11][9:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sum_select_16/dut/o_metrics[12]" type="array">
+         <obj_property name="ElementShortName">[12][9:0]</obj_property>
+         <obj_property name="ObjectShortName">[12][9:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sum_select_16/dut/o_metrics[13]" type="array">
+         <obj_property name="ElementShortName">[13][9:0]</obj_property>
+         <obj_property name="ObjectShortName">[13][9:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sum_select_16/dut/o_metrics[14]" type="array">
+         <obj_property name="ElementShortName">[14][9:0]</obj_property>
+         <obj_property name="ObjectShortName">[14][9:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sum_select_16/dut/o_metrics[15]" type="array">
+         <obj_property name="ElementShortName">[15][9:0]</obj_property>
+         <obj_property name="ObjectShortName">[15][9:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb_sum_select_16/dut/o_labels" type="array">
+      <obj_property name="ElementShortName">o_labels[0:15][11:0]</obj_property>
+      <obj_property name="ObjectShortName">o_labels[0:15][11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <wvobject fp_name="/tb_sum_select_16/dut/o_labels[0]" type="array">
+         <obj_property name="ElementShortName">[0][11:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][11:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sum_select_16/dut/o_labels[1]" type="array">
+         <obj_property name="ElementShortName">[1][11:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][11:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sum_select_16/dut/o_labels[2]" type="array">
+         <obj_property name="ElementShortName">[2][11:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][11:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sum_select_16/dut/o_labels[3]" type="array">
+         <obj_property name="ElementShortName">[3][11:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][11:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sum_select_16/dut/o_labels[4]" type="array">
+         <obj_property name="ElementShortName">[4][11:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][11:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sum_select_16/dut/o_labels[5]" type="array">
+         <obj_property name="ElementShortName">[5][11:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][11:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sum_select_16/dut/o_labels[6]" type="array">
+         <obj_property name="ElementShortName">[6][11:0]</obj_property>
+         <obj_property name="ObjectShortName">[6][11:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sum_select_16/dut/o_labels[7]" type="array">
+         <obj_property name="ElementShortName">[7][11:0]</obj_property>
+         <obj_property name="ObjectShortName">[7][11:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sum_select_16/dut/o_labels[8]" type="array">
+         <obj_property name="ElementShortName">[8][11:0]</obj_property>
+         <obj_property name="ObjectShortName">[8][11:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sum_select_16/dut/o_labels[9]" type="array">
+         <obj_property name="ElementShortName">[9][11:0]</obj_property>
+         <obj_property name="ObjectShortName">[9][11:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sum_select_16/dut/o_labels[10]" type="array">
+         <obj_property name="ElementShortName">[10][11:0]</obj_property>
+         <obj_property name="ObjectShortName">[10][11:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sum_select_16/dut/o_labels[11]" type="array">
+         <obj_property name="ElementShortName">[11][11:0]</obj_property>
+         <obj_property name="ObjectShortName">[11][11:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sum_select_16/dut/o_labels[12]" type="array">
+         <obj_property name="ElementShortName">[12][11:0]</obj_property>
+         <obj_property name="ObjectShortName">[12][11:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sum_select_16/dut/o_labels[13]" type="array">
+         <obj_property name="ElementShortName">[13][11:0]</obj_property>
+         <obj_property name="ObjectShortName">[13][11:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sum_select_16/dut/o_labels[14]" type="array">
+         <obj_property name="ElementShortName">[14][11:0]</obj_property>
+         <obj_property name="ObjectShortName">[14][11:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sum_select_16/dut/o_labels[15]" type="array">
+         <obj_property name="ElementShortName">[15][11:0]</obj_property>
+         <obj_property name="ObjectShortName">[15][11:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb_sum_select_16/dut/o_valid" type="logic">
+      <obj_property name="ElementShortName">o_valid</obj_property>
+      <obj_property name="ObjectShortName">o_valid</obj_property>
+   </wvobject>
+</wave_config>

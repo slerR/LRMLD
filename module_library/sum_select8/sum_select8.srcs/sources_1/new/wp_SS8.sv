@@ -1,0 +1,105 @@
+module wp_SS8 #(
+    parameter  METRIC_W = 10,
+    parameter  LABEL_W  = 32,
+    parameter  LABEL_W1 = 32,
+    localparam SUM_W    = METRIC_W + 1,
+    localparam CONC_W   = LABEL_W + LABEL_W1
+)(
+    input  logic                     clk,
+    input  logic                     i_valid,
+    input  logic [METRIC_W-1:0]      i_metric,
+    input  logic [LABEL_W-1:0]       i_label,
+    input  logic [METRIC_W-1:0]      i_metric1,
+    input  logic [LABEL_W1-1:0]      i_label1,
+    output logic                     o_valid,
+    output logic [METRIC_W-1:0]      o_metric,
+    output logic [CONC_W-1:0]        o_label
+);
+
+    logic [2:0]                      cnt_in;
+    logic                            full;
+
+    logic [4*METRIC_W-1:0]           buf_metrics0;
+    logic [4*LABEL_W-1:0]            buf_labels0;
+    logic [4*METRIC_W-1:0]           buf_metrics1;
+    logic [4*LABEL_W1-1:0]           buf_labels1;
+
+    logic                            start;
+
+    logic [METRIC_W-1:0]             ss_metrics [0:7];
+    logic [CONC_W-1:0]               ss_labels  [0:7];
+
+    logic [8*METRIC_W-1:0]           out_metrics_r;
+    logic [8*CONC_W-1:0]             out_labels_r;
+
+    logic [2:0]                      cnt_out;
+    logic                            busy;
+
+    always_ff @(posedge clk) begin
+        if (i_valid) begin
+            buf_metrics0[(3-cnt_in)*METRIC_W +: METRIC_W] <= i_metric;
+            buf_labels0 [(3-cnt_in)*LABEL_W  +: LABEL_W ] <= i_label;
+            buf_metrics1[(3-cnt_in)*METRIC_W +: METRIC_W] <= i_metric1;
+            buf_labels1 [(3-cnt_in)*LABEL_W1 +: LABEL_W1] <= i_label1;
+        end
+    end
+
+    always_ff @(posedge clk) begin
+        if (i_valid) begin
+            if (cnt_in == 3)
+                cnt_in <= 0;
+            else
+                cnt_in <= cnt_in + 1;
+        end
+    end
+
+    assign full  = (i_valid && cnt_in == 3);
+    assign start = full;
+
+    sum_select_8 #(
+        .METRIC_W (METRIC_W),
+        .LABEL_W  (LABEL_W),
+        .LABEL_W1 (LABEL_W1)
+    ) dut (
+        .clk        (clk),
+        .i_metrics  (buf_metrics0),
+        .i_labels   (buf_labels0),
+        .i_metrics1 (buf_metrics1),
+        .i_labels1  (buf_labels1),
+        .o_metrics  (ss_metrics),
+        .o_labels   (ss_labels)
+    );
+
+    always_ff @(posedge clk) begin
+        if (start) begin
+            for (int i = 0; i < 8; i++) begin
+                out_metrics_r[(7-i)*METRIC_W +: METRIC_W] <= ss_metrics[i];
+                out_labels_r [(7-i)*CONC_W   +: CONC_W  ] <= ss_labels[i];
+            end
+        end
+    end
+
+    always_ff @(posedge clk) begin
+        if (start) begin
+            busy    <= 1'b1;
+            cnt_out <= 0;
+        end else if (busy) begin
+            if (cnt_out == 7) begin
+                busy    <= 1'b0;
+                cnt_out <= 0;
+            end else begin
+                cnt_out <= cnt_out + 1;
+            end
+        end
+    end
+
+    always_comb begin
+        o_metric = out_metrics_r[(8*METRIC_W - 1) - cnt_out*METRIC_W -: METRIC_W];
+        o_label  = out_labels_r [(8*CONC_W   - 1) - cnt_out*CONC_W   -: CONC_W];
+    end
+
+    always_ff @(posedge clk) begin
+        o_valid <= busy;
+    end
+
+endmodule

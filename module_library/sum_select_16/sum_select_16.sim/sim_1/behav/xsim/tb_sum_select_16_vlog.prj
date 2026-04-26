@@ -1,0 +1,17 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../sum_select_16.srcs/sources_1/new/bitonic_merge_4_4.sv" \
+"../../../../sum_select_16.srcs/sources_1/new/bitonic_merge_8_8.sv" \
+"../../../../../sum_select8/sum_select8.srcs/sources_1/new/cas.sv" \
+"../../../../../sum_select/sum_select.srcs/sources_1/new/comparator.sv" \
+"../../../../../min_3_frm_7/min_3_frm_7.srcs/sources_1/new/min_3_frm_7.sv" \
+"../../../../../sum_select/sum_select.srcs/sources_1/new/sum_select.sv" \
+"../../../../sum_select_16.srcs/sources_1/new/sum_select_16.sv" \
+"../../../../../sum_select8/sum_select8.srcs/sources_1/new/sum_select_8.sv" \
+"../../../../sum_select_16.srcs/sim_1/new/tb_sum_select_16.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

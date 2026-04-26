@@ -1,0 +1,8 @@
+0.7
+2020.2
+Apr 18 2022
+16:05:34
+C:/LRMLD/min_3_frm_7/min_3_frm_7.sim/sim_1/behav/xsim/glbl.v,1649976174,verilog,,,,glbl,,uvm,,,,,,
+C:/LRMLD/min_3_frm_7/min_3_frm_7.srcs/sim_1/new/tb_min_3_frm_7.sv,1777228913,systemVerilog,,,,tb_find,,uvm,,,,,,
+C:/LRMLD/min_3_frm_7/min_3_frm_7.srcs/sources_1/new/comparator.sv,1777225459,systemVerilog,,C:/LRMLD/min_3_frm_7/min_3_frm_7.srcs/sources_1/new/min_3_frm_7.sv,,comparator,,uvm,,,,,,
+C:/LRMLD/min_3_frm_7/min_3_frm_7.srcs/sources_1/new/min_3_frm_7.sv,1777228863,systemVerilog,,C:/LRMLD/min_3_frm_7/min_3_frm_7.srcs/sim_1/new/tb_min_3_frm_7.sv,,min3_frm7,,uvm,,,,,,

@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../min_3_frm_7.srcs/sources_1/new/comparator.sv" \
+"../../../../min_3_frm_7.srcs/sources_1/new/min_3_frm_7.sv" \
+"../../../../min_3_frm_7.srcs/sim_1/new/tb_min_3_frm_7.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

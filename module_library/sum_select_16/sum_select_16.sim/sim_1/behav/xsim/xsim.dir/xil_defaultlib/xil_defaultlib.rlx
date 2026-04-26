@@ -1,0 +1,15 @@
+0.7
+2020.2
+Apr 18 2022
+16:05:34
+C:/LRMLD/min_3_frm_7/min_3_frm_7.srcs/sources_1/new/min_3_frm_7.sv,1777228863,systemVerilog,,C:/LRMLD/sum_select/sum_select.srcs/sources_1/new/sum_select.sv,,min3_frm7,,uvm,,,,,,
+C:/LRMLD/sum_select/sum_select.srcs/sources_1/new/comparator.sv,1777127287,systemVerilog,,C:/LRMLD/min_3_frm_7/min_3_frm_7.srcs/sources_1/new/min_3_frm_7.sv,,comparator,,uvm,,,,,,
+C:/LRMLD/sum_select/sum_select.srcs/sources_1/new/sum_select.sv,1777231272,systemVerilog,,C:/LRMLD/sum_select_16/sum_select_16.srcs/sources_1/new/sum_select_16.sv,,sum_select,,uvm,,,,,,
+C:/LRMLD/sum_select8/sum_select8.srcs/sources_1/new/cas.sv,1777150364,systemVerilog,,C:/LRMLD/sum_select/sum_select.srcs/sources_1/new/comparator.sv,,cas,,uvm,,,,,,
+C:/LRMLD/sum_select8/sum_select8.srcs/sources_1/new/sum_select_8.sv,1777232268,systemVerilog,,C:/LRMLD/sum_select_16/sum_select_16.srcs/sim_1/new/tb_sum_select_16.sv,,sum_select_8,,uvm,,,,,,
+C:/LRMLD/sum_select_16/sum_select_16.sim/sim_1/behav/xsim/glbl.v,1649976174,verilog,,,,glbl,,uvm,,,,,,
+C:/LRMLD/sum_select_16/sum_select_16.srcs/sim_1/new/tb_merge.sv,1777232860,systemVerilog,,,,tb_bitonic_merge_8_8,,uvm,,,,,,
+C:/LRMLD/sum_select_16/sum_select_16.srcs/sim_1/new/tb_sum_select_16.sv,1777240986,systemVerilog,,,,tb_sum_select_16,,uvm,,,,,,
+C:/LRMLD/sum_select_16/sum_select_16.srcs/sources_1/new/bitonic_merge_4_4.sv,1777240339,systemVerilog,,C:/LRMLD/sum_select_16/sum_select_16.srcs/sources_1/new/bitonic_merge_8_8.sv,,bitonic_merge_4_4,,uvm,,,,,,
+C:/LRMLD/sum_select_16/sum_select_16.srcs/sources_1/new/bitonic_merge_8_8.sv,1777239331,systemVerilog,,C:/LRMLD/sum_select8/sum_select8.srcs/sources_1/new/cas.sv,,bitonic_merge_8_8,,uvm,,,,,,
+C:/LRMLD/sum_select_16/sum_select_16.srcs/sources_1/new/sum_select_16.sv,1777240705,systemVerilog,,C:/LRMLD/sum_select8/sum_select8.srcs/sources_1/new/sum_select_8.sv,,sum_select_16,,uvm,,,,,,
