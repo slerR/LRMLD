@@ -108,7 +108,7 @@ module bitonic_merge_4_4#(
 
     // STAGE 3
     logic [M_W-1:0] s3_m_min [0:3], s3_m_max [0:3];
-    logic [  2-1:0] s3_l_min [0:3], s3_l_max [0:3];
+    logic [    2:0] s3_l_min [0:3], s3_l_max [0:3];
 
     generate
         for (i = 0; i < 8; i += 2) begin : gen_stage3
