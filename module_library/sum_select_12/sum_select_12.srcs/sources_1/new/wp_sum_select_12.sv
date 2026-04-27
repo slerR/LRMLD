@@ -53,7 +53,7 @@ module SS12_wrapper #(
     logic [CONC_W-1:0]   o_l_arr [0:11];
     logic                dut_valid;
 
-    sum_select_12 #(
+    sum_select_12_bm_ir #(
         .METRIC_W (METRIC_W),
         .LABEL_W  (LABEL_W),
         .LABEL_W1 (LABEL_W1)

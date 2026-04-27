@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-| Date         : Mon Apr 27 15:46:18 2026
+| Date         : Tue Apr 28 01:07:38 2026
 | Host         : feduuk running 64-bit major release  (build 9200)
 | Command      : report_utilization -file SS12_wrapper_utilization_synth.rpt -pb SS12_wrapper_utilization_synth.pb
 | Design       : SS12_wrapper
@@ -32,13 +32,13 @@ Table of Contents
 +----------------------------+------+-------+------------+-----------+-------+
 |          Site Type         | Used | Fixed | Prohibited | Available | Util% |
 +----------------------------+------+-------+------------+-----------+-------+
-| CLB LUTs*                  | 3816 |     0 |          0 |    203128 |  1.88 |
-|   LUT as Logic             | 3514 |     0 |          0 |    203128 |  1.73 |
-|   LUT as Memory            |  302 |     0 |          0 |    112800 |  0.27 |
+| CLB LUTs*                  | 4111 |     0 |          0 |    203128 |  2.02 |
+|   LUT as Logic             | 3585 |     0 |          0 |    203128 |  1.76 |
+|   LUT as Memory            |  526 |     0 |          0 |    112800 |  0.47 |
 |     LUT as Distributed RAM |    0 |     0 |            |           |       |
-|     LUT as Shift Register  |  302 |     0 |            |           |       |
-| CLB Registers              | 4047 |     0 |          0 |    406256 |  1.00 |
-|   Register as Flip Flop    | 3807 |     0 |          0 |    406256 |  0.94 |
+|     LUT as Shift Register  |  526 |     0 |            |           |       |
+| CLB Registers              | 4143 |     0 |          0 |    406256 |  1.02 |
+|   Register as Flip Flop    | 3903 |     0 |          0 |    406256 |  0.96 |
 |   Register as Latch        |  240 |     0 |          0 |    406256 |  0.06 |
 | CARRY8                     |  159 |     0 |          0 |     30300 |  0.52 |
 | F7 Muxes                   |  141 |     0 |          0 |    121200 |  0.12 |
@@ -63,7 +63,7 @@ Table of Contents
 | 0     |          Yes |           - |          Set |
 | 240   |          Yes |           - |        Reset |
 | 184   |          Yes |         Set |            - |
-| 3623  |          Yes |       Reset |            - |
+| 3719  |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -155,13 +155,13 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     | 3623 |            Register |
+| FDRE     | 3719 |            Register |
 | LUT3     |  963 |                 CLB |
-| LUT5     |  937 |                 CLB |
-| LUT6     |  918 |                 CLB |
+| LUT5     |  945 |                 CLB |
+| LUT6     |  926 |                 CLB |
 | LUT4     |  643 |                 CLB |
+| SRL16E   |  526 |                 CLB |
 | LUT2     |  440 |                 CLB |
-| SRL16E   |  302 |                 CLB |
 | LDCE     |  240 |            Register |
 | FDSE     |  184 |            Register |
 | CARRY8   |  159 |                 CLB |

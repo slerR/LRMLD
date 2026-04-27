@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-| Date             : Mon Apr 27 15:50:02 2026
+| Date             : Tue Apr 28 01:11:29 2026
 | Host             : feduuk running 64-bit major release  (build 9200)
 | Command          : report_power -file SS12_wrapper_power_routed.rpt -pb SS12_wrapper_power_summary_routed.pb -rpx SS12_wrapper_power_routed.rpx
 | Design           : SS12_wrapper
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.132        |
+| Total On-Chip Power (W)  | 1.171        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.647        |
-| Device Static (W)        | 0.485        |
+| Dynamic (W)              | 0.685        |
+| Device Static (W)        | 0.486        |
 | Effective TJA (C/W)      | 1.9          |
-| Max Ambient (C)          | 97.9         |
-| Junction Temperature (C) | 27.1         |
+| Max Ambient (C)          | 97.8         |
+| Junction Temperature (C) | 27.2         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,18 +52,18 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Clocks                  |     0.143 |        3 |       --- |             --- |
-| CLB Logic               |     0.195 |     8764 |       --- |             --- |
-|   LUT as Logic          |     0.158 |     3526 |    203128 |            1.74 |
-|   LUT as Shift Register |     0.023 |      294 |    112800 |            0.26 |
-|   Register              |     0.014 |     4048 |    406256 |            1.00 |
+| Clocks                  |     0.140 |        3 |       --- |             --- |
+| CLB Logic               |     0.228 |     9111 |       --- |             --- |
+|   LUT as Logic          |     0.154 |     3566 |    203128 |            1.76 |
+|   LUT as Shift Register |     0.058 |      422 |    112800 |            0.37 |
+|   Register              |     0.015 |     4153 |    406256 |            1.02 |
 |   CARRY8                |    <0.001 |      159 |     30300 |            0.52 |
 |   F7/F8 Muxes           |    <0.001 |      141 |    242400 |            0.06 |
 |   Others                |     0.000 |      199 |       --- |             --- |
-| Signals                 |     0.216 |     5540 |       --- |             --- |
+| Signals                 |     0.225 |     5796 |       --- |             --- |
 | I/O                     |     0.093 |       60 |       312 |           19.23 |
-| Static Power            |     0.485 |          |           |                 |
-| Total                   |     1.132 |          |           |                 |
+| Static Power            |     0.486 |          |           |                 |
+| Total                   |     1.171 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,7 +73,7 @@ Table of Contents
 +------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source     | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint     |       0.950 |     0.736 |       0.584 |      0.152 |       NA    | Unspecified | NA         |
+| Vccint     |       0.950 |     0.776 |       0.624 |      0.153 |       NA    | Unspecified | NA         |
 | Vccaux     |       1.800 |     0.096 |       0.000 |      0.096 |       NA    | Unspecified | NA         |
 | Vccaux_io  |       1.800 |     0.089 |       0.024 |      0.065 |       NA    | Unspecified | NA         |
 | Vccint_io  |       0.950 |     0.022 |       0.006 |      0.016 |       NA    | Unspecified | NA         |
@@ -148,43 +148,47 @@ Table of Contents
 +----------------------------+-----------+
 | Name                       | Power (W) |
 +----------------------------+-----------+
-| SS12_wrapper               |     0.647 |
+| SS12_wrapper               |     0.685 |
 |   clk_IBUF_inst            |     0.011 |
-|   dut                      |     0.521 |
-|     A0Bb[1].SS             |     0.034 |
+|   dut                      |     0.557 |
+|     A0Bb[1].SS             |     0.033 |
 |       sort2                |     0.009 |
 |       sort3                |     0.005 |
-|     A0Bb[2].SS             |     0.030 |
-|       sort2                |     0.009 |
+|     A0Bb[2].SS             |     0.029 |
+|       sort2                |     0.008 |
 |       sort3                |     0.005 |
-|     AaB0[1].SS             |     0.034 |
+|     AaB0[1].SS             |     0.032 |
 |       sort2                |     0.009 |
-|       sort3                |     0.005 |
-|     AaB0[2].SS             |     0.028 |
+|       sort3                |     0.004 |
+|     AaB0[2].SS             |     0.027 |
 |       sort2                |     0.008 |
 |       sort3                |     0.004 |
-|     SS_00                  |     0.113 |
+|     SS_00                  |     0.111 |
 |       c42                  |     0.001 |
 |       c43                  |     0.001 |
 |       c44                  |     0.001 |
-|       c51                  |     0.002 |
-|       c52                  |     0.001 |
+|       c51                  |     0.001 |
+|       c52                  |     0.002 |
 |       c61                  |     0.002 |
 |       c62                  |     0.002 |
-|       c63                  |     0.002 |
+|       c63                  |     0.001 |
 |     SS_11                  |     0.022 |
 |       sort2                |     0.007 |
-|       sort3                |     0.003 |
-|     merge1                 |     0.080 |
+|       sort3                |     0.004 |
+|     merge1                 |     0.068 |
 |       gen_stage1[0].cas_s1 |     0.003 |
-|       gen_stage1[1].cas_s1 |     0.003 |
+|       gen_stage1[1].cas_s1 |     0.002 |
 |       gen_stage1[2].cas_s1 |     0.004 |
 |       gen_stage1[3].cas_s1 |     0.004 |
-|       gen_stage3[0].cas_s3 |     0.017 |
-|       gen_stage3[2].cas_s3 |     0.018 |
-|     merge_board            |     0.075 |
+|       gen_stage3[0].cas_s3 |     0.005 |
+|       gen_stage3[2].cas_s3 |     0.005 |
+|     merge_board            |     0.132 |
+|       gen_stage1[0].cas_s1 |     0.005 |
+|       gen_stage1[1].cas_s1 |     0.005 |
+|       gen_stage1[2].cas_s1 |     0.008 |
+|       gen_stage1[3].cas_s1 |     0.008 |
 |       gen_stage3[0].cas_s3 |     0.008 |
-|       gen_stage3[2].cas_s3 |     0.004 |
+|       gen_stage3[2].cas_s3 |     0.005 |
 |       gen_stage3[4].cas_s3 |     0.005 |
 |       gen_stage3[6].cas_s3 |     0.004 |
 +----------------------------+-----------+

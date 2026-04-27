@@ -1,28 +1,14 @@
 +====================+===================+============================================+
 | Launch Setup Clock | Launch Hold Clock | Pin                                        |
 +====================+===================+============================================+
-| sys_clk_pin        | sys_clk_pin       | dut/merge1/m2_reg[3][0]/D                  |
-| sys_clk_pin        | sys_clk_pin       | dut/merge1/m2_reg[0][0]/D                  |
-| sys_clk_pin        | sys_clk_pin       | dut/merge1/m2_reg[0][7]/D                  |
-| sys_clk_pin        | sys_clk_pin       | dut/merge1/m2_reg[1][1]/D                  |
+| sys_clk_pin        | sys_clk_pin       | dut/A0Bb[2].SS/c_m1_r_reg[2][0]/D          |
+| sys_clk_pin        | sys_clk_pin       | dut/A0Bb[2].SS/c_m1_r_reg[1][6]/D          |
 | sys_clk_pin        | sys_clk_pin       | dut/AaB0[2].SS/conc_d_reg[1][0][15]_srl3/D |
-| sys_clk_pin        | sys_clk_pin       | dut/SS_00/conc_d_reg[1][5][7]_srl3/D       |
-| sys_clk_pin        | sys_clk_pin       | dut/AaB0[2].SS/conc_d_reg[1][7][15]_srl3/D |
-| sys_clk_pin        | sys_clk_pin       | dut/AaB0[1].SS/conc_d_reg[1][7][15]_srl3/D |
-| sys_clk_pin        | sys_clk_pin       | dut/AaB0[2].SS/conc_d_reg[1][2][15]_srl3/D |
-| sys_clk_pin        | sys_clk_pin       | dut/AaB0[1].SS/conc_d_reg[1][2][15]_srl3/D |
-| sys_clk_pin        | sys_clk_pin       | dut/AaB0[2].SS/conc_d_reg[1][6][15]_srl3/D |
-| sys_clk_pin        | sys_clk_pin       | dut/SS_00/conc_d_reg[4][6][15]_srl2/D      |
-| sys_clk_pin        | sys_clk_pin       | dut/SS_00/conc_d_reg[4][2][15]_srl2/D      |
-| sys_clk_pin        | sys_clk_pin       | dut/AaB0[1].SS/conc_d_reg[1][7][10]_srl3/D |
-| sys_clk_pin        | sys_clk_pin       | dut/AaB0[1].SS/conc_d_reg[1][7][8]_srl3/D  |
-| sys_clk_pin        | sys_clk_pin       | dut/AaB0[1].SS/conc_d_reg[1][7][9]_srl3/D  |
-| sys_clk_pin        | sys_clk_pin       | dut/AaB0[2].SS/conc_d_reg[1][7][14]_srl3/D |
-| sys_clk_pin        | sys_clk_pin       | dut/AaB0[1].SS/conc_d_reg[1][2][10]_srl3/D |
-| sys_clk_pin        | sys_clk_pin       | dut/SS_00/conc_d_reg[1][2][15]_srl3/D      |
-| sys_clk_pin        | sys_clk_pin       | dut/AaB0[2].SS/conc_d_reg[1][7][11]_srl3/D |
-| sys_clk_pin        | sys_clk_pin       | dut/AaB0[1].SS/conc_d_reg[1][2][8]_srl3/D  |
-| sys_clk_pin        | sys_clk_pin       | dut/AaB0[1].SS/conc_d_reg[1][2][9]_srl3/D  |
-| sys_clk_pin        | sys_clk_pin       | dut/AaB0[2].SS/conc_d_reg[1][6][10]_srl3/D |
-| sys_clk_pin        | sys_clk_pin       | dut/A0Bb[1].SS/summ0_d_reg[1][7]_srl2/D    |
+| sys_clk_pin        | sys_clk_pin       | dut/SS_00/l0_d_reg[1][7]_srl3/D            |
+| sys_clk_pin        | sys_clk_pin       | dut/SS_00/conc_d_reg[1][1][7]_srl3/D       |
+| sys_clk_pin        | sys_clk_pin       | dut/A0Bb[2].SS/conc_d_reg[1][4][7]_srl3/D  |
+| sys_clk_pin        | sys_clk_pin       | dut/A0Bb[1].SS/conc_d_reg[1][0][7]_srl3/D  |
+| sys_clk_pin        | sys_clk_pin       | dut/SS_11/summ0_d_reg[1][7]_srl2/D         |
+| sys_clk_pin        | sys_clk_pin       | dut/A0Bb[2].SS/conc_d_reg[1][0][7]_srl3/D  |
+| sys_clk_pin        | sys_clk_pin       | dut/A0Bb[2].SS/conc_d_reg[1][0][6]_srl3/D  |
 +--------------------+-------------------+--------------------------------------------+

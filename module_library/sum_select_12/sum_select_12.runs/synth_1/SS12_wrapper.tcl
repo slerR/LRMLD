@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 3
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xcku035-fbva676-1-i
 
@@ -85,12 +86,12 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib -sv {
-  C:/LRMLD/module_library/sum_select_16/sum_select_16.srcs/sources_1/new/bitonic_merge_4_4.sv
+  C:/LRMLD/module_library/sum_select_12/sum_select_12.srcs/sources_1/new/bitonic_merge_4_4_ir.sv
   C:/LRMLD/module_library/sum_select8/sum_select8.srcs/sources_1/new/cas.sv
   C:/LRMLD/module_library/min2_frm_5/min2_frm_5.srcs/sources_1/new/comparator.sv
   C:/LRMLD/module_library/min2_frm_5/min2_frm_5.srcs/sources_1/new/min2_frm5.sv
   C:/LRMLD/module_library/sum_select/sum_select.srcs/sources_1/new/sum_select.sv
-  C:/LRMLD/module_library/sum_select_12/sum_select_12.srcs/sources_1/new/sum_select_12.sv
+  C:/LRMLD/module_library/sum_select_12/sum_select_12.srcs/sources_1/new/sum_select_12_bm_ir.sv
   C:/LRMLD/module_library/sum_select8/sum_select8.srcs/sources_1/new/sum_select_8.sv
   C:/LRMLD/module_library/sum_select_12/sum_select_12.srcs/sources_1/new/wp_sum_select_12.sv
 }
@@ -107,6 +108,8 @@ read_xdc C:/QW/bitonic_sort/bitonic_sort.srcs/constrs_1/new/constraints.xdc
 set_property used_in_implementation false [get_files C:/QW/bitonic_sort/bitonic_sort.srcs/constrs_1/new/constraints.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental C:/LRMLD/module_library/sum_select_12/sum_select_12.srcs/utils_1/imports/synth_1/SS12_wrapper.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

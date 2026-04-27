@@ -26,7 +26,7 @@ module tb_sum_select_16;
         end
     end
 
-    sum_select_12 #(
+    sum_select_12_bm_ir #(
         .METRIC_W(M_W),
         .LABEL_W(L_W),
         .LABEL_W1(L_W1)

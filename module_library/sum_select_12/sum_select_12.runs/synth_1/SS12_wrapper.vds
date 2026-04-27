@@ -2,8 +2,8 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Mon Apr 27 15:45:21 2026
-# Process ID: 36136
+# Start of session at: Tue Apr 28 01:06:46 2026
+# Process ID: 38576
 # Current directory: C:/LRMLD/module_library/sum_select_12/sum_select_12.runs/synth_1
 # Command line: vivado.exe -log SS12_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source SS12_wrapper.tcl
 # Log file: C:/LRMLD/module_library/sum_select_12/sum_select_12.runs/synth_1/SS12_wrapper.vds
@@ -11,19 +11,24 @@
 # Running On: feduuk, OS: Windows, CPU Frequency: 3294 MHz, CPU Physical cores: 12, Host memory: 16487 MB
 #-----------------------------------------------------------
 source SS12_wrapper.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/LRMLD/module_library/sum_select_12/sum_select_12.srcs/utils_1/imports/synth_1/SS12_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/LRMLD/module_library/sum_select_12/sum_select_12.srcs/utils_1/imports/synth_1/SS12_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top SS12_wrapper -part xcku035-fbva676-1-i
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xcku035'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku035'
 INFO: [Device 21-403] Loading part xcku035-fbva676-1-i
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 12024
+INFO: [Synth 8-7075] Helper process launched with PID 27668
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1446.762 ; gain = 152.281
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1451.355 ; gain = 157.430
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'SS12_wrapper' [C:/LRMLD/module_library/sum_select_12/sum_select_12.srcs/sources_1/new/wp_sum_select_12.sv:3]
-INFO: [Synth 8-6157] synthesizing module 'sum_select_12' [C:/LRMLD/module_library/sum_select_12/sum_select_12.srcs/sources_1/new/sum_select_12.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'sum_select_12_bm_ir' [C:/LRMLD/module_library/sum_select_12/sum_select_12.srcs/sources_1/new/sum_select_12_bm_ir.sv:4]
 	Parameter METRIC_W bound to: 8 - type: integer 
 	Parameter LABEL_W bound to: 8 - type: integer 
 	Parameter LABEL_W1 bound to: 8 - type: integer 
@@ -83,19 +88,27 @@ WARNING: [Synth 8-7071] port 'o_min' of module 'comparator' is unconnected for i
 WARNING: [Synth 8-7071] port 'o_max' of module 'comparator' is unconnected for instance 'cmp4' [C:/LRMLD/module_library/min2_frm_5/min2_frm_5.srcs/sources_1/new/min2_frm5.sv:56]
 WARNING: [Synth 8-7023] instance 'cmp4' of module 'comparator' has 5 connections declared, but only 3 given [C:/LRMLD/module_library/min2_frm_5/min2_frm_5.srcs/sources_1/new/min2_frm5.sv:56]
 INFO: [Synth 8-6155] done synthesizing module 'min2_frm5' (0#1) [C:/LRMLD/module_library/min2_frm_5/min2_frm_5.srcs/sources_1/new/min2_frm5.sv:3]
-WARNING: [Synth 8-324] index 2 out of range [C:/LRMLD/module_library/sum_select_12/sum_select_12.srcs/sources_1/new/sum_select_12.sv:236]
-WARNING: [Synth 8-324] index 2 out of range [C:/LRMLD/module_library/sum_select_12/sum_select_12.srcs/sources_1/new/sum_select_12.sv:236]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/LRMLD/module_library/sum_select_12/sum_select_12.srcs/sources_1/new/sum_select_12.sv:243]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/LRMLD/module_library/sum_select_12/sum_select_12.srcs/sources_1/new/sum_select_12.sv:276]
-INFO: [Synth 8-6157] synthesizing module 'bitonic_merge_4_4' [C:/LRMLD/module_library/sum_select_16/sum_select_16.srcs/sources_1/new/bitonic_merge_4_4.sv:4]
+WARNING: [Synth 8-324] index 2 out of range [C:/LRMLD/module_library/sum_select_12/sum_select_12.srcs/sources_1/new/sum_select_12_bm_ir.sv:243]
+WARNING: [Synth 8-324] index 2 out of range [C:/LRMLD/module_library/sum_select_12/sum_select_12.srcs/sources_1/new/sum_select_12_bm_ir.sv:243]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/LRMLD/module_library/sum_select_12/sum_select_12.srcs/sources_1/new/sum_select_12_bm_ir.sv:250]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/LRMLD/module_library/sum_select_12/sum_select_12.srcs/sources_1/new/sum_select_12_bm_ir.sv:283]
+INFO: [Synth 8-6157] synthesizing module 'bitonic_merge_4_4_ir' [C:/LRMLD/module_library/sum_select_12/sum_select_12.srcs/sources_1/new/bitonic_merge_4_4_ir.sv:4]
 	Parameter M_W bound to: 8 - type: integer 
 	Parameter L_W bound to: 16 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'cas__parameterized0' [C:/LRMLD/module_library/sum_select8/sum_select8.srcs/sources_1/new/cas.sv:1]
 	Parameter METRIC_W bound to: 8 - type: integer 
 	Parameter LABEL_W bound to: 3 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'cas__parameterized0' (0#1) [C:/LRMLD/module_library/sum_select8/sum_select8.srcs/sources_1/new/cas.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'bitonic_merge_4_4' (0#1) [C:/LRMLD/module_library/sum_select_16/sum_select_16.srcs/sources_1/new/bitonic_merge_4_4.sv:4]
-INFO: [Synth 8-6155] done synthesizing module 'sum_select_12' (0#1) [C:/LRMLD/module_library/sum_select_12/sum_select_12.srcs/sources_1/new/sum_select_12.sv:4]
+INFO: [Synth 8-226] default block is never used [C:/LRMLD/module_library/sum_select_12/sum_select_12.srcs/sources_1/new/bitonic_merge_4_4_ir.sv:143]
+INFO: [Synth 8-226] default block is never used [C:/LRMLD/module_library/sum_select_12/sum_select_12.srcs/sources_1/new/bitonic_merge_4_4_ir.sv:143]
+INFO: [Synth 8-226] default block is never used [C:/LRMLD/module_library/sum_select_12/sum_select_12.srcs/sources_1/new/bitonic_merge_4_4_ir.sv:143]
+INFO: [Synth 8-226] default block is never used [C:/LRMLD/module_library/sum_select_12/sum_select_12.srcs/sources_1/new/bitonic_merge_4_4_ir.sv:143]
+INFO: [Synth 8-226] default block is never used [C:/LRMLD/module_library/sum_select_12/sum_select_12.srcs/sources_1/new/bitonic_merge_4_4_ir.sv:143]
+INFO: [Synth 8-226] default block is never used [C:/LRMLD/module_library/sum_select_12/sum_select_12.srcs/sources_1/new/bitonic_merge_4_4_ir.sv:143]
+INFO: [Synth 8-226] default block is never used [C:/LRMLD/module_library/sum_select_12/sum_select_12.srcs/sources_1/new/bitonic_merge_4_4_ir.sv:143]
+INFO: [Synth 8-226] default block is never used [C:/LRMLD/module_library/sum_select_12/sum_select_12.srcs/sources_1/new/bitonic_merge_4_4_ir.sv:143]
+INFO: [Synth 8-6155] done synthesizing module 'bitonic_merge_4_4_ir' (0#1) [C:/LRMLD/module_library/sum_select_12/sum_select_12.srcs/sources_1/new/bitonic_merge_4_4_ir.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'sum_select_12_bm_ir' (0#1) [C:/LRMLD/module_library/sum_select_12/sum_select_12.srcs/sources_1/new/sum_select_12_bm_ir.sv:4]
 INFO: [Synth 8-6155] done synthesizing module 'SS12_wrapper' (0#1) [C:/LRMLD/module_library/sum_select_12/sum_select_12.srcs/sources_1/new/wp_sum_select_12.sv:3]
 WARNING: [Synth 8-5856] 3D RAM conc_d_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
 WARNING: [Synth 8-10225] Potential Runtime issue for 3D-RAM or RAM from Record/Structs for RAM  conc_d_reg 
@@ -141,19 +154,23 @@ WARNING: [Synth 8-5856] 3D RAM AB_m_a0_d_reg  for this pattern/configuration is 
 WARNING: [Synth 8-10225] Potential Runtime issue for 3D-RAM or RAM from Record/Structs for RAM  AB_m_a0_d_reg 
 WARNING: [Synth 8-5856] 3D RAM AB_l_a0_d_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
 WARNING: [Synth 8-10225] Potential Runtime issue for 3D-RAM or RAM from Record/Structs for RAM  AB_l_a0_d_reg 
+WARNING: [Synth 8-5856] 3D RAM AB_m_00MS_d_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-10225] Potential Runtime issue for 3D-RAM or RAM from Record/Structs for RAM  AB_m_00MS_d_reg 
+WARNING: [Synth 8-5856] 3D RAM AB_l_00MS_d_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-10225] Potential Runtime issue for 3D-RAM or RAM from Record/Structs for RAM  AB_l_00MS_d_reg 
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1546.387 ; gain = 251.906
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1550.648 ; gain = 256.723
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1546.387 ; gain = 251.906
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1550.648 ; gain = 256.723
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1546.387 ; gain = 251.906
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1550.648 ; gain = 256.723
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.068 . Memory (MB): peak = 1546.387 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.070 . Memory (MB): peak = 1550.648 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -164,13 +181,15 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/SS12_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1626.590 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1627.453 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1626.590 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1627.453 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1626.590 ; gain = 332.109
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1627.453 ; gain = 333.527
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -178,19 +197,19 @@ Start Loading Part and Timing Information
 Loading part: xcku035-fbva676-1-i
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1626.590 ; gain = 332.109
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1627.453 ; gain = 333.527
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1626.590 ; gain = 332.109
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1627.453 ; gain = 333.527
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-327] inferring latch for variable 'o_labels_reg[1]' [C:/LRMLD/module_library/sum_select/sum_select.srcs/sources_1/new/sum_select.sv:323]
 WARNING: [Synth 8-327] inferring latch for variable 'o_labels_reg[2]' [C:/LRMLD/module_library/sum_select/sum_select.srcs/sources_1/new/sum_select.sv:323]
 WARNING: [Synth 8-327] inferring latch for variable 'o_labels_reg[3]' [C:/LRMLD/module_library/sum_select/sum_select.srcs/sources_1/new/sum_select.sv:323]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1626.590 ; gain = 332.109
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1627.453 ; gain = 333.527
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -204,9 +223,10 @@ Detailed RTL Component Info :
 +---Registers : 
 	               96 Bit    Registers := 4     
 	               32 Bit    Registers := 12    
-	               16 Bit    Registers := 245   
-	                9 Bit    Registers := 117   
-	                8 Bit    Registers := 92    
+	               16 Bit    Registers := 273   
+	               11 Bit    Registers := 1     
+	                9 Bit    Registers := 116   
+	                8 Bit    Registers := 120   
 	                4 Bit    Registers := 2     
 	                3 Bit    Registers := 128   
 	                1 Bit    Registers := 3     
@@ -238,25 +258,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1626.590 ; gain = 332.109
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1627.453 ; gain = 333.527
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1687.176 ; gain = 392.695
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1689.238 ; gain = 395.312
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1741.277 ; gain = 446.797
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1755.418 ; gain = 461.492
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1746.145 ; gain = 451.664
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1763.062 ; gain = 469.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -274,37 +294,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1760.723 ; gain = 466.242
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1772.852 ; gain = 478.926
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1760.723 ; gain = 466.242
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1772.852 ; gain = 478.926
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1760.723 ; gain = 466.242
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1772.852 ; gain = 478.926
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1760.723 ; gain = 466.242
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1772.852 ; gain = 478.926
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1760.723 ; gain = 466.242
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1772.852 ; gain = 478.926
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1760.723 ; gain = 466.242
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1772.852 ; gain = 478.926
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -322,7 +342,11 @@ Static Shift Register Report:
 |SS12_wrapper | dut/SS_00/m_p_reg[5][7][7]          | 3      | 8     | NO           | NO                 | NO                | 8      | 0       | 
 |SS12_wrapper | dut/SS_00/conc_d_reg[5][4][7]       | 3      | 48    | NO           | NO                 | YES               | 48     | 0       | 
 |SS12_wrapper | dut/SS_00/idx_p_reg[5][7][2]        | 3      | 3     | NO           | NO                 | YES               | 3      | 0       | 
-|SS12_wrapper | dut/valid_d_reg[8]                  | 9      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|SS12_wrapper | dut/merge1/ld_reg[0][15]            | 3      | 64    | NO           | NO                 | YES               | 64     | 0       | 
+|SS12_wrapper | dut/merge_board/ld_reg[0][15]       | 4      | 64    | NO           | NO                 | YES               | 64     | 0       | 
+|SS12_wrapper | dut/AB_m_00MS_d_reg[2][0][7]        | 3      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|SS12_wrapper | dut/AB_l_00MS_d_reg[2][0][15]       | 4      | 64    | NO           | NO                 | YES               | 64     | 0       | 
+|SS12_wrapper | dut/valid_d_reg[10]                 | 11     | 1     | NO           | NO                 | YES               | 1      | 0       | 
 |SS12_wrapper | dut/AB_m_0b_r_reg[0][0][7]          | 4      | 16    | NO           | YES                | YES               | 16     | 0       | 
 |SS12_wrapper | dut/AB_m_a0_r_reg[0][0][7]          | 4      | 16    | NO           | YES                | YES               | 16     | 0       | 
 |SS12_wrapper | dut/AB_m_11_r_reg[0][7]             | 4      | 8     | NO           | YES                | YES               | 8      | 0       | 
@@ -353,40 +377,40 @@ Report Cell Usage:
 |4     |LUT2   |   440|
 |5     |LUT3   |   963|
 |6     |LUT4   |   643|
-|7     |LUT5   |   937|
-|8     |LUT6   |   918|
+|7     |LUT5   |   945|
+|8     |LUT6   |   926|
 |9     |MUXF7  |   141|
-|10    |SRL16E |   302|
-|11    |FDRE   |  3623|
+|10    |SRL16E |   526|
+|11    |FDRE   |  3719|
 |12    |FDSE   |   184|
 |13    |LD     |   240|
 |14    |IBUF   |    35|
 |15    |OBUF   |    25|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1760.723 ; gain = 466.242
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1772.852 ; gain = 478.926
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:36 . Memory (MB): peak = 1760.723 ; gain = 386.039
-Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1760.723 ; gain = 466.242
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:38 . Memory (MB): peak = 1772.852 ; gain = 402.121
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1772.852 ; gain = 478.926
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.076 . Memory (MB): peak = 1772.770 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.081 . Memory (MB): peak = 1784.887 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 576 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1790.984 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1802.129 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 276 instances were transformed.
   BUFG => BUFGCE: 1 instance 
   IBUF => IBUF (IBUFCTRL, INBUF): 35 instances
   LD => LDCE: 240 instances
 
-Synth Design complete, checksum: 3601aaab
+Synth Design complete, checksum: 140815f5
 INFO: [Common 17-83] Releasing license: Synthesis
-41 Infos, 80 Warnings, 0 Critical Warnings and 0 Errors encountered.
+55 Infos, 84 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:50 . Memory (MB): peak = 1790.984 ; gain = 496.504
+synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 1802.129 ; gain = 508.203
 INFO: [Common 17-1381] The checkpoint 'C:/LRMLD/module_library/sum_select_12/sum_select_12.runs/synth_1/SS12_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file SS12_wrapper_utilization_synth.rpt -pb SS12_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Apr 27 15:46:18 2026...
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 28 01:07:38 2026...
