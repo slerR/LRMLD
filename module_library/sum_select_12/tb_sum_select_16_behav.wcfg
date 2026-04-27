@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_sum_select_16_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_sum_select_16" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="292.878 ns"></ZoomEndTime>
+      <Cursor1Time time="125.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="340"></NameColumnWidth>
+      <ValueColumnWidth column_width="155"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="12" />
+   <wvobject fp_name="/tb_sum_select_16/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sum_select_16/i_valid" type="logic">
+      <obj_property name="ElementShortName">i_valid</obj_property>
+      <obj_property name="ObjectShortName">i_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sum_select_16/i_metrics" type="array">
+      <obj_property name="ElementShortName">i_metrics[119:0]</obj_property>
+      <obj_property name="ObjectShortName">i_metrics[119:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sum_select_16/i_metrics1" type="array">
+      <obj_property name="ElementShortName">i_metrics1[119:0]</obj_property>
+      <obj_property name="ObjectShortName">i_metrics1[119:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sum_select_16/i_labels" type="array">
+      <obj_property name="ElementShortName">i_labels[71:0]</obj_property>
+      <obj_property name="ObjectShortName">i_labels[71:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sum_select_16/i_labels1" type="array">
+      <obj_property name="ElementShortName">i_labels1[71:0]</obj_property>
+      <obj_property name="ObjectShortName">i_labels1[71:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sum_select_16/o_metrics" type="array">
+      <obj_property name="ElementShortName">o_metrics[0:11][9:0]</obj_property>
+      <obj_property name="ObjectShortName">o_metrics[0:11][9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sum_select_16/o_labels" type="array">
+      <obj_property name="ElementShortName">o_labels[0:11][11:0]</obj_property>
+      <obj_property name="ObjectShortName">o_labels[0:11][11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sum_select_16/o_valid" type="logic">
+      <obj_property name="ElementShortName">o_valid</obj_property>
+      <obj_property name="ObjectShortName">o_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sum_select_16/M_W" type="array">
+      <obj_property name="ElementShortName">M_W[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M_W[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sum_select_16/L_W" type="array">
+      <obj_property name="ElementShortName">L_W[31:0]</obj_property>
+      <obj_property name="ObjectShortName">L_W[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sum_select_16/L_W1" type="array">
+      <obj_property name="ElementShortName">L_W1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">L_W1[31:0]</obj_property>
+   </wvobject>
+</wave_config>

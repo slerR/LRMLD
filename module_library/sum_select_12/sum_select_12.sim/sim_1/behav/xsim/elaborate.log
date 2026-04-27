@@ -1,0 +1,23 @@
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_sum_select_16_behav xil_defaultlib.tb_sum_select_16 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.comparator(DATA_W=11)
+Compiling module xil_defaultlib.sum_select(METRIC_W=10)
+Compiling module xil_defaultlib.cas(METRIC_W=11,LABEL_W=3)
+Compiling module xil_defaultlib.sum_select_8(METRIC_W=10)
+Compiling module xil_defaultlib.comparator(DATA_W=10)
+Compiling module xil_defaultlib.min2_frm5
+Compiling module xil_defaultlib.cas(METRIC_W=10,LABEL_W=3)
+Compiling module xil_defaultlib.bitonic_merge_4_4(L_W=12)
+WARNING: [VRFC 10-3705] select index 2 into 'ss_idx_r' is out of bounds [C:/LRMLD/module_library/sum_select_12/sum_select_12.srcs/sources_1/new/sum_select_12.sv:236]
+Compiling module xil_defaultlib.sum_select_12(LABEL_W=6,LABEL_W1...
+Compiling module xil_defaultlib.tb_sum_select_16
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_sum_select_16_behav

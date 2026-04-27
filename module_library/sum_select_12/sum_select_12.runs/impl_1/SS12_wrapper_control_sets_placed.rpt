@@ -1,0 +1,134 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Apr 27 15:48:16 2026
+| Host         : feduuk running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file SS12_wrapper_control_sets_placed.rpt
+| Design       : SS12_wrapper
+| Device       : xcku035
+-----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    56 |
+|    Minimum number of control sets                        |    56 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |     1 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    56 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |    23 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    30 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |            3348 |          693 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             187 |           57 |
+| Yes          | No                    | No                     |             504 |          193 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               8 |            3 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------------------+--------------------------+-----------------------------------+------------------+----------------+--------------+
+|                 Clock Signal                |       Enable Signal      |          Set/Reset Signal         | Slice Load Count | Bel Load Count | Bels / Slice |
++---------------------------------------------+--------------------------+-----------------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG                              |                          | rst_IBUF_inst/O                   |                2 |              3 |         1.50 |
+|  clk_IBUF_BUFG                              | busy                     | dut/SR[0]                         |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG                              | i_valid_IBUF_inst/O      | rst_IBUF_inst/O                   |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG                              |                          | dut/A0Bb[1].SS/sort3/p_0_in__1[8] |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG                              |                          | dut/AaB0[1].SS/sort2/p_0_in[8]    |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG                              |                          | dut/A0Bb[2].SS/sort2/p_0_in[8]    |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                              |                          | dut/A0Bb[2].SS/sort2/p_0_in__0[8] |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG                              |                          | dut/A0Bb[2].SS/sort3/p_0_in__1[8] |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG                              |                          | dut/SS_11/sort2/p_0_in[8]         |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                              |                          | dut/SS_11/sort2/p_0_in__0[8]      |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                              |                          | dut/AaB0[1].SS/sort3/p_0_in__1[8] |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                              |                          | dut/SS_11/sort3/p_0_in__1[8]      |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG                              |                          | dut/AaB0[2].SS/sort2/p_0_in__0[8] |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG                              |                          | dut/AaB0[2].SS/sort2/p_0_in[8]    |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                              |                          | dut/AaB0[2].SS/sort3/p_0_in__1[8] |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG                              |                          | dut/A0Bb[1].SS/sort2/p_0_in[8]    |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG                              |                          | dut/A0Bb[1].SS/sort2/p_0_in__0[8] |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                              |                          | dut/AaB0[1].SS/sort2/p_0_in__0[8] |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG                              |                          | dut/SS_00/m_p_reg[5][3][8]_0[8]   |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                              |                          | dut/SS_00/m_p_reg[5][1][8]_0[8]   |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG                              |                          | dut/SS_00/m_p_reg[5][2][8]_0[8]   |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG                              |                          | dut/SS_00/m_p_reg[5][4][8]_0[8]   |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG                              |                          | dut/SS_00/m_p_reg[5][6][8]_0[8]   |                5 |              8 |         1.60 |
+|  clk_IBUF_BUFG                              |                          | dut/SS_00/m_p_reg[5][5][8]_0[8]   |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG                              |                          | dut/SS_00/m_p_reg[5][7]_9[8]      |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG                              |                          | dut/SS_00/s0_d_reg[5]_8[8]        |                1 |              8 |         8.00 |
+|  dut/AaB0[1].SS/sort2/l_m1_r_reg[1][2][0]   |                          |                                   |                9 |             16 |         1.78 |
+|  dut/AaB0[1].SS/sort2/E[0]                  |                          |                                   |               11 |             16 |         1.45 |
+|  dut/AaB0[2].SS/sort2/l_m1_r_reg[1][2][0]   |                          |                                   |                6 |             16 |         2.67 |
+|  dut/A0Bb[2].SS/sort2/E[0]                  |                          |                                   |               10 |             16 |         1.60 |
+|  dut/A0Bb[2].SS/sort2/l_m1_r_reg[1][2]_0[0] |                          |                                   |               11 |             16 |         1.45 |
+|  dut/A0Bb[2].SS/sort3/E[0]                  |                          |                                   |               14 |             16 |         1.14 |
+|  dut/SS_11/sort2/E[0]                       |                          |                                   |               11 |             16 |         1.45 |
+|  dut/SS_11/sort2/l_m1_r_reg[1][2]_0[0]      |                          |                                   |               11 |             16 |         1.45 |
+|  dut/SS_11/sort3/E[0]                       |                          |                                   |                8 |             16 |         2.00 |
+|  dut/AaB0[2].SS/sort2/E[0]                  |                          |                                   |               12 |             16 |         1.33 |
+|  dut/AaB0[2].SS/sort3/E[0]                  |                          |                                   |               11 |             16 |         1.45 |
+|  dut/A0Bb[1].SS/sort2/E[0]                  |                          |                                   |               10 |             16 |         1.60 |
+|  dut/A0Bb[1].SS/sort2/l_m1_r_reg[1][2]_0[0] |                          |                                   |                9 |             16 |         1.78 |
+|  dut/A0Bb[1].SS/sort3/E[0]                  |                          |                                   |                9 |             16 |         1.78 |
+|  dut/AaB0[1].SS/sort3/E[0]                  |                          |                                   |               11 |             16 |         1.45 |
+|  clk_IBUF_BUFG                              | o_metric[7]_i_1_n_0      |                                   |               20 |             24 |         1.20 |
+|  clk_IBUF_BUFG                              | i_metrics_buf[7]         |                                   |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG                              | i_metrics_buf[23]        |                                   |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG                              | i_metrics_buf[87]        |                                   |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG                              | i_metrics_buf[47]        |                                   |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG                              | i_metrics_buf[63]        |                                   |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG                              | i_metrics_buf[71]        |                                   |               17 |             32 |         1.88 |
+|  clk_IBUF_BUFG                              | i_metrics_buf[95]        |                                   |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG                              | i_metrics_buf[39]        |                                   |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG                              | i_metrics_buf[31]        |                                   |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG                              | i_metrics_buf[55]        |                                   |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG                              | i_metrics_buf[15]        |                                   |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG                              | i_metrics_buf[79]        |                                   |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG                              | dut/AB_m_2[0][7]_i_1_n_0 |                                   |               58 |             96 |         1.66 |
+|  clk_IBUF_BUFG                              |                          |                                   |              634 |           3410 |         5.38 |
++---------------------------------------------+--------------------------+-----------------------------------+------------------+----------------+--------------+
+
+

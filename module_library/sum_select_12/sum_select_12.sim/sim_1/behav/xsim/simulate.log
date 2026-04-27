@@ -1,0 +1,41 @@
+Time resolution is 1 ps
+--- New Valid Output Detected ---
+Index 0: Metric = 15, Label = 000000000001
+Index 1: Metric = 25, Label = 000000000010
+Index 2: Metric = 25, Label = 000001000001
+Index 3: Metric = 35, Label = 000010000001
+Index 4: Metric = 35, Label = 000001000010
+Index 5: Metric = 35, Label = 000000000011
+Index 6: Metric = 45, Label = 000000000100
+Index 7: Metric = 45, Label = 000011000001
+Index 8: Metric = 55, Label = 000100000001
+Index 9: Metric = 55, Label = 000000000101
+Index 10: Metric = 65, Label = 000101000001
+Index 11: Metric = 65, Label = 000100000010
+--- New Valid Output Detected ---
+Index 0: Metric = 11, Label = 000000000010
+Index 1: Metric = 14, Label = 000000000011
+Index 2: Metric = 14, Label = 000001000010
+Index 3: Metric = 17, Label = 000010000010
+Index 4: Metric = 17, Label = 000001000011
+Index 5: Metric = 17, Label = 000000000100
+Index 6: Metric = 20, Label = 000000000101
+Index 7: Metric = 20, Label = 000011000010
+Index 8: Metric = 23, Label = 000100000010
+Index 9: Metric = 23, Label = 000000000110
+Index 10: Metric = 26, Label = 000101000010
+Index 11: Metric = 26, Label = 000100000011
+--- New Valid Output Detected ---
+Index 0: Metric = 0, Label = 000000000000
+Index 1: Metric = 1, Label = 000000000001
+Index 2: Metric = 1, Label = 000000000000
+Index 3: Metric = 2, Label = 000000000000
+Index 4: Metric = 2, Label = 000000000001
+Index 5: Metric = 2, Label = 000000000010
+Index 6: Metric = 3, Label = 000000000011
+Index 7: Metric = 3, Label = 000000000000
+Index 8: Metric = 4, Label = 000000000000
+Index 9: Metric = 4, Label = 000000000100
+Index 10: Metric = 5, Label = 000000000000
+Index 11: Metric = 5, Label = 000000000001
+$finish called at time : 245 ns : File "C:/LRMLD/module_library/sum_select_12/sum_select_12.srcs/sim_1/new/tb_sum_select_12.sv" Line 72
