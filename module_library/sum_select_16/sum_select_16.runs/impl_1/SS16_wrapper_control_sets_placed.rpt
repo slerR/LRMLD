@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-| Date         : Mon Apr 27 01:41:45 2026
+| Date         : Tue Apr 28 02:58:10 2026
 | Host         : feduuk running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file SS16_wrapper_control_sets_placed.rpt
 | Design       : SS16_wrapper
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |    60 |
-|    Minimum number of control sets                        |    60 |
+| Total control sets                                       |    68 |
+|    Minimum number of control sets                        |    68 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    51 |
+| Unused register locations in slices containing registers |    54 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,15 +39,15 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |    60 |
+| Total control sets |    68 |
 | >= 0 to < 4        |     1 |
 | >= 4 to < 6        |     1 |
 | >= 6 to < 8        |     1 |
 | >= 8 to < 10       |     0 |
-| >= 10 to < 12      |    22 |
+| >= 10 to < 12      |    24 |
 | >= 12 to < 14      |     0 |
 | >= 14 to < 16      |     0 |
-| >= 16              |    35 |
+| >= 16              |    41 |
 +--------------------+-------+
 * Control sets can be remapped at either synth_design or opt_design
 
@@ -58,81 +58,89 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |            9605 |         1758 |
+| No           | No                    | No                     |           13694 |         2524 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |             223 |           68 |
-| Yes          | No                    | No                     |            1626 |          554 |
+| No           | Yes                   | No                     |             243 |           66 |
+| Yes          | No                    | No                     |            2010 |          642 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              11 |            3 |
+| Yes          | Yes                   | No                     |              11 |            5 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+------------------------------------------------+----------------------+------------------------------------------+------------------+----------------+--------------+
-|                  Clock Signal                  |     Enable Signal    |             Set/Reset Signal             | Slice Load Count | Bel Load Count | Bels / Slice |
-+------------------------------------------------+----------------------+------------------------------------------+------------------+----------------+--------------+
-|  clk_IBUF_BUFG                                 |                      | rst_IBUF_inst/O                          |                3 |              3 |         1.00 |
-|  clk_IBUF_BUFG                                 | i_valid_IBUF_inst/O  | rst_IBUF_inst/O                          |                2 |              4 |         2.00 |
-|  clk_IBUF_BUFG                                 | busy                 | dut/busy_reg                             |                1 |              7 |         7.00 |
-|  clk_IBUF_BUFG                                 |                      | dut/AaB0[1].SS/sort2/c_m3temp[2]_382[10] |                3 |             10 |         3.33 |
-|  clk_IBUF_BUFG                                 |                      | dut/SS_00/m_p_reg[5][2][10]_0[10]        |                3 |             10 |         3.33 |
-|  clk_IBUF_BUFG                                 |                      | dut/SS_00/m_p_reg[5][3][10]_0[10]        |                3 |             10 |         3.33 |
-|  clk_IBUF_BUFG                                 |                      | dut/SS_00/s0_d_reg[5]_16[10]             |                1 |             10 |        10.00 |
-|  clk_IBUF_BUFG                                 |                      | dut/AaB0[1].SS/sort2/c_m2[0]_381[10]     |                4 |             10 |         2.50 |
-|  clk_IBUF_BUFG                                 |                      | dut/A0Bb[2].SS/sort2/c_m3temp[2]_483[10] |                3 |             10 |         3.33 |
-|  clk_IBUF_BUFG                                 |                      | dut/AaB0[1].SS/sort2/c_m3temp[1]_383[10] |                4 |             10 |         2.50 |
-|  clk_IBUF_BUFG                                 |                      | dut/A0Bb[3].SS/sort2/c_m3temp[2]_505[10] |                3 |             10 |         3.33 |
-|  clk_IBUF_BUFG                                 |                      | dut/A0Bb[3].SS/sort2/c_m3temp[1]_506[10] |                4 |             10 |         2.50 |
-|  clk_IBUF_BUFG                                 |                      | dut/A0Bb[3].SS/sort2/c_m2[0]_504[10]     |                4 |             10 |         2.50 |
-|  clk_IBUF_BUFG                                 |                      | dut/A0Bb[2].SS/sort2/c_m3temp[1]_484[10] |                4 |             10 |         2.50 |
-|  clk_IBUF_BUFG                                 |                      | dut/A0Bb[2].SS/sort2/c_m2[0]_482[10]     |                4 |             10 |         2.50 |
-|  clk_IBUF_BUFG                                 |                      | dut/AaB0[2].SS/sort2/c_m2[0]_602[10]     |                4 |             10 |         2.50 |
-|  clk_IBUF_BUFG                                 |                      | dut/AaB0[2].SS/sort2/c_m3temp[1]_604[10] |                5 |             10 |         2.00 |
-|  clk_IBUF_BUFG                                 |                      | dut/AaB0[2].SS/sort2/c_m3temp[2]_603[10] |                4 |             10 |         2.50 |
-|  clk_IBUF_BUFG                                 |                      | dut/AaB0[3].SS/sort2/c_m3temp[2]_415[10] |                4 |             10 |         2.50 |
-|  clk_IBUF_BUFG                                 |                      | dut/AaB0[3].SS/sort2/c_m3temp[1]_416[10] |                4 |             10 |         2.50 |
-|  clk_IBUF_BUFG                                 |                      | dut/AaB0[3].SS/sort2/c_m2[0]_414[10]     |                4 |             10 |         2.50 |
-|  clk_IBUF_BUFG                                 |                      | dut/SS_11/sort2/c_m3temp[2]_448[10]      |                4 |             10 |         2.50 |
-|  clk_IBUF_BUFG                                 |                      | dut/SS_11/sort2/c_m2[0]_447[10]          |                4 |             10 |         2.50 |
-|  clk_IBUF_BUFG                                 |                      | dut/SS_11/sort2/c_m3temp[1]_449[10]      |                4 |             10 |         2.50 |
-|  clk_IBUF_BUFG                                 |                      | dut/SS_00/Q[10]                          |                3 |             10 |         3.33 |
-|  clk_IBUF_BUFG                                 | dut/AB_m_3_n_11      |                                          |               21 |             40 |         1.90 |
-|  clk_IBUF_BUFG                                 | i_metrics_buf[9]     |                                          |               13 |             52 |         4.00 |
-|  clk_IBUF_BUFG                                 | i_metrics_buf[39]    |                                          |               19 |             52 |         2.74 |
-|  clk_IBUF_BUFG                                 | i_metrics_buf[19]    |                                          |               20 |             52 |         2.60 |
-|  clk_IBUF_BUFG                                 | i_metrics_buf[29]    |                                          |               17 |             52 |         3.06 |
-|  dut/AaB0[2].SS/sort2/E_BUFG[0]                |                      |                                          |               48 |             64 |         1.33 |
-|  dut/AaB0[2].SS/sort2/l_m1_r_reg[1][2]_BUFG[0] |                      |                                          |               53 |             64 |         1.21 |
-|  dut/AaB0[2].SS/sort3/E_BUFG[0]                |                      |                                          |               50 |             64 |         1.28 |
-|  n_0_10503_BUFG                                |                      |                                          |               47 |             64 |         1.36 |
-|  dut/A0Bb[2].SS/sort3/E_BUFG[0]                |                      |                                          |               44 |             64 |         1.45 |
-|  n_3_11214_BUFG                                |                      |                                          |               55 |             64 |         1.16 |
-|  n_10_12955_BUFG                               |                      |                                          |               48 |             64 |         1.33 |
-|  n_1_10766_BUFG                                |                      |                                          |               47 |             64 |         1.36 |
-|  n_6_11925_BUFG                                |                      |                                          |               44 |             64 |         1.45 |
-|  n_2_10635_BUFG                                |                      |                                          |               54 |             64 |         1.19 |
-|  n_4_11477_BUFG                                |                      |                                          |               54 |             64 |         1.19 |
-|  n_5_11346_BUFG                                |                      |                                          |               55 |             64 |         1.16 |
-|  n_9_12692_BUFG                                |                      |                                          |               46 |             64 |         1.39 |
-|  n_8_12057_BUFG                                |                      |                                          |               46 |             64 |         1.39 |
-|  n_7_12188_BUFG                                |                      |                                          |               48 |             64 |         1.33 |
-|  clk_IBUF_BUFG                                 | o_metric[9]_i_1_n_11 |                                          |               74 |             74 |         1.00 |
-|  clk_IBUF_BUFG                                 | i_metrics_buf[69]    |                                          |               22 |             84 |         3.82 |
-|  clk_IBUF_BUFG                                 | i_metrics_buf[99]    |                                          |               23 |             84 |         3.65 |
-|  clk_IBUF_BUFG                                 | i_metrics_buf[59]    |                                          |               23 |             84 |         3.65 |
-|  clk_IBUF_BUFG                                 | i_metrics_buf[119]   |                                          |               23 |             84 |         3.65 |
-|  clk_IBUF_BUFG                                 | i_metrics_buf[79]    |                                          |               23 |             84 |         3.65 |
-|  clk_IBUF_BUFG                                 | i_metrics_buf[139]   |                                          |               21 |             84 |         4.00 |
-|  clk_IBUF_BUFG                                 | i_metrics_buf[159]   |                                          |               25 |             84 |         3.36 |
-|  clk_IBUF_BUFG                                 | i_metrics_buf[109]   |                                          |               27 |             84 |         3.11 |
-|  clk_IBUF_BUFG                                 | i_metrics_buf[49]    |                                          |               27 |             84 |         3.11 |
-|  clk_IBUF_BUFG                                 | i_metrics_buf[129]   |                                          |               21 |             84 |         4.00 |
-|  clk_IBUF_BUFG                                 | i_metrics_buf[89]    |                                          |               23 |             84 |         3.65 |
-|  clk_IBUF_BUFG                                 | i_metrics_buf[149]   |                                          |               27 |             84 |         3.11 |
-|  clk_IBUF_BUFG                                 | dut/AB_m_2_n_11      |                                          |              248 |            296 |         1.19 |
-|  clk_IBUF_BUFG                                 |                      |                                          |             1489 |          11149 |         7.49 |
-+------------------------------------------------+----------------------+------------------------------------------+------------------+----------------+--------------+
++------------------------------------------------+---------------------------+------------------------------------------+------------------+----------------+--------------+
+|                  Clock Signal                  |       Enable Signal       |             Set/Reset Signal             | Slice Load Count | Bel Load Count | Bels / Slice |
++------------------------------------------------+---------------------------+------------------------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG                                 |                           | rst_IBUF_inst/O                          |                2 |              3 |         1.50 |
+|  clk_IBUF_BUFG                                 | i_valid_IBUF_inst/O       | rst_IBUF_inst/O                          |                4 |              4 |         1.00 |
+|  clk_IBUF_BUFG                                 | busy                      | dut/busy_reg                             |                1 |              7 |         7.00 |
+|  clk_IBUF_BUFG                                 |                           | dut/A0Bb[3].SS/sort2/c_m3temp[1]_379[10] |                4 |             10 |         2.50 |
+|  clk_IBUF_BUFG                                 |                           | dut/A0Bb[3].SS/sort2/c_m3temp[2]_378[10] |                4 |             10 |         2.50 |
+|  clk_IBUF_BUFG                                 |                           | dut/A0Bb[3].SS/sort2/c_m2[0]_377[10]     |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG                                 |                           | dut/AaB0[1].SS/sort2/c_m2[0]_614[10]     |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG                                 |                           | dut/AaB0[1].SS/sort2/c_m3temp[2]_615[10] |                5 |             10 |         2.00 |
+|  clk_IBUF_BUFG                                 |                           | dut/AaB0[1].SS/sort2/c_m3temp[1]_616[10] |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG                                 |                           | dut/AaB0[2].SS/sort2/c_m3temp[1]_583[10] |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG                                 |                           | dut/AaB0[2].SS/sort2/c_m3temp[2]_582[10] |                4 |             10 |         2.50 |
+|  clk_IBUF_BUFG                                 |                           | dut/AaB0[2].SS/sort2/c_m2[0]_581[10]     |                4 |             10 |         2.50 |
+|  clk_IBUF_BUFG                                 |                           | dut/A0Bb[1].SS/sort2/c_m3temp[2]_411[10] |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG                                 |                           | dut/A0Bb[1].SS/sort2/c_m3temp[1]_412[10] |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG                                 |                           | dut/A0Bb[1].SS/sort2/c_m2[0]_410[10]     |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG                                 |                           | dut/A0Bb[2].SS/sort2/c_m3temp[1]_80[10]  |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG                                 |                           | dut/A0Bb[2].SS/sort2/c_m3temp[2]_79[10]  |                4 |             10 |         2.50 |
+|  clk_IBUF_BUFG                                 |                           | dut/AaB0[3].SS/sort2/c_m2[0]_443[10]     |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG                                 |                           | dut/AaB0[3].SS/sort2/c_m3temp[1]_445[10] |                4 |             10 |         2.50 |
+|  clk_IBUF_BUFG                                 |                           | dut/AaB0[3].SS/sort2/c_m3temp[2]_444[10] |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG                                 |                           | dut/SS_11/sort2/c_m3temp[1]_550[10]      |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG                                 |                           | dut/SS_11/sort2/c_m2[0]_548[10]          |                4 |             10 |         2.50 |
+|  clk_IBUF_BUFG                                 |                           | dut/SS_11/sort2/c_m3temp[2]_549[10]      |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG                                 |                           | dut/SS_00/m_p_reg[5][1][10]_0[10]        |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG                                 |                           | dut/SS_00/m_p_reg[5][3][10]_0[10]        |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG                                 |                           | dut/SS_00/m_p_reg[5][2][10]_0[10]        |                1 |             10 |        10.00 |
+|  clk_IBUF_BUFG                                 |                           | dut/SS_00/s0_d_reg[5]_4[10]              |                1 |             10 |        10.00 |
+|  n_9_12284_BUFG                                |                           |                                          |               42 |             64 |         1.52 |
+|  n_4_11125_BUFG                                |                           |                                          |               44 |             64 |         1.45 |
+|  n_5_10994_BUFG                                |                           |                                          |               43 |             64 |         1.49 |
+|  n_7_11836_BUFG                                |                           |                                          |               46 |             64 |         1.39 |
+|  n_10_12547_BUFG                               |                           |                                          |               40 |             64 |         1.60 |
+|  n_8_11705_BUFG                                |                           |                                          |               45 |             64 |         1.42 |
+|  n_0_571_BUFG                                  |                           |                                          |               47 |             64 |         1.36 |
+|  dut/SS_11/sort2/E_BUFG[0]                     |                           |                                          |               45 |             64 |         1.42 |
+|  dut/AaB0[1].SS/sort2/E_BUFG[0]                |                           |                                          |               40 |             64 |         1.60 |
+|  dut/AaB0[1].SS/sort2/l_m1_r_reg[1][2]_BUFG[0] |                           |                                          |               46 |             64 |         1.39 |
+|  dut/AaB0[1].SS/sort3/E_BUFG[0]                |                           |                                          |               43 |             64 |         1.49 |
+|  dut/AaB0[2].SS/sort2/E_BUFG[0]                |                           |                                          |               45 |             64 |         1.42 |
+|  dut/AaB0[2].SS/sort2/l_m1_r_reg[1][2]_BUFG[0] |                           |                                          |               43 |             64 |         1.49 |
+|  dut/AaB0[2].SS/sort3/E_BUFG[0]                |                           |                                          |               37 |             64 |         1.73 |
+|  dut/AaB0[3].SS/sort3/E_BUFG[0]                |                           |                                          |               43 |             64 |         1.49 |
+|  dut/SS_11/sort3/E_BUFG[0]                     |                           |                                          |               42 |             64 |         1.52 |
+|  dut/SS_11/sort2/l_m1_r_reg[1][2]_0_BUFG[0]    |                           |                                          |               41 |             64 |         1.56 |
+|  n_3_10862_BUFG                                |                           |                                          |               40 |             64 |         1.60 |
+|  n_6_11573_BUFG                                |                           |                                          |               45 |             64 |         1.42 |
+|  n_2_440_BUFG                                  |                           |                                          |               41 |             64 |         1.56 |
+|  n_1_308_BUFG                                  |                           |                                          |               40 |             64 |         1.60 |
+|  clk_IBUF_BUFG                                 | o_metric[9]_i_1_n_11      |                                          |               74 |             74 |         1.00 |
+|  clk_IBUF_BUFG                                 | i_metrics_buf[119]        |                                          |               27 |             84 |         3.11 |
+|  clk_IBUF_BUFG                                 | i_metrics_buf[149]        |                                          |               28 |             84 |         3.00 |
+|  clk_IBUF_BUFG                                 | i_metrics_buf[39]         |                                          |               34 |             84 |         2.47 |
+|  clk_IBUF_BUFG                                 | i_metrics_buf[139]        |                                          |               30 |             84 |         2.80 |
+|  clk_IBUF_BUFG                                 | i_metrics_buf[79]         |                                          |               24 |             84 |         3.50 |
+|  clk_IBUF_BUFG                                 | i_metrics_buf[9]          |                                          |               29 |             84 |         2.90 |
+|  clk_IBUF_BUFG                                 | i_metrics_buf[159]        |                                          |               27 |             84 |         3.11 |
+|  clk_IBUF_BUFG                                 | i_metrics_buf[129]        |                                          |               29 |             84 |         2.90 |
+|  clk_IBUF_BUFG                                 | i_metrics_buf[89]         |                                          |               28 |             84 |         3.00 |
+|  clk_IBUF_BUFG                                 | i_metrics_buf[29]         |                                          |               31 |             84 |         2.71 |
+|  clk_IBUF_BUFG                                 | i_metrics_buf[69]         |                                          |               21 |             84 |         4.00 |
+|  clk_IBUF_BUFG                                 | i_metrics_buf[109]        |                                          |               29 |             84 |         2.90 |
+|  clk_IBUF_BUFG                                 | i_metrics_buf[59]         |                                          |               31 |             84 |         2.71 |
+|  clk_IBUF_BUFG                                 | i_metrics_buf[99]         |                                          |               24 |             84 |         3.50 |
+|  clk_IBUF_BUFG                                 | i_metrics_buf[19]         |                                          |               27 |             84 |         3.11 |
+|  clk_IBUF_BUFG                                 | i_metrics_buf[49]         |                                          |               26 |             84 |         3.23 |
+|  clk_IBUF_BUFG                                 | dut/AB_m_3[2][9]_i_1_n_11 |                                          |              238 |            296 |         1.24 |
+|  clk_IBUF_BUFG                                 | dut/AB_m_2[1][9]_i_1_n_11 |                                          |              242 |            296 |         1.22 |
+|  clk_IBUF_BUFG                                 |                           |                                          |             2329 |          13958 |         5.99 |
++------------------------------------------------+---------------------------+------------------------------------------+------------------+----------------+--------------+
 
 

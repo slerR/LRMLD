@@ -15,7 +15,7 @@ module tb_sum_select_16;
     logic [(L_W+L_W1)-1 : 0] o_labels [0 : 15];
     logic o_valid;
 
-    sum_select_16 #(
+    sum_select_16_bm_ir #(
         .METRIC_W(M_W),
         .LABEL_W(L_W),
         .LABEL_W1(L_W1)

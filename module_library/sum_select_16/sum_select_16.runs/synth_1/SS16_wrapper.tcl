@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/LRMLD/sum_select_16/sum_select_16.runs/synth_1/SS16_wrapper.tcl"
+  variable script "C:/LRMLD/module_library/sum_select_16/sum_select_16.runs/synth_1/SS16_wrapper.tcl"
   variable category "vivado_synth"
 }
 
@@ -77,24 +77,24 @@ create_project -in_memory -part xcku035-fbva676-1-i
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/LRMLD/sum_select_16/sum_select_16.cache/wt [current_project]
-set_property parent.project_path C:/LRMLD/sum_select_16/sum_select_16.xpr [current_project]
+set_property webtalk.parent_dir C:/LRMLD/module_library/sum_select_16/sum_select_16.cache/wt [current_project]
+set_property parent.project_path C:/LRMLD/module_library/sum_select_16/sum_select_16.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo c:/LRMLD/sum_select_16/sum_select_16.cache/ip [current_project]
+set_property ip_output_repo c:/LRMLD/module_library/sum_select_16/sum_select_16.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib -sv {
-  C:/LRMLD/sum_select_16/sum_select_16.srcs/sources_1/new/bitonic_merge_4_4.sv
-  C:/LRMLD/sum_select_16/sum_select_16.srcs/sources_1/new/bitonic_merge_8_8.sv
-  C:/LRMLD/sum_select8/sum_select8.srcs/sources_1/new/cas.sv
-  C:/LRMLD/sum_select/sum_select.srcs/sources_1/new/comparator.sv
-  C:/LRMLD/min_3_frm_7/min_3_frm_7.srcs/sources_1/new/min_3_frm_7.sv
-  C:/LRMLD/sum_select/sum_select.srcs/sources_1/new/sum_select.sv
-  C:/LRMLD/sum_select_16/sum_select_16.srcs/sources_1/new/sum_select_16.sv
-  C:/LRMLD/sum_select8/sum_select8.srcs/sources_1/new/sum_select_8.sv
-  C:/LRMLD/sum_select_16/sum_select_16.srcs/sources_1/new/wp_sum_select_16.sv
+  C:/LRMLD/module_library/sum_select_16/sum_select_16.srcs/sources_1/new/bitonic_merge_4_4.sv
+  C:/LRMLD/module_library/sum_select_16/sum_select_16.srcs/sources_1/new/bitonic_merge_8_8.sv
+  C:/LRMLD/module_library/sum_select8/sum_select8.srcs/sources_1/new/cas.sv
+  C:/LRMLD/module_library/sum_select/sum_select.srcs/sources_1/new/comparator.sv
+  C:/LRMLD/module_library/min_3_frm_7/min_3_frm_7.srcs/sources_1/new/min_3_frm_7.sv
+  C:/LRMLD/module_library/sum_select/sum_select.srcs/sources_1/new/sum_select.sv
+  C:/LRMLD/module_library/sum_select_16/sum_select_16.srcs/sources_1/new/sum_select_16.sv
+  C:/LRMLD/module_library/sum_select8/sum_select8.srcs/sources_1/new/sum_select_8.sv
+  C:/LRMLD/module_library/sum_select_16/sum_select_16.srcs/sources_1/new/wp_sum_select_16.sv
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -110,7 +110,7 @@ set_property used_in_implementation false [get_files C:/QW/bitonic_sort/bitonic_
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental C:/LRMLD/sum_select_16/sum_select_16.srcs/utils_1/imports/synth_1/SS16_wrapper.dcp
+read_checkpoint -auto_incremental -incremental C:/LRMLD/module_library/sum_select_16/sum_select_16.srcs/utils_1/imports/synth_1/SS16_wrapper.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

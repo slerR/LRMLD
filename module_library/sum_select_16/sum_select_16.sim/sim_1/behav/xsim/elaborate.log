@@ -4,7 +4,6 @@ Running: C:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe --incr --debug 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 3 for port 'o_lmin' [C:/LRMLD/sum_select_16/sum_select_16.srcs/sources_1/new/bitonic_merge_4_4.sv:119]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
@@ -16,10 +15,10 @@ Compiling module xil_defaultlib.sum_select_8(METRIC_W=10)
 Compiling module xil_defaultlib.comparator(DATA_W=10)
 Compiling module xil_defaultlib.min3_frm7
 Compiling module xil_defaultlib.cas(METRIC_W=10,LABEL_W=3)
-Compiling module xil_defaultlib.bitonic_merge_4_4(L_W=12)
+Compiling module xil_defaultlib.bitonic_merge_4_4_ir(L_W=12)
 Compiling module xil_defaultlib.cas(METRIC_W=10,LABEL_W=4)
-Compiling module xil_defaultlib.bitonic_merge_8_8(L_W=12)
-Compiling module xil_defaultlib.sum_select_16_default
+Compiling module xil_defaultlib.bitonic_merge_8_8_ir(L_W=12)
+Compiling module xil_defaultlib.sum_select_16_bm_ir(LABEL_W=6,LA...
 Compiling module xil_defaultlib.tb_sum_select_16
 Compiling module xil_defaultlib.glbl
 Built simulation snapshot tb_sum_select_16_behav

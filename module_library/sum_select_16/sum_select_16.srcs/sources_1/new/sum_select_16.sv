@@ -380,8 +380,8 @@ module sum_select_16#(
     
     always_comb begin
         for(int i = 0; i < 4; i++) begin
-            AB_m_0[i] <=  AB_m_00[i+4];
-            AB_l_0[i] <=  AB_l_00[i+4];
+            AB_m_0[i] =  AB_m_00[i+4];
+            AB_l_0[i] =  AB_l_00[i+4];
         end
     end
     

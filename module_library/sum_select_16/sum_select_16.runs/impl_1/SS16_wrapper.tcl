@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "C:/LRMLD/sum_select_16/sum_select_16.runs/impl_1/SS16_wrapper.tcl"
+  variable script "C:/LRMLD/module_library/sum_select_16/sum_select_16.runs/impl_1/SS16_wrapper.tcl"
   variable category "vivado_impl"
 }
 
@@ -129,13 +129,13 @@ OPTRACE "create in-memory project" START { }
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir C:/LRMLD/sum_select_16/sum_select_16.cache/wt [current_project]
-  set_property parent.project_path C:/LRMLD/sum_select_16/sum_select_16.xpr [current_project]
-  set_property ip_output_repo C:/LRMLD/sum_select_16/sum_select_16.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/LRMLD/module_library/sum_select_16/sum_select_16.cache/wt [current_project]
+  set_property parent.project_path C:/LRMLD/module_library/sum_select_16/sum_select_16.xpr [current_project]
+  set_property ip_output_repo C:/LRMLD/module_library/sum_select_16/sum_select_16.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet C:/LRMLD/sum_select_16/sum_select_16.runs/synth_1/SS16_wrapper.dcp
+  add_files -quiet C:/LRMLD/module_library/sum_select_16/sum_select_16.runs/synth_1/SS16_wrapper.dcp
 OPTRACE "read constraints: implementation" START { }
   read_xdc C:/QW/bitonic_sort/bitonic_sort.srcs/constrs_1/new/constraints.xdc
 OPTRACE "read constraints: implementation" END { }
