@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Apr 28 11:13:18 2026
+# Process ID: 27832
+# Current directory: C:/LRMLD/module_library/unite_lists
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent40944 C:\LRMLD\module_library\unite_lists\unite_lists.xpr
+# Log file: C:/LRMLD/module_library/unite_lists/vivado.log
+# Journal file: C:/LRMLD/module_library/unite_lists\vivado.jou
+#-----------------------------------------------------------
+start_gui
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 28 11:13:37 2026...
