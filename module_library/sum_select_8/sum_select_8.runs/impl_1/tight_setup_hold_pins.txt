@@ -1,0 +1,10 @@
++====================+===================+=======================================+
+| Launch Setup Clock | Launch Hold Clock | Pin                                   |
++====================+===================+=======================================+
+| sys_clk_pin        | sys_clk_pin       | dut/SS_00/l0_d_reg[4][7]_srl6/D       |
+| sys_clk_pin        | sys_clk_pin       | dut/SS_00/conc_d_reg[4][1][23]_srl6/D |
+| sys_clk_pin        | sys_clk_pin       | dut/SS_00/conc_d_reg[4][4][23]_srl6/D |
+| sys_clk_pin        | sys_clk_pin       | dut/SS_00/conc_d_reg[4][6][39]_srl6/D |
+| sys_clk_pin        | sys_clk_pin       | dut/SS_00/conc_d_reg[4][4][7]_srl6/D  |
+| sys_clk_pin        | sys_clk_pin       | dut/SS_00/conc_d_reg[4][7][36]_srl6/D |
++--------------------+-------------------+---------------------------------------+

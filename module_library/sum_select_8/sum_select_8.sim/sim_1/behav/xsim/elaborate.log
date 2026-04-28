@@ -1,0 +1,58 @@
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_sum_select_16_behav xil_defaultlib.tb_sum_select_16 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/LRMLD/module_library/sum_select_8/sum_select_8.srcs/sources_1/new/sum_select8.sv" Line 3. Module sum_select8(LABEL_W=6,LABEL_W1=6) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/LRMLD/module_library/sum_select8/sum_select8.srcs/sources_1/new/sum_select_8.sv" Line 2. Module sum_select_8(METRIC_W=10) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/LRMLD/module_library/sum_select8/sum_select8.srcs/sources_1/new/cas.sv" Line 1. Module cas(METRIC_W=11,LABEL_W=3) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/LRMLD/module_library/sum_select8/sum_select8.srcs/sources_1/new/cas.sv" Line 1. Module cas(METRIC_W=11,LABEL_W=3) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/LRMLD/module_library/sum_select8/sum_select8.srcs/sources_1/new/cas.sv" Line 1. Module cas(METRIC_W=11,LABEL_W=3) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/LRMLD/module_library/sum_select8/sum_select8.srcs/sources_1/new/cas.sv" Line 1. Module cas(METRIC_W=11,LABEL_W=3) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/LRMLD/module_library/sum_select8/sum_select8.srcs/sources_1/new/cas.sv" Line 1. Module cas(METRIC_W=11,LABEL_W=3) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/LRMLD/module_library/sum_select8/sum_select8.srcs/sources_1/new/cas.sv" Line 1. Module cas(METRIC_W=11,LABEL_W=3) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/LRMLD/module_library/sum_select8/sum_select8.srcs/sources_1/new/cas.sv" Line 1. Module cas(METRIC_W=11,LABEL_W=3) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/LRMLD/module_library/sum_select8/sum_select8.srcs/sources_1/new/cas.sv" Line 1. Module cas(METRIC_W=11,LABEL_W=3) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/LRMLD/module_library/sum_select8/sum_select8.srcs/sources_1/new/cas.sv" Line 1. Module cas(METRIC_W=11,LABEL_W=3) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/LRMLD/module_library/sum_select8/sum_select8.srcs/sources_1/new/cas.sv" Line 1. Module cas(METRIC_W=11,LABEL_W=3) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/LRMLD/module_library/sum_select8/sum_select8.srcs/sources_1/new/cas.sv" Line 1. Module cas(METRIC_W=11,LABEL_W=3) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/LRMLD/module_library/sum_select8/sum_select8.srcs/sources_1/new/cas.sv" Line 1. Module cas(METRIC_W=11,LABEL_W=3) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/LRMLD/module_library/sum_select8/sum_select8.srcs/sources_1/new/cas.sv" Line 1. Module cas(METRIC_W=11,LABEL_W=3) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/LRMLD/module_library/sum_select8/sum_select8.srcs/sources_1/new/cas.sv" Line 1. Module cas(METRIC_W=11,LABEL_W=3) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/LRMLD/module_library/sum_select8/sum_select8.srcs/sources_1/new/cas.sv" Line 1. Module cas(METRIC_W=11,LABEL_W=3) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/LRMLD/module_library/sum_select8/sum_select8.srcs/sources_1/new/cas.sv" Line 1. Module cas(METRIC_W=11,LABEL_W=3) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/LRMLD/module_library/sum_select8/sum_select8.srcs/sources_1/new/cas.sv" Line 1. Module cas(METRIC_W=11,LABEL_W=3) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/LRMLD/module_library/sum_select8/sum_select8.srcs/sources_1/new/cas.sv" Line 1. Module cas(METRIC_W=11,LABEL_W=3) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/LRMLD/module_library/sum_select8/sum_select8.srcs/sources_1/new/cas.sv" Line 1. Module cas(METRIC_W=11,LABEL_W=3) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/LRMLD/module_library/sum_select_8/sum_select_8.srcs/sources_1/new/sum_select8.sv" Line 3. Module sum_select8(LABEL_W=6,LABEL_W1=6) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/LRMLD/module_library/sum_select8/sum_select8.srcs/sources_1/new/sum_select_8.sv" Line 2. Module sum_select_8(METRIC_W=10) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/LRMLD/module_library/sum_select8/sum_select8.srcs/sources_1/new/cas.sv" Line 1. Module cas(METRIC_W=11,LABEL_W=3) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/LRMLD/module_library/sum_select8/sum_select8.srcs/sources_1/new/cas.sv" Line 1. Module cas(METRIC_W=11,LABEL_W=3) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/LRMLD/module_library/sum_select8/sum_select8.srcs/sources_1/new/cas.sv" Line 1. Module cas(METRIC_W=11,LABEL_W=3) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/LRMLD/module_library/sum_select8/sum_select8.srcs/sources_1/new/cas.sv" Line 1. Module cas(METRIC_W=11,LABEL_W=3) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/LRMLD/module_library/sum_select8/sum_select8.srcs/sources_1/new/cas.sv" Line 1. Module cas(METRIC_W=11,LABEL_W=3) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/LRMLD/module_library/sum_select8/sum_select8.srcs/sources_1/new/cas.sv" Line 1. Module cas(METRIC_W=11,LABEL_W=3) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/LRMLD/module_library/sum_select8/sum_select8.srcs/sources_1/new/cas.sv" Line 1. Module cas(METRIC_W=11,LABEL_W=3) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/LRMLD/module_library/sum_select8/sum_select8.srcs/sources_1/new/cas.sv" Line 1. Module cas(METRIC_W=11,LABEL_W=3) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/LRMLD/module_library/sum_select8/sum_select8.srcs/sources_1/new/cas.sv" Line 1. Module cas(METRIC_W=11,LABEL_W=3) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/LRMLD/module_library/sum_select8/sum_select8.srcs/sources_1/new/cas.sv" Line 1. Module cas(METRIC_W=11,LABEL_W=3) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/LRMLD/module_library/sum_select8/sum_select8.srcs/sources_1/new/cas.sv" Line 1. Module cas(METRIC_W=11,LABEL_W=3) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/LRMLD/module_library/sum_select8/sum_select8.srcs/sources_1/new/cas.sv" Line 1. Module cas(METRIC_W=11,LABEL_W=3) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/LRMLD/module_library/sum_select8/sum_select8.srcs/sources_1/new/cas.sv" Line 1. Module cas(METRIC_W=11,LABEL_W=3) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/LRMLD/module_library/sum_select8/sum_select8.srcs/sources_1/new/cas.sv" Line 1. Module cas(METRIC_W=11,LABEL_W=3) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/LRMLD/module_library/sum_select8/sum_select8.srcs/sources_1/new/cas.sv" Line 1. Module cas(METRIC_W=11,LABEL_W=3) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/LRMLD/module_library/sum_select8/sum_select8.srcs/sources_1/new/cas.sv" Line 1. Module cas(METRIC_W=11,LABEL_W=3) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/LRMLD/module_library/sum_select8/sum_select8.srcs/sources_1/new/cas.sv" Line 1. Module cas(METRIC_W=11,LABEL_W=3) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/LRMLD/module_library/sum_select8/sum_select8.srcs/sources_1/new/cas.sv" Line 1. Module cas(METRIC_W=11,LABEL_W=3) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/LRMLD/module_library/sum_select8/sum_select8.srcs/sources_1/new/cas.sv" Line 1. Module cas(METRIC_W=11,LABEL_W=3) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.cas(METRIC_W=11,LABEL_W=3)
+Compiling module xil_defaultlib.sum_select_8(METRIC_W=10)
+Compiling module xil_defaultlib.sum_select8(LABEL_W=6,LABEL_W1=6...
+Compiling module xil_defaultlib.tb_sum_select_16
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_sum_select_16_behav

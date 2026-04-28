@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue Apr 28 10:53:53 2026
+# Process ID: 20580
+# Current directory: C:/LRMLD/module_library/sum_select_8/sum_select_8.runs/synth_1
+# Command line: vivado.exe -log SS8_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source SS8_wrapper.tcl
+# Log file: C:/LRMLD/module_library/sum_select_8/sum_select_8.runs/synth_1/SS8_wrapper.vds
+# Journal file: C:/LRMLD/module_library/sum_select_8/sum_select_8.runs/synth_1\vivado.jou
+# Running On: feduuk, OS: Windows, CPU Frequency: 3294 MHz, CPU Physical cores: 12, Host memory: 16487 MB
+#-----------------------------------------------------------
+source SS8_wrapper.tcl -notrace
