@@ -1,0 +1,45 @@
++====================+===================+=====================================================================================================+
+| Launch Setup Clock | Launch Hold Clock | Pin                                                                                                 |
++====================+===================+=====================================================================================================+
+| sys_clk_pin        | sys_clk_pin       | dut/gen_layer[0].gen_node[0].merge_inst/genblk2[2].genblk2[2].genblk1[1].cas_l_dut/o_lmax_reg[14]/D |
+| sys_clk_pin        | sys_clk_pin       | dut/gen_layer[0].gen_node[1].merge_inst/genblk2[2].genblk2[2].genblk1[1].cas_l_dut/o_max_reg[7]/D   |
+| sys_clk_pin        | sys_clk_pin       | dut/gen_layer[0].gen_node[1].merge_inst/genblk2[1].genblk2[5].genblk1[0].cas_l_dut/o_lmin_reg[3]/D  |
+| sys_clk_pin        | sys_clk_pin       | dut/gen_layer[0].gen_node[0].merge_inst/genblk2[1].genblk2[7].genblk1[0].cas_l_dut/o_lmin_reg[6]/D  |
+| sys_clk_pin        | sys_clk_pin       | dut/gen_layer[0].gen_node[0].merge_inst/genblk2[1].genblk2[7].genblk1[0].cas_l_dut/o_lmin_reg[5]/D  |
+| sys_clk_pin        | sys_clk_pin       | dut/gen_layer[0].gen_node[0].merge_inst/genblk2[1].genblk2[7].genblk1[0].cas_l_dut/o_min_reg[5]/D   |
+| sys_clk_pin        | sys_clk_pin       | dut/gen_layer[1].gen_node[0].merge_inst/genblk2[4].genblk2[4].genblk1[3].cas_l_dut/o_lmin_reg[3]/D  |
+| sys_clk_pin        | sys_clk_pin       | dut/gen_layer[1].gen_node[0].merge_inst/genblk2[4].genblk2[4].genblk1[1].cas_l_dut/o_lmax_reg[11]/D |
+| sys_clk_pin        | sys_clk_pin       | dut/gen_layer[0].gen_node[1].merge_inst/genblk2[2].genblk2[2].genblk1[1].cas_l_dut/o_min_reg[5]/D   |
+| sys_clk_pin        | sys_clk_pin       | dut/gen_layer[0].gen_node[3].merge_inst/genblk2[2].genblk1[0].delay_line_dut/dreg_reg[23]_srl3/D    |
+| sys_clk_pin        | sys_clk_pin       | dut/gen_layer[0].gen_node[1].merge_inst/genblk2[2].genblk2[2].genblk1[1].cas_l_dut/o_max_reg[5]/D   |
+| sys_clk_pin        | sys_clk_pin       | dut/gen_layer[1].gen_node[0].merge_inst/genblk2[4].genblk2[4].genblk1[1].cas_l_dut/o_lmin_reg[8]/D  |
+| sys_clk_pin        | sys_clk_pin       | dut/gen_layer[0].gen_node[1].merge_inst/genblk2[1].genblk2[5].genblk1[0].cas_l_dut/o_lmax_reg[6]/D  |
+| sys_clk_pin        | sys_clk_pin       | dut/gen_layer[0].gen_node[1].merge_inst/genblk2[1].genblk2[3].genblk1[0].cas_l_dut/o_lmax_reg[2]/D  |
+| sys_clk_pin        | sys_clk_pin       | dut/gen_layer[0].gen_node[0].merge_inst/genblk2[1].genblk2[7].genblk1[0].cas_l_dut/o_min_reg[3]/D   |
+| sys_clk_pin        | sys_clk_pin       | dut/gen_layer[0].gen_node[0].merge_inst/genblk2[1].genblk2[7].genblk1[0].cas_l_dut/o_min_reg[0]/D   |
+| sys_clk_pin        | sys_clk_pin       | dut/gen_layer[0].gen_node[1].merge_inst/genblk2[2].genblk2[2].genblk1[1].cas_l_dut/o_min_reg[7]/D   |
+| sys_clk_pin        | sys_clk_pin       | dut/gen_layer[0].gen_node[0].merge_inst/genblk2[1].genblk2[7].genblk1[0].cas_l_dut/o_min_reg[8]/D   |
+| sys_clk_pin        | sys_clk_pin       | dut/gen_layer[1].gen_node[0].merge_inst/genblk2[8].genblk2[0].genblk1[3].cas_l_dut/o_lmin_reg[3]/D  |
+| sys_clk_pin        | sys_clk_pin       | dut/gen_layer[0].gen_node[0].merge_inst/genblk2[2].genblk2[2].genblk1[1].cas_l_dut/o_lmin_reg[9]/D  |
+| sys_clk_pin        | sys_clk_pin       | dut/gen_layer[0].gen_node[0].merge_inst/genblk2[2].genblk2[2].genblk1[1].cas_l_dut/o_lmax_reg[9]/D  |
+| sys_clk_pin        | sys_clk_pin       | dut/gen_layer[0].gen_node[0].merge_inst/genblk2[1].genblk2[7].genblk1[0].cas_l_dut/o_min_reg[9]/D   |
+| sys_clk_pin        | sys_clk_pin       | dut/gen_layer[1].gen_node[0].merge_inst/genblk2[2].genblk2[2].genblk1[1].cas_l_dut/o_lmin_reg[6]/D  |
+| sys_clk_pin        | sys_clk_pin       | dut/gen_layer[1].gen_node[0].merge_inst/genblk2[4].genblk2[4].genblk1[1].cas_l_dut/o_lmax_reg[8]/D  |
+| sys_clk_pin        | sys_clk_pin       | dut/gen_layer[0].gen_node[0].merge_inst/genblk2[1].genblk2[5].genblk1[0].cas_l_dut/o_lmax_reg[6]/D  |
+| sys_clk_pin        | sys_clk_pin       | dut/gen_layer[0].gen_node[0].merge_inst/genblk2[1].genblk2[5].genblk1[0].cas_l_dut/o_lmin_reg[6]/D  |
+| sys_clk_pin        | sys_clk_pin       | dut/gen_layer[0].gen_node[1].merge_inst/genblk2[1].genblk2[7].genblk1[0].cas_l_dut/o_min_reg[1]/D   |
+| sys_clk_pin        | sys_clk_pin       | dut/gen_layer[0].gen_node[0].merge_inst/genblk2[1].genblk2[3].genblk1[0].cas_l_dut/o_lmax_reg[1]/D  |
+| sys_clk_pin        | sys_clk_pin       | dut/gen_layer[0].gen_node[0].merge_inst/genblk2[1].genblk2[7].genblk1[0].cas_l_dut/o_lmin_reg[4]/D  |
+| sys_clk_pin        | sys_clk_pin       | dut/gen_layer[0].gen_node[0].merge_inst/genblk2[1].genblk2[5].genblk1[0].cas_l_dut/o_lmax_reg[9]/D  |
+| sys_clk_pin        | sys_clk_pin       | dut/gen_layer[2].gen_node[0].merge_inst/genblk2[4].genblk2[4].genblk1[3].cas_l_dut/o_min_reg[0]/D   |
+| sys_clk_pin        | sys_clk_pin       | dut/gen_layer[0].gen_node[0].merge_inst/genblk2[8].genblk2[0].genblk1[4].cas_l_dut/o_lmin_reg[6]/D  |
+| sys_clk_pin        | sys_clk_pin       | dut/gen_layer[0].gen_node[1].merge_inst/genblk2[1].genblk2[5].genblk1[0].cas_l_dut/o_lmax_reg[14]/D |
+| sys_clk_pin        | sys_clk_pin       | dut/gen_layer[0].gen_node[0].merge_inst/genblk2[1].genblk2[5].genblk1[0].cas_l_dut/o_lmin_reg[5]/D  |
+| sys_clk_pin        | sys_clk_pin       | dut/gen_layer[0].gen_node[1].merge_inst/genblk2[2].genblk2[2].genblk1[0].cas_l_dut/o_min_reg[1]/D   |
+| sys_clk_pin        | sys_clk_pin       | dut/gen_layer[1].gen_node[0].merge_inst/genblk2[4].genblk1[1].delay_line_dut/dreg_reg[19]_srl2/D    |
+| sys_clk_pin        | sys_clk_pin       | dut/gen_layer[2].gen_node[0].merge_inst/genblk2[4].genblk1[1].delay_line_dut/dreg_reg[21]_srl2/D    |
+| sys_clk_pin        | sys_clk_pin       | dut/gen_layer[2].gen_node[0].merge_inst/genblk2[4].genblk1[1].delay_line_dut/dreg_reg[19]_srl2/D    |
+| sys_clk_pin        | sys_clk_pin       | dut/gen_layer[0].gen_node[2].merge_inst/genblk2[4].genblk1[1].delay_line_dut/dreg_reg[23]_srl2/D    |
+| sys_clk_pin        | sys_clk_pin       | dut/gen_layer[0].gen_node[3].merge_inst/genblk2[4].genblk1[1].delay_line_dut/dreg_reg[3]_srl2/D     |
+| sys_clk_pin        | sys_clk_pin       | dut/gen_layer[1].gen_node[1].merge_inst/genblk2[2].genblk1[0].delay_line_dut/dreg_reg[3]_srl3/D     |
++--------------------+-------------------+-----------------------------------------------------------------------------------------------------+

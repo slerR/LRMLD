@@ -1,0 +1,11 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/LRMLD/module_library/merge_tree/merge_tree.srcs/sources_1/new/cas_l.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cas_l
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/LRMLD/module_library/merge_tree/merge_tree.srcs/sources_1/new/delay_line.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module delay_line
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/LRMLD/module_library/merge_tree/merge_tree.srcs/sources_1/new/merge_2n_n.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module merge_2n_n
+WARNING: [VRFC 10-9024] illegal argument of type logic [packed dim count:1] in math function 'floor()'; expected real type [C:/LRMLD/module_library/merge_tree/merge_tree.srcs/sources_1/new/merge_2n_n.sv:48]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/LRMLD/module_library/merge_tree/merge_tree.srcs/sources_1/new/merge_tree.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module merge_tree
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/LRMLD/module_library/merge_tree/merge_tree.srcs/sim_1/new/tb_merge_tree.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_merge_tree

@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../merge_tree.srcs/sources_1/new/cas_l.sv" \
+"../../../../merge_tree.srcs/sources_1/new/delay_line.sv" \
+"../../../../merge_tree.srcs/sources_1/new/merge_2n_n.sv" \
+"../../../../merge_tree.srcs/sources_1/new/merge_tree.sv" \
+"../../../../merge_tree.srcs/sim_1/new/tb_merge_tree.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
