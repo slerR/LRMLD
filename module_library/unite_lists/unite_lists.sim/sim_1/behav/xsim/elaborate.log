@@ -1,0 +1,19 @@
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_unite_lists_behav xil_defaultlib.tb_unite_lists xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-9466] unpacked array widths (16 versus 7) do not match [C:/LRMLD/module_library/unite_lists/unite_lists.srcs/sim_1/new/tb_unite_lists.sv:38]
+WARNING: [VRFC 10-9466] unpacked array widths (16 versus 7) do not match [C:/LRMLD/module_library/unite_lists/unite_lists.srcs/sim_1/new/tb_unite_lists.sv:39]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.cas(METRIC_W=11,LABEL_W=3)
+Compiling module xil_defaultlib.sum_select_8(METRIC_W=10,LABEL_W...
+Compiling module xil_defaultlib.sum_select8_default
+Compiling module xil_defaultlib.unite_lists_default
+Compiling module xil_defaultlib.tb_unite_lists
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_unite_lists_behav
