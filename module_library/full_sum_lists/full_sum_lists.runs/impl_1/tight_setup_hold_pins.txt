@@ -1,0 +1,40 @@
++====================+===================+===================================================================+
+| Launch Setup Clock | Launch Hold Clock | Pin                                                               |
++====================+===================+===================================================================+
+| sys_clk_pin        | sys_clk_pin       | dut/sort_inst/genblk1[4].genblk1[1].pipe_metrics_reg[9][7][0]/D   |
+| sys_clk_pin        | sys_clk_pin       | dut/sort_inst/genblk1[4].genblk1[1].pipe_metrics_reg[9][7][5]/D   |
+| sys_clk_pin        | sys_clk_pin       | dut/sort_inst/genblk1[4].genblk1[1].pipe_indices_reg[9][15][0]/D  |
+| sys_clk_pin        | sys_clk_pin       | dut/sort_inst/genblk1[4].genblk1[1].pipe_indices_reg[9][13][0]/D  |
+| sys_clk_pin        | sys_clk_pin       | dut/sort_inst/genblk1[4].genblk1[1].pipe_metrics_reg[9][10][9]/D  |
+| sys_clk_pin        | sys_clk_pin       | dut/sort_inst/genblk1[4].genblk1[1].pipe_indices_reg[9][8][0]/D   |
+| sys_clk_pin        | sys_clk_pin       | dut/sort_inst/genblk1[4].genblk1[1].pipe_indices_reg[9][0][3]/D   |
+| sys_clk_pin        | sys_clk_pin       | dut/sort_inst/genblk1[4].genblk1[1].pipe_indices_reg[9][10][0]/D  |
+| sys_clk_pin        | sys_clk_pin       | dut/sort_inst/genblk1[4].genblk1[1].pipe_metrics_reg[9][13][7]/D  |
+| sys_clk_pin        | sys_clk_pin       | dut/sort_inst/genblk1[4].genblk1[1].pipe_metrics_reg[9][8][9]/D   |
+| sys_clk_pin        | sys_clk_pin       | dut/sort_inst/genblk1[4].genblk1[1].pipe_metrics_reg[9][13][9]/D  |
+| sys_clk_pin        | sys_clk_pin       | dut/sort_inst/genblk1[4].genblk1[0].pipe_metrics_reg[10][4][2]/D  |
+| sys_clk_pin        | sys_clk_pin       | dut/sort_inst/genblk1[4].genblk1[1].pipe_metrics_reg[9][4][0]/D   |
+| sys_clk_pin        | sys_clk_pin       | dut/sort_inst/genblk1[4].genblk1[1].pipe_indices_reg[9][5][0]/D   |
+| sys_clk_pin        | sys_clk_pin       | dut/sort_inst/genblk1[4].genblk1[0].pipe_metrics_reg[10][7][2]/D  |
+| sys_clk_pin        | sys_clk_pin       | dut/sort_inst/genblk1[4].genblk1[1].pipe_metrics_reg[9][5][5]/D   |
+| sys_clk_pin        | sys_clk_pin       | dut/sort_inst/genblk1[4].genblk1[0].pipe_indices_reg[10][7][1]/D  |
+| sys_clk_pin        | sys_clk_pin       | dut/sort_inst/genblk1[4].genblk1[0].pipe_indices_reg[10][6][1]/D  |
+| sys_clk_pin        | sys_clk_pin       | dut/sort_inst/genblk1[4].genblk1[0].pipe_metrics_reg[10][7][3]/D  |
+| sys_clk_pin        | sys_clk_pin       | dut/sort_inst/genblk1[4].genblk1[0].pipe_metrics_reg[10][5][2]/D  |
+| sys_clk_pin        | sys_clk_pin       | dut/sort_inst/genblk1[4].genblk1[0].pipe_metrics_reg[10][6][3]/D  |
+| sys_clk_pin        | sys_clk_pin       | dut/sort_inst/genblk1[4].genblk1[1].pipe_indices_reg[9][2][1]/D   |
+| sys_clk_pin        | sys_clk_pin       | dut/sort_inst/genblk1[4].genblk1[1].pipe_indices_reg[9][0][1]/D   |
+| sys_clk_pin        | sys_clk_pin       | dut/sort_inst/genblk1[4].genblk1[0].pipe_metrics_reg[10][7][1]/D  |
+| sys_clk_pin        | sys_clk_pin       | dut/sort_inst/genblk1[4].genblk1[0].pipe_metrics_reg[10][6][1]/D  |
+| sys_clk_pin        | sys_clk_pin       | dut/sort_inst/genblk1[4].genblk1[2].pipe_metrics_reg[8][5][1]/D   |
+| sys_clk_pin        | sys_clk_pin       | dut/sort_inst/genblk1[4].genblk1[1].pipe_metrics_reg[9][0][7]/D   |
+| sys_clk_pin        | sys_clk_pin       | dut/sort_inst/genblk1[4].genblk1[1].pipe_metrics_reg[9][9][2]/D   |
+| sys_clk_pin        | sys_clk_pin       | dut/sort_inst/genblk1[4].genblk1[1].pipe_metrics_reg[9][5][0]/D   |
+| sys_clk_pin        | sys_clk_pin       | dut/sort_inst/genblk1[4].genblk1[0].pipe_metrics_reg[10][6][7]/D  |
+| sys_clk_pin        | sys_clk_pin       | dut/sort_inst/genblk1[4].genblk1[0].pipe_metrics_reg[10][7][7]/D  |
+| sys_clk_pin        | sys_clk_pin       | dut/sort_inst/genblk1[4].genblk1[1].pipe_metrics_reg[9][14][3]/D  |
+| sys_clk_pin        | sys_clk_pin       | dut/sort_inst/genblk1[4].genblk1[1].pipe_metrics_reg[9][12][8]/D  |
+| sys_clk_pin        | sys_clk_pin       | dut/sort_inst/genblk1[4].genblk1[1].pipe_metrics_reg[9][11][4]/D  |
+| sys_clk_pin        | sys_clk_pin       | dut/sort_inst/genblk1[4].genblk1[0].pipe_metrics_reg[10][15][9]/D |
+| sys_clk_pin        | sys_clk_pin       | dut/sort_inst/genblk1[4].genblk1[0].pipe_metrics_reg[10][14][9]/D |
++--------------------+-------------------+-------------------------------------------------------------------+

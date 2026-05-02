@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_sum_lists_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_sum_lists" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="90.250 ns"></ZoomStartTime>
+      <ZoomEndTime time="102.001 ns"></ZoomEndTime>
+      <Cursor1Time time="95.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="198"></NameColumnWidth>
+      <ValueColumnWidth column_width="140"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="14" />
+   <wvobject fp_name="/tb_sum_lists/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sum_lists/i_valid" type="logic">
+      <obj_property name="ElementShortName">i_valid</obj_property>
+      <obj_property name="ObjectShortName">i_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sum_lists/i_metrics" type="array">
+      <obj_property name="ElementShortName">i_metrics[29:0]</obj_property>
+      <obj_property name="ObjectShortName">i_metrics[29:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sum_lists/i_labels" type="array">
+      <obj_property name="ElementShortName">i_labels[9:0]</obj_property>
+      <obj_property name="ObjectShortName">i_labels[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sum_lists/i_metrics1" type="array">
+      <obj_property name="ElementShortName">i_metrics1[23:0]</obj_property>
+      <obj_property name="ObjectShortName">i_metrics1[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sum_lists/i_labels1" type="array">
+      <obj_property name="ElementShortName">i_labels1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">i_labels1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sum_lists/o_valid" type="logic">
+      <obj_property name="ElementShortName">o_valid</obj_property>
+      <obj_property name="ObjectShortName">o_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sum_lists/dut/unpacked_m" type="array">
+      <obj_property name="ElementShortName">unpacked_m[0:1][5:0]</obj_property>
+      <obj_property name="ObjectShortName">unpacked_m[0:1][5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sum_lists/dut/unpacked_m1" type="array">
+      <obj_property name="ElementShortName">unpacked_m1[0:2][5:0]</obj_property>
+      <obj_property name="ObjectShortName">unpacked_m1[0:2][5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sum_lists/dut/m_rep" type="array">
+      <obj_property name="ElementShortName">m_rep[0:1][0:2][5:0]</obj_property>
+      <obj_property name="ObjectShortName">m_rep[0:1][0:2][5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sum_lists/dut/m1_rep" type="array">
+      <obj_property name="ElementShortName">m1_rep[0:1][0:2][5:0]</obj_property>
+      <obj_property name="ObjectShortName">m1_rep[0:1][0:2][5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sum_lists/dut/o_metrics" type="array">
+      <obj_property name="ElementShortName">o_metrics[0:4][5:0]</obj_property>
+      <obj_property name="ObjectShortName">o_metrics[0:4][5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sum_lists/dut/o_labels" type="array">
+      <obj_property name="ElementShortName">o_labels[0:4][4:0]</obj_property>
+      <obj_property name="ObjectShortName">o_labels[0:4][4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sum_lists/dut/o_valid" type="logic">
+      <obj_property name="ElementShortName">o_valid</obj_property>
+      <obj_property name="ObjectShortName">o_valid</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,16 @@
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_sum_lists_behav xil_defaultlib.tb_sum_lists xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-2861] module 'full_sum_lists' does not have a parameter named METRIC_W1 [C:/LRMLD/module_library/full_sum_lists/full_sum_lists.srcs/sim_1/new/tb_full_sum_lists.sv:37]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.bitonic_sort_fp(METRIC_W=10,LABE...
+Compiling module xil_defaultlib.full_sum_lists(L=16,METRIC_W=10,...
+Compiling module xil_defaultlib.tb_sum_lists
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_sum_lists_behav
