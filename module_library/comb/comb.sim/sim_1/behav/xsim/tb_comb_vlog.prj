@@ -1,0 +1,28 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../../unite_lists/unite_lists.srcs/sources_1/imports/module_library/sum_select_12/sum_select_12.srcs/sources_1/new/bitonic_merge_4_4_ir.sv" \
+"../../../../../unite_lists/unite_lists.srcs/sources_1/imports/module_library/sum_select_16/sum_select_16.srcs/sources_1/new/bitonic_merge_8_8_ir.sv" \
+"../../../../../unite_lists/unite_lists.srcs/sources_1/imports/module_library/bitonic_sort/bitonic_sort.srcs/sources_1/new/bitonic_sort_fp.sv" \
+"../../../../../unite_lists/unite_lists.srcs/sources_1/imports/module_library/sum_select8/sum_select8.srcs/sources_1/new/cas.sv" \
+"../../../../../merge_tree/merge_tree.srcs/sources_1/new/cas_l.sv" \
+"../../../../comb.srcs/sources_1/new/comb.sv" \
+"../../../../../unite_lists/unite_lists.srcs/sources_1/imports/module_library/sum_select8/sum_select8.srcs/sources_1/new/comparator.sv" \
+"../../../../../merge_tree/merge_tree.srcs/sources_1/new/delay_line.sv" \
+"../../../../../unite_lists/unite_lists.srcs/sources_1/imports/module_library/full_sum_lists/full_sum_lists.srcs/sources_1/new/full_sum_lists.sv" \
+"../../../../../merge_tree/merge_tree.srcs/sources_1/new/merge_2n_n.sv" \
+"../../../../../merge_tree/merge_tree.srcs/sources_1/new/merge_tree.sv" \
+"../../../../../unite_lists/unite_lists.srcs/sources_1/imports/module_library/min2_frm_5/min2_frm_5.srcs/sources_1/new/min2_frm5.sv" \
+"../../../../../unite_lists/unite_lists.srcs/sources_1/imports/module_library/min_3_frm_7/min_3_frm_7.srcs/sources_1/new/min_3_frm_7.sv" \
+"../../../../../unite_lists/unite_lists.srcs/sources_1/imports/module_library/sum_select/sum_select.srcs/sources_1/new/sum_select.sv" \
+"../../../../../unite_lists/unite_lists.srcs/sources_1/imports/module_library/sum_select_8/sum_select_8.srcs/sources_1/new/sum_select8.sv" \
+"../../../../../unite_lists/unite_lists.srcs/sources_1/imports/module_library/sum_select_12/sum_select_12.srcs/sources_1/new/sum_select_12_bm_ir.sv" \
+"../../../../../unite_lists/unite_lists.srcs/sources_1/imports/module_library/sum_select_16/sum_select_16.srcs/sources_1/new/sum_select_16_bm_ir.sv" \
+"../../../../../unite_lists/unite_lists.srcs/sources_1/imports/module_library/sum_select8/sum_select8.srcs/sources_1/new/sum_select_8.sv" \
+"../../../../../unite_lists/unite_lists.srcs/sources_1/new/unite_lists.sv" \
+"../../../../comb.srcs/sim_1/new/tb_comb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,21 @@
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_comb_behav xil_defaultlib.tb_comb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.comparator(DATA_W=9)
+Compiling module xil_defaultlib.sum_select(METRIC_W=8,LABEL_W=16...
+Compiling module xil_defaultlib.unite_lists(L=4,N=4,N1=4,METRIC_...
+Compiling module xil_defaultlib.cas_l(LABEL_W=32,USE_FF=1'b1)
+Compiling module xil_defaultlib.delay_line(DELAY=1'b1,WIDTH=40,S...
+Compiling module xil_defaultlib.merge_2n_n(LABEL_W=32,FF_P=3'b11...
+Compiling module xil_defaultlib.merge_tree(NUM_LISTS=2,LABEL_W=3...
+Compiling module xil_defaultlib.comb(IS_STM=1'b0,N_COS=2,METRIC_...
+Compiling module xil_defaultlib.tb_comb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_comb_behav
