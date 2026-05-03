@@ -3,7 +3,7 @@
 module tb_comb;
 
     parameter L       = 4;
-    parameter logic IS_STM = 0;
+    parameter logic IS_STM = 1;
     parameter N       = 4;
     parameter N1      = 4;
     parameter N_COS   = 2;
@@ -69,6 +69,8 @@ module tb_comb;
 
     initial begin
         @(posedge clk);
+        i_valid       <= 0;
+        repeat(2)@(posedge clk);
         i_valid       <= 1;
         i_metrics[0]  <= {8'd1, 8'd5, 8'd9, 8'd13};
         i_labels[0]   <= {16'd0, 16'd1, 16'd2, 16'd3};
@@ -79,8 +81,12 @@ module tb_comb;
         i_labels1[0]  <= {16'd8, 16'd9, 16'd10, 16'd11};
         i_metrics1[1] <= {8'd4, 8'd8, 8'd12, 8'd16};
         i_labels1[1]  <= {16'd12, 16'd13, 16'd14, 16'd15};
-
+        
         @(posedge clk);
+        i_valid       <= 0;
+        
+        repeat(1)@(posedge clk);
+        i_valid       <= 1;
         i_metrics[0]  <= {8'd17, 8'd18, 8'd19, 8'd20};
         i_labels[0]   <= {16'd16, 16'd17, 16'd18, 16'd19};
         i_metrics[1]  <= {8'd21, 8'd22, 8'd23, 8'd24};

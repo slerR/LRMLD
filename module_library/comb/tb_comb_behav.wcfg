@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="76.357 ns"></ZoomEndTime>
-      <Cursor1Time time="75.000 ns"></Cursor1Time>
+      <ZoomStartTime time="112.200 ns"></ZoomStartTime>
+      <ZoomEndTime time="230.001 ns"></ZoomEndTime>
+      <Cursor1Time time="135.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="223"></NameColumnWidth>
-      <ValueColumnWidth column_width="155"></ValueColumnWidth>
+      <NameColumnWidth column_width="242"></NameColumnWidth>
+      <ValueColumnWidth column_width="116"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="10" />
+   <WVObjectSize size="22" />
    <wvobject fp_name="/tb_comb/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -52,13 +52,84 @@
       <obj_property name="ElementShortName">o_labels[0:1][127:0]</obj_property>
       <obj_property name="ObjectShortName">o_labels[0:1][127:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_comb/dut/\genblk1.m_metrics " type="array">
-      <obj_property name="ElementShortName">\genblk1.m_metrics [0:1][0:3][7:0]</obj_property>
-      <obj_property name="ObjectShortName">\genblk1.m_metrics [0:1][0:3][7:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
    <wvobject fp_name="/tb_comb/o_valid" type="logic">
       <obj_property name="ElementShortName">o_valid</obj_property>
       <obj_property name="ObjectShortName">o_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_comb/dut/\FSM.u_metrics_d " type="array">
+      <obj_property name="ElementShortName">\FSM.u_metrics_d [0:1][0:1][0:3][7:0]</obj_property>
+      <obj_property name="ObjectShortName">\FSM.u_metrics_d [0:1][0:1][0:3][7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <wvobject fp_name="/tb_comb/dut/\FSM.u_metrics_d [0]" type="array">
+         <obj_property name="ElementShortName">[0][0:1][0:3][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][0:1][0:3][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_comb/dut/\FSM.u_metrics_d [1]" type="array">
+         <obj_property name="ElementShortName">[1][0:1][0:3][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][0:1][0:3][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb_comb/dut/\FSM.m_metrics " type="array">
+      <obj_property name="ElementShortName">\FSM.m_metrics [0:1][0:3][7:0]</obj_property>
+      <obj_property name="ObjectShortName">\FSM.m_metrics [0:1][0:3][7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <wvobject fp_name="/tb_comb/dut/\FSM.m_metrics [0]" type="array">
+         <obj_property name="ElementShortName">[0][0:3][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][0:3][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_comb/dut/\FSM.m_metrics [1]" type="array">
+         <obj_property name="ElementShortName">[1][0:3][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][0:3][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb_comb/dut/\FSM.COSSET[0].merge_tree /i_valid" type="logic">
+      <obj_property name="ElementShortName">i_valid</obj_property>
+      <obj_property name="ObjectShortName">i_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_comb/dut/\FSM.COSSET[0].merge_tree /o_valid" type="logic">
+      <obj_property name="ElementShortName">o_valid</obj_property>
+      <obj_property name="ObjectShortName">o_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_comb/dut/\FSM.COSSET[0].unite_lists /o_metrics" type="array">
+      <obj_property name="ElementShortName">o_metrics[0:3][7:0]</obj_property>
+      <obj_property name="ObjectShortName">o_metrics[0:3][7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_comb/dut/\FSM.COSSET[1].unite_lists /o_metrics" type="array">
+      <obj_property name="ElementShortName">o_metrics[0:3][7:0]</obj_property>
+      <obj_property name="ObjectShortName">o_metrics[0:3][7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_comb/dut/\FSM.cur_phase " type="array">
+      <obj_property name="ElementShortName">\FSM.cur_phase [0:0]</obj_property>
+      <obj_property name="ObjectShortName">\FSM.cur_phase [0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_comb/dut/\FSM.metrics_r " type="array">
+      <obj_property name="ElementShortName">\FSM.metrics_r [0:1][31:0]</obj_property>
+      <obj_property name="ObjectShortName">\FSM.metrics_r [0:1][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_comb/dut/\FSM.COSSET[0].mux_metrics " type="array">
+      <obj_property name="ElementShortName">\FSM.COSSET[0].mux_metrics [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\FSM.COSSET[0].mux_metrics [31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_comb/dut/\FSM.COSSET[0].mux_labels " type="array">
+      <obj_property name="ElementShortName">\FSM.COSSET[0].mux_labels [63:0]</obj_property>
+      <obj_property name="ObjectShortName">\FSM.COSSET[0].mux_labels [63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_comb/dut/\FSM.valid_d " type="logic">
+      <obj_property name="ElementShortName">\FSM.valid_d </obj_property>
+      <obj_property name="ObjectShortName">\FSM.valid_d </obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_comb/dut/i_valid" type="logic">
+      <obj_property name="ElementShortName">i_valid</obj_property>
+      <obj_property name="ObjectShortName">i_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_comb/dut/\FSM.start " type="logic">
+      <obj_property name="ElementShortName">\FSM.start </obj_property>
+      <obj_property name="ObjectShortName">\FSM.start </obj_property>
    </wvobject>
 </wave_config>
