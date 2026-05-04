@@ -1,0 +1,22 @@
+Time resolution is 1 ps
+RESULTS at time 65000:
+coset 0: lab=1111 metric=13  lab=0000 metric=13  
+coset 1: lab=0100 metric=8  lab=1011 metric=18  
+coset 2: lab=1101 metric=10  lab=0010 metric=16  
+coset 3: lab=0110 metric=11  lab=1001 metric=15  
+coset 4: lab=0001 metric=5  lab=1110 metric=21  
+coset 5: lab=0101 metric=0  lab=1010 metric=26  
+coset 6: lab=0011 metric=8  lab=1100 metric=18  
+coset 7: lab=0111 metric=3  lab=1000 metric=23  
+
+RESULTS at time 75000:
+coset 0: lab=1111 metric=11  lab=0000 metric=14  
+coset 1: lab=1011 metric=4  lab=0100 metric=21  
+coset 2: lab=0010 metric=12  lab=1101 metric=13  
+coset 3: lab=1001 metric=6  lab=0110 metric=19  
+coset 4: lab=1110 metric=7  lab=0001 metric=18  
+coset 5: lab=1010 metric=0  lab=0101 metric=25  
+coset 6: lab=1100 metric=9  lab=0011 metric=16  
+coset 7: lab=1000 metric=2  lab=0111 metric=23  
+
+$finish called at time : 225 ns : File "C:/LRMLD/module_library/make/make.srcs/sim_1/new/tb_make.sv" Line 79

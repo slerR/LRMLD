@@ -2,7 +2,7 @@
 
 module table_sort#(
     parameter METRIC_W = 10,
-    parameter LABEL_W  = 8,
+    parameter LABEL_W  = 4,
     parameter N_COS    = 8,
     parameter N        = 8
 )(
@@ -27,7 +27,7 @@ module table_sort#(
             sml_list_sort#(
                 .METRIC_W(METRIC_W),
                 .LABEL_W (LABEL_W ),
-                .N       (N_COS   )
+                .N       (N       )
             )sort (
                 .clk      (clk         ),
                 .i_valid  (i_valid     ),

@@ -1,0 +1,16 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date              : Mon May  4 22:20:40 2026
+| Host              : feduuk running 64-bit major release  (build 9200)
+| Command           : report_bus_skew -warn_on_violation -file table_sort_wrap_bus_skew_routed.rpt -pb table_sort_wrap_bus_skew_routed.pb -rpx table_sort_wrap_bus_skew_routed.rpx
+| Design            : table_sort_wrap
+| Device            : xcku035-fbva676
+| Speed File        : -1  PRODUCTION 1.25 12-04-2018
+| Temperature Grade : I
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+No bus skew constraints
+

@@ -24,13 +24,13 @@ module tb_table_sort;
         .N_COS   (N_COS   ),
         .N       (N       )
     ) dut (
-        .clk     (clk     ),
-        .i_valid (i_valid ),
+        .clk      (clk      ),
+        .i_valid  (i_valid  ),
         .i_metrics(i_metrics),
-        .i_labels (i_labels),
+        .i_labels (i_labels ),
         .o_metrics(o_metrics),
-        .o_labels (o_labels),
-        .o_valid (o_valid )
+        .o_labels (o_labels ),
+        .o_valid  (o_valid  )
     );
 
     initial begin
