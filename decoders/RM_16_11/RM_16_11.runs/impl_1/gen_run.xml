@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xcku035-fbva676-1-i" LaunchTime="1777936009">
+  <File Type="ROUTE-PWR" Name="wp_top_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="wp_top.tcl"/>
+  <File Type="BITSTR-MMI" Name="wp_top.mmi"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="wp_top_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="wp_top_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="wp_top_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="wp_top_reports.tcl"/>
+  <File Type="OPT-TIMING" Name="wp_top_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="wp_top_opt.dcp"/>
+  <File Type="OPT-DRC" Name="wp_top_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="wp_top.hwdef"/>
+  <File Type="PWROPT-DCP" Name="wp_top_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="wp_top_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="wp_top_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="wp_top_placed.dcp"/>
+  <File Type="PLACE-IO" Name="wp_top_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="wp_top_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="wp_top_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="wp_top_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="wp_top_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="wp_top_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="wp_top_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BIN" Name="wp_top.bin"/>
+  <File Type="PLACE-TIMING" Name="wp_top_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="wp_top_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-MSK" Name="wp_top.msk"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="wp_top_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="wp_top_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="wp_top_drc_physopted.rpt"/>
+  <File Type="BITSTR-RBT" Name="wp_top.rbt"/>
+  <File Type="PHYSOPT-TIMING" Name="wp_top_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="wp_top_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="wp_top_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="wp_top_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="wp_top_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="wp_top_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="wp_top_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="wp_top_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="wp_top_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="wp_top_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="wp_top_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="wp_top_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="wp_top_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="wp_top_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="wp_top_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="wp_top_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="wp_top_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="wp_top_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="wp_top_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="wp_top_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="wp_top_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="wp_top_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="wp_top_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="wp_top_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="wp_top_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="wp_top_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="wp_top_bus_skew_postroute_physopted.rpt"/>
+  <File Type="BG-BIT" Name="wp_top.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="wp_top_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="wp_top_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="wp_top.nky"/>
+  <File Type="BITSTR-BMM" Name="wp_top_bd.bmm"/>
+  <File Type="PDI-FILE" Name="wp_top.pdi"/>
+  <File Type="RCFI_FILE" Name="wp_top.rcfi"/>
+  <File Type="CFI_FILE" Name="wp_top.cfi"/>
+  <File Type="RNPI_FILE" Name="wp_top.rnpi"/>
+  <File Type="NPI_FILE" Name="wp_top.npi"/>
+  <File Type="RBD_FILE" Name="wp_top.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="wp_top.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="wp_top.sysdef"/>
+  <File Type="BG-BGN" Name="wp_top.bgn"/>
+  <File Type="BG-DRC" Name="wp_top.drc"/>
+  <File Type="RDI-RDI" Name="wp_top.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="ROUTE-RQS" Name="wp_top_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="wp_top_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../../module_library/all_modules/bitonic_merge_4_4_ir.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../module_library/all_modules/bitonic_merge_8_8_ir.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../module_library/all_modules/bitonic_sort_fp.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../module_library/all_modules/cas.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../module_library/all_modules/cas_l.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../module_library/all_modules/comb.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../module_library/all_modules/comparator.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../module_library/all_modules/delay_line.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../module_library/all_modules/full_sum_lists.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../module_library/all_modules/list_delay.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../module_library/all_modules/make.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../module_library/all_modules/merge_2n_n.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../module_library/all_modules/merge_tree.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../module_library/all_modules/min2_frm5.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../module_library/all_modules/min_3_frm_7.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../module_library/all_modules/n_adder.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../module_library/all_modules/sml_lists_sort.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../module_library/all_modules/sort_2.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../module_library/all_modules/sort_4.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../module_library/all_modules/sort_8.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../module_library/all_modules/sum_select.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../module_library/all_modules/sum_select8.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../module_library/all_modules/sum_select_12_bm_ir.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../module_library/all_modules/sum_select_16_bm_ir.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../module_library/all_modules/sum_select_8.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../module_library/all_modules/table_sort.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/top.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../module_library/all_modules/top_comb.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../module_library/all_modules/unite_lists.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/wp_top.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="wp_top"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../../module_library/all_modules/constraints.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>
