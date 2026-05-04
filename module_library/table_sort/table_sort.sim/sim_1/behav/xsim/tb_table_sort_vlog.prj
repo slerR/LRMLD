@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../../merge_tree/merge_tree.srcs/sources_1/new/cas_l.sv" \
+"../../../../table_sort.srcs/sources_1/new/sml_lists_sort.sv" \
+"../../../../table_sort.srcs/sources_1/new/sort_2.sv" \
+"../../../../table_sort.srcs/sources_1/new/sort_4.sv" \
+"../../../../table_sort.srcs/sources_1/new/sort_8.sv" \
+"../../../../table_sort.srcs/sources_1/new/table_sort.sv" \
+"../../../../table_sort.srcs/sim_1/new/tb_table_sort.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
