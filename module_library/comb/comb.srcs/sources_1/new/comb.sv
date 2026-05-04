@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-// Если IS_FSM = 1, то i_valid раз в N_U тактов
+// Если IS_FSM = 1, то i_valid раз в N_U тактов, при этом задержка + N_U cycles
 module comb#(
     parameter L            = 4,
     // 0 - на каждое объединение списков по unite_lists, 1 - используется конечный автомат
