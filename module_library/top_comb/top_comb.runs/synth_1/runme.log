@@ -1,0 +1,449 @@
+
+*** Running vivado
+    with args -log wp_top_comb.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source wp_top_comb.tcl
+
+
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source wp_top_comb.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/LRMLD/module_library/top_comb/top_comb.srcs/utils_1/imports/synth_1/wp_top_comb.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/LRMLD/module_library/top_comb/top_comb.srcs/utils_1/imports/synth_1/wp_top_comb.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top wp_top_comb -part xcku035-fbva676-1-i
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcku035'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku035'
+INFO: [Device 21-403] Loading part xcku035-fbva676-1-i
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 54528
+WARNING: [Synth 8-10180] variable 'pair' must explicitly be declared as automatic or static [C:/LRMLD/module_library/top_comb/top_comb.srcs/sources_1/imports/sources_1/imports/module_library/unite_lists/unite_lists.srcs/sources_1/imports/module_library/bitonic_sort/bitonic_sort.srcs/sources_1/new/bitonic_sort_fp.sv:57]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1451.645 ; gain = 157.723
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'wp_top_comb' [C:/LRMLD/module_library/top_comb/top_comb.srcs/sources_1/new/wp_top_comb.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'top_comb' [C:/LRMLD/module_library/top_comb/top_comb.srcs/sources_1/new/top_comb.sv:3]
+	Parameter L bound to: 8 - type: integer 
+	Parameter N bound to: 8 - type: integer 
+	Parameter N1 bound to: 8 - type: integer 
+	Parameter N_COS bound to: 8 - type: integer 
+	Parameter METRIC_W bound to: 10 - type: integer 
+	Parameter LABEL_W bound to: 32 - type: integer 
+	Parameter LABEL_W1 bound to: 32 - type: integer 
+	Parameter N_OUT bound to: 8 - type: integer 
+	Parameter FF_P bound to: 4'b1111 
+INFO: [Synth 8-6157] synthesizing module 'unite_lists' [C:/LRMLD/module_library/top_comb/top_comb.srcs/sources_1/imports/sources_1/imports/module_library/unite_lists/unite_lists.srcs/sources_1/new/unite_lists.sv:3]
+	Parameter L bound to: 8 - type: integer 
+	Parameter N bound to: 8 - type: integer 
+	Parameter N1 bound to: 8 - type: integer 
+	Parameter METRIC_W bound to: 10 - type: integer 
+	Parameter LABEL_W bound to: 32 - type: integer 
+	Parameter LABEL_W1 bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sum_select8' [C:/LRMLD/module_library/top_comb/top_comb.srcs/sources_1/imports/sources_1/imports/module_library/unite_lists/unite_lists.srcs/sources_1/imports/module_library/sum_select_8/sum_select_8.srcs/sources_1/new/sum_select8.sv:3]
+	Parameter METRIC_W bound to: 10 - type: integer 
+	Parameter LABEL_W bound to: 32 - type: integer 
+	Parameter LABEL_W1 bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sum_select_8' [C:/LRMLD/module_library/top_comb/top_comb.srcs/sources_1/imports/sources_1/imports/module_library/unite_lists/unite_lists.srcs/sources_1/imports/module_library/sum_select8/sum_select8.srcs/sources_1/new/sum_select_8.sv:2]
+	Parameter METRIC_W bound to: 10 - type: integer 
+	Parameter LABEL_W bound to: 32 - type: integer 
+	Parameter LABEL_W1 bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'cas' [C:/LRMLD/module_library/top_comb/top_comb.srcs/sources_1/imports/sources_1/imports/module_library/unite_lists/unite_lists.srcs/sources_1/imports/module_library/sum_select8/sum_select8.srcs/sources_1/new/cas.sv:1]
+	Parameter METRIC_W bound to: 11 - type: integer 
+	Parameter LABEL_W bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'cas' (0#1) [C:/LRMLD/module_library/top_comb/top_comb.srcs/sources_1/imports/sources_1/imports/module_library/unite_lists/unite_lists.srcs/sources_1/imports/module_library/sum_select8/sum_select8.srcs/sources_1/new/cas.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'sum_select_8' (0#1) [C:/LRMLD/module_library/top_comb/top_comb.srcs/sources_1/imports/sources_1/imports/module_library/unite_lists/unite_lists.srcs/sources_1/imports/module_library/sum_select8/sum_select8.srcs/sources_1/new/sum_select_8.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'sum_select8' (0#1) [C:/LRMLD/module_library/top_comb/top_comb.srcs/sources_1/imports/sources_1/imports/module_library/unite_lists/unite_lists.srcs/sources_1/imports/module_library/sum_select_8/sum_select_8.srcs/sources_1/new/sum_select8.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'unite_lists' (0#1) [C:/LRMLD/module_library/top_comb/top_comb.srcs/sources_1/imports/sources_1/imports/module_library/unite_lists/unite_lists.srcs/sources_1/new/unite_lists.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'merge_tree' [C:/LRMLD/module_library/top_comb/top_comb.srcs/sources_1/imports/sources_1/imports/module_library/merge_tree/merge_tree.srcs/sources_1/new/merge_tree.sv:1]
+	Parameter NUM_LISTS bound to: 8 - type: integer 
+	Parameter N_INPUTS bound to: 8 - type: integer 
+	Parameter METRIC_W bound to: 10 - type: integer 
+	Parameter LABEL_W bound to: 64 - type: integer 
+	Parameter FF_P bound to: 4'b1111 
+INFO: [Synth 8-6157] synthesizing module 'merge_2n_n' [C:/LRMLD/module_library/top_comb/top_comb.srcs/sources_1/imports/sources_1/imports/module_library/merge_tree/merge_tree.srcs/sources_1/new/merge_2n_n.sv:1]
+	Parameter N_INPUTS bound to: 8 - type: integer 
+	Parameter METRIC_W bound to: 10 - type: integer 
+	Parameter LABEL_W bound to: 64 - type: integer 
+	Parameter FF_P bound to: 4'b1111 
+INFO: [Synth 8-6157] synthesizing module 'cas_l' [C:/LRMLD/module_library/top_comb/top_comb.srcs/sources_1/imports/sources_1/imports/module_library/merge_tree/merge_tree.srcs/sources_1/new/cas_l.sv:5]
+	Parameter METRIC_W bound to: 10 - type: integer 
+	Parameter LABEL_W bound to: 64 - type: integer 
+	Parameter USE_FF bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'cas_l' (0#1) [C:/LRMLD/module_library/top_comb/top_comb.srcs/sources_1/imports/sources_1/imports/module_library/merge_tree/merge_tree.srcs/sources_1/new/cas_l.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'delay_line' [C:/LRMLD/module_library/top_comb/top_comb.srcs/sources_1/imports/sources_1/imports/module_library/merge_tree/merge_tree.srcs/sources_1/new/delay_line.sv:15]
+	Parameter DELAY bound to: 1'b1 
+	Parameter WIDTH bound to: 74 - type: integer 
+	Parameter STYLE bound to: auto - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'delay_line' (0#1) [C:/LRMLD/module_library/top_comb/top_comb.srcs/sources_1/imports/sources_1/imports/module_library/merge_tree/merge_tree.srcs/sources_1/new/delay_line.sv:15]
+INFO: [Synth 8-6155] done synthesizing module 'merge_2n_n' (0#1) [C:/LRMLD/module_library/top_comb/top_comb.srcs/sources_1/imports/sources_1/imports/module_library/merge_tree/merge_tree.srcs/sources_1/new/merge_2n_n.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'merge_tree' (0#1) [C:/LRMLD/module_library/top_comb/top_comb.srcs/sources_1/imports/sources_1/imports/module_library/merge_tree/merge_tree.srcs/sources_1/new/merge_tree.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'top_comb' (0#1) [C:/LRMLD/module_library/top_comb/top_comb.srcs/sources_1/new/top_comb.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'wp_top_comb' (0#1) [C:/LRMLD/module_library/top_comb/top_comb.srcs/sources_1/new/wp_top_comb.sv:3]
+WARNING: [Synth 8-5856] 3D RAM conc_d_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-10225] Potential Runtime issue for 3D-RAM or RAM from Record/Structs for RAM  conc_d_reg 
+WARNING: [Synth 8-5856] 3D RAM m_p_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-10225] Potential Runtime issue for 3D-RAM or RAM from Record/Structs for RAM  m_p_reg 
+WARNING: [Synth 8-5856] 3D RAM idx_p_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-10225] Potential Runtime issue for 3D-RAM or RAM from Record/Structs for RAM  idx_p_reg 
+WARNING: [Synth 8-6014] Unused sequential element m_p_reg[3][0] was removed.  [C:/LRMLD/module_library/top_comb/top_comb.srcs/sources_1/imports/sources_1/imports/module_library/unite_lists/unite_lists.srcs/sources_1/imports/module_library/sum_select8/sum_select8.srcs/sources_1/new/sum_select_8.sv:64]
+WARNING: [Synth 8-6014] Unused sequential element m_p_reg[4][0] was removed.  [C:/LRMLD/module_library/top_comb/top_comb.srcs/sources_1/imports/sources_1/imports/module_library/unite_lists/unite_lists.srcs/sources_1/imports/module_library/sum_select8/sum_select8.srcs/sources_1/new/sum_select_8.sv:64]
+WARNING: [Synth 8-6014] Unused sequential element m_p_reg[5][0] was removed.  [C:/LRMLD/module_library/top_comb/top_comb.srcs/sources_1/imports/sources_1/imports/module_library/unite_lists/unite_lists.srcs/sources_1/imports/module_library/sum_select8/sum_select8.srcs/sources_1/new/sum_select_8.sv:64]
+WARNING: [Synth 8-6014] Unused sequential element idx_p_reg[3][0] was removed.  [C:/LRMLD/module_library/top_comb/top_comb.srcs/sources_1/imports/sources_1/imports/module_library/unite_lists/unite_lists.srcs/sources_1/imports/module_library/sum_select8/sum_select8.srcs/sources_1/new/sum_select_8.sv:64]
+WARNING: [Synth 8-6014] Unused sequential element idx_p_reg[4][0] was removed.  [C:/LRMLD/module_library/top_comb/top_comb.srcs/sources_1/imports/sources_1/imports/module_library/unite_lists/unite_lists.srcs/sources_1/imports/module_library/sum_select8/sum_select8.srcs/sources_1/new/sum_select_8.sv:64]
+WARNING: [Synth 8-6014] Unused sequential element idx_p_reg[5][0] was removed.  [C:/LRMLD/module_library/top_comb/top_comb.srcs/sources_1/imports/sources_1/imports/module_library/unite_lists/unite_lists.srcs/sources_1/imports/module_library/sum_select8/sum_select8.srcs/sources_1/new/sum_select_8.sv:64]
+WARNING: [Synth 8-6014] Unused sequential element conc_d_reg[0][0] was removed.  [C:/LRMLD/module_library/top_comb/top_comb.srcs/sources_1/imports/sources_1/imports/module_library/unite_lists/unite_lists.srcs/sources_1/imports/module_library/sum_select8/sum_select8.srcs/sources_1/new/sum_select_8.sv:62]
+WARNING: [Synth 8-6014] Unused sequential element conc_d_reg[1][0] was removed.  [C:/LRMLD/module_library/top_comb/top_comb.srcs/sources_1/imports/sources_1/imports/module_library/unite_lists/unite_lists.srcs/sources_1/imports/module_library/sum_select8/sum_select8.srcs/sources_1/new/sum_select_8.sv:62]
+WARNING: [Synth 8-6014] Unused sequential element conc_d_reg[2][0] was removed.  [C:/LRMLD/module_library/top_comb/top_comb.srcs/sources_1/imports/sources_1/imports/module_library/unite_lists/unite_lists.srcs/sources_1/imports/module_library/sum_select8/sum_select8.srcs/sources_1/new/sum_select_8.sv:62]
+WARNING: [Synth 8-6014] Unused sequential element conc_d_reg[3][0] was removed.  [C:/LRMLD/module_library/top_comb/top_comb.srcs/sources_1/imports/sources_1/imports/module_library/unite_lists/unite_lists.srcs/sources_1/imports/module_library/sum_select8/sum_select8.srcs/sources_1/new/sum_select_8.sv:62]
+WARNING: [Synth 8-6014] Unused sequential element conc_d_reg[4][0] was removed.  [C:/LRMLD/module_library/top_comb/top_comb.srcs/sources_1/imports/sources_1/imports/module_library/unite_lists/unite_lists.srcs/sources_1/imports/module_library/sum_select8/sum_select8.srcs/sources_1/new/sum_select_8.sv:62]
+WARNING: [Synth 8-6014] Unused sequential element conc_d_reg[5][0] was removed.  [C:/LRMLD/module_library/top_comb/top_comb.srcs/sources_1/imports/sources_1/imports/module_library/unite_lists/unite_lists.srcs/sources_1/imports/module_library/sum_select8/sum_select8.srcs/sources_1/new/sum_select_8.sv:62]
+WARNING: [Synth 8-5856] 3D RAM i_m_r_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-10225] Potential Runtime issue for 3D-RAM or RAM from Record/Structs for RAM  i_m_r_reg 
+WARNING: [Synth 8-5856] 3D RAM i_l_r_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-10225] Potential Runtime issue for 3D-RAM or RAM from Record/Structs for RAM  i_l_r_reg 
+WARNING: [Synth 8-7129] Port i_metrics[39] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_metrics[38] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_metrics[37] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_metrics[36] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_metrics[35] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_metrics[34] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_metrics[33] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_metrics[32] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_metrics[31] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_metrics[30] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_metrics[29] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_metrics[28] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_metrics[27] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_metrics[26] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_metrics[25] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_metrics[24] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_metrics[23] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_metrics[22] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_metrics[21] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_metrics[20] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_metrics[19] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_metrics[18] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_metrics[17] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_metrics[16] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_metrics[15] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_metrics[14] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_metrics[13] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_metrics[12] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_metrics[11] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_metrics[10] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_metrics[9] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_metrics[8] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_metrics[7] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_metrics[6] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_metrics[5] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_metrics[4] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_metrics[3] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_metrics[2] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_metrics[1] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_metrics[0] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[127] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[126] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[125] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[124] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[123] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[122] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[121] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[120] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[119] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[118] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[117] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[116] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[115] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[114] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[113] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[112] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[111] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[110] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[109] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[108] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[107] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[106] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[105] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[104] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[103] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[102] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[101] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[100] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[99] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[98] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[97] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[96] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[95] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[94] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[93] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[92] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[91] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[90] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[89] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[88] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[87] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[86] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[85] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[84] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[83] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[82] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[81] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[80] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[79] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[78] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[77] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[76] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[75] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[74] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[73] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[72] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[71] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[70] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[69] in module sum_select8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_labels[68] in module sum_select8 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1563.777 ; gain = 269.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1563.777 ; gain = 269.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1563.777 ; gain = 269.855
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.878 . Memory (MB): peak = 1563.777 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/LRMLD/module_library/top_comb/top_comb.srcs/constrs_1/imports/new/constraints.xdc]
+Finished Parsing XDC File [C:/LRMLD/module_library/top_comb/top_comb.srcs/constrs_1/imports/new/constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/LRMLD/module_library/top_comb/top_comb.srcs/constrs_1/imports/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/wp_top_comb_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/wp_top_comb_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1756.773 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.285 . Memory (MB): peak = 1756.773 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1757.480 ; gain = 463.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcku035-fbva676-1-i
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1757.480 ; gain = 463.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1757.480 ; gain = 463.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1757.480 ; gain = 463.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   11 Bit       Adders := 64    
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 3     
++---Registers : 
+	              256 Bit    Registers := 32    
+	              128 Bit    Registers := 16    
+	               80 Bit    Registers := 32    
+	               74 Bit    Registers := 49    
+	               64 Bit    Registers := 737   
+	               40 Bit    Registers := 16    
+	               11 Bit    Registers := 408   
+	               10 Bit    Registers := 353   
+	                7 Bit    Registers := 8     
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 363   
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   2 Input  256 Bit        Muxes := 8     
+	   2 Input   80 Bit        Muxes := 8     
+	   2 Input   64 Bit        Muxes := 280   
+	   2 Input   11 Bit        Muxes := 304   
+	   2 Input   10 Bit        Muxes := 344   
+	   2 Input    6 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 309   
+	   2 Input    1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1700 (col length:120)
+BRAMs: 1080 (col length: RAMB18 120 RAMB36 60)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 1757.480 ; gain = 463.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 1757.480 ; gain = 463.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1769.246 ; gain = 475.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 1878.484 ; gain = 584.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 1919.992 ; gain = 626.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 1919.992 ; gain = 626.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:02 ; elapsed = 00:01:03 . Memory (MB): peak = 1919.992 ; gain = 626.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:02 ; elapsed = 00:01:03 . Memory (MB): peak = 1919.992 ; gain = 626.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:03 ; elapsed = 00:01:05 . Memory (MB): peak = 1919.992 ; gain = 626.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:03 ; elapsed = 00:01:05 . Memory (MB): peak = 1919.992 ; gain = 626.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                                                                             | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|wp_top_comb | dut/COSSET[0].unite_lists/genblk1_0.dut/SS_00/s0_d_reg[5][10]                                        | 6      | 88    | NO           | NO                 | YES               | 88     | 0       | 
+|wp_top_comb | dut/COSSET[0].unite_lists/genblk1_0.dut/SS_00/m_p_reg[5][7][10]                                      | 3      | 112   | NO           | NO                 | YES               | 112    | 0       | 
+|wp_top_comb | dut/COSSET[0].unite_lists/genblk1_0.dut/SS_00/conc_d_reg[5][4][31]                                   | 8      | 2049  | NO           | NO                 | YES               | 2049   | 0       | 
+|wp_top_comb | dut/merge_tree/gen_layer[0].gen_node[0].merge_inst/genblk2[2].genblk1[1].delay_line_dut/dreg_reg[73] | 3      | 518   | NO           | NO                 | YES               | 518    | 0       | 
+|wp_top_comb | dut/merge_tree/gen_layer[0].gen_node[0].merge_inst/genblk2[1].genblk1[0].delay_line_dut/dreg_reg[73] | 4      | 444   | NO           | NO                 | YES               | 444    | 0       | 
+|wp_top_comb | dut/merge_tree/gen_layer[2].gen_node[0].merge_inst/genblk2[1].valid_pipe_reg[4]                      | 13     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|wp_top_comb | dut/merge_tree/gen_layer[2].gen_node[0].merge_inst/genblk2[1].genblk1[0].delay_line_dut/dreg_reg[73] | 4      | 74    | NO           | NO                 | NO                | 74     | 0       | 
++------------+------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY8 |   420|
+|3     |LUT1   |    94|
+|4     |LUT2   |  1592|
+|5     |LUT3   | 20324|
+|6     |LUT4   |  3259|
+|7     |LUT5   |  7203|
+|8     |LUT6   |   150|
+|9     |MUXF7  |    74|
+|10    |SRL16E |  3286|
+|11    |FDRE   | 33633|
+|12    |IBUF   |    87|
+|13    |OBUF   |    75|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:03 ; elapsed = 00:01:05 . Memory (MB): peak = 1919.992 ; gain = 626.070
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:47 ; elapsed = 00:00:56 . Memory (MB): peak = 1919.992 ; gain = 432.367
+Synthesis Optimization Complete : Time (s): cpu = 00:01:03 ; elapsed = 00:01:05 . Memory (MB): peak = 1919.992 ; gain = 626.070
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.818 . Memory (MB): peak = 1942.590 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 582 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 2030.238 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 88 instances were transformed.
+  BUFG => BUFGCE: 1 instance 
+  IBUF => IBUF (IBUFCTRL, INBUF): 87 instances
+
+Synth Design complete, checksum: f82e28d0
+INFO: [Common 17-83] Releasing license: Synthesis
+43 Infos, 124 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:16 ; elapsed = 00:01:19 . Memory (MB): peak = 2030.238 ; gain = 736.316
+INFO: [Common 17-1381] The checkpoint 'C:/LRMLD/module_library/top_comb/top_comb.runs/synth_1/wp_top_comb.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file wp_top_comb_utilization_synth.rpt -pb wp_top_comb_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon May  4 18:50:37 2026...

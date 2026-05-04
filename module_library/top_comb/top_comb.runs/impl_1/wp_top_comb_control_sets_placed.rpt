@@ -1,0 +1,145 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon May  4 18:55:20 2026
+| Host         : feduuk running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file wp_top_comb_control_sets_placed.rpt
+| Design       : wp_top_comb
+| Device       : xcku035
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    67 |
+|    Minimum number of control sets                        |    41 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |    26 |
+| Unused register locations in slices containing registers |    43 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    67 |
+| >= 0 to < 4        |     3 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    62 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |           25784 |         4503 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               3 |            3 |
+| Yes          | No                    | No                     |            4736 |         1679 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |            3378 |          618 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+---------------------------------------------------------------------+------------------+------------------+----------------+--------------+
+|  Clock Signal  |                            Enable Signal                            | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+---------------------------------------------------------------------+------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG |                                                                     | rst_IBUF_inst/O  |                3 |              3 |         1.00 |
+|  clk_IBUF_BUFG | dut/merge_tree/gen_layer[2].gen_node[0].merge_inst/rd_cnt_reg[2][0] | rst_IBUF_inst/O  |                2 |              3 |         1.50 |
+|  clk_IBUF_BUFG | cos_idx                                                             | RSTB             |                2 |              3 |         1.50 |
+|  clk_IBUF_BUFG | i_valid_IBUF_inst/O                                                 | rst_IBUF_inst/O  |                1 |              6 |         6.00 |
+|  clk_IBUF_BUFG | i_valid_IBUF_inst/O                                                 | RSTB             |                3 |             12 |         4.00 |
+|  clk_IBUF_BUFG | dut/COSSET[2].unite_lists/genblk1_0.dut/E[0]_repN_4                 |                  |               21 |             53 |         2.52 |
+|  clk_IBUF_BUFG | busy                                                                | rst_IBUF_inst/O  |               70 |             74 |         1.06 |
+|  clk_IBUF_BUFG | dut/COSSET[2].unite_lists/genblk1_0.dut/E[0]_repN_12                |                  |               37 |             82 |         2.22 |
+|  clk_IBUF_BUFG | in_metrics[49]                                                      | rst_IBUF_inst/O  |               39 |             84 |         2.15 |
+|  clk_IBUF_BUFG | in_metrics[69]                                                      | rst_IBUF_inst/O  |               34 |             84 |         2.47 |
+|  clk_IBUF_BUFG | in_metrics[59]                                                      | rst_IBUF_inst/O  |               33 |             84 |         2.55 |
+|  clk_IBUF_BUFG | in_metrics[79]                                                      | rst_IBUF_inst/O  |               32 |             84 |         2.62 |
+|  clk_IBUF_BUFG | in_metrics[1][49]_i_1_n_0                                           | rst_IBUF_inst/O  |               28 |             84 |         3.00 |
+|  clk_IBUF_BUFG | in_metrics[1][69]_i_1_n_0                                           | rst_IBUF_inst/O  |               32 |             84 |         2.62 |
+|  clk_IBUF_BUFG | in_metrics[1][79]_i_1_n_0                                           | rst_IBUF_inst/O  |               33 |             84 |         2.55 |
+|  clk_IBUF_BUFG | in_metrics[2][49]_i_1_n_0                                           | rst_IBUF_inst/O  |               34 |             84 |         2.47 |
+|  clk_IBUF_BUFG | in_metrics[1][59]_i_1_n_0                                           | rst_IBUF_inst/O  |               22 |             84 |         3.82 |
+|  clk_IBUF_BUFG | in_metrics[2][69]_i_1_n_0                                           | rst_IBUF_inst/O  |               33 |             84 |         2.55 |
+|  clk_IBUF_BUFG | in_metrics[2][79]_i_1_n_0                                           | rst_IBUF_inst/O  |               30 |             84 |         2.80 |
+|  clk_IBUF_BUFG | in_metrics[3][49]_i_1_n_0                                           | rst_IBUF_inst/O  |               31 |             84 |         2.71 |
+|  clk_IBUF_BUFG | in_metrics[3][59]_i_1_n_0                                           | rst_IBUF_inst/O  |               34 |             84 |         2.47 |
+|  clk_IBUF_BUFG | in_metrics[3][69]_i_1_n_0                                           | rst_IBUF_inst/O  |               39 |             84 |         2.15 |
+|  clk_IBUF_BUFG | in_metrics[3][79]_i_1_n_0                                           | rst_IBUF_inst/O  |               30 |             84 |         2.80 |
+|  clk_IBUF_BUFG | in_metrics[4][49]_i_1_n_0                                           | rst_IBUF_inst/O  |               22 |             84 |         3.82 |
+|  clk_IBUF_BUFG | in_metrics[4][59]_i_1_n_0                                           | rst_IBUF_inst/O  |               21 |             84 |         4.00 |
+|  clk_IBUF_BUFG | in_metrics[4][69]_i_1_n_0                                           | rst_IBUF_inst/O  |               28 |             84 |         3.00 |
+|  clk_IBUF_BUFG | in_metrics[6][59]_i_1_n_0                                           | rst_IBUF_inst/O  |               39 |             84 |         2.15 |
+|  clk_IBUF_BUFG | in_metrics[5][79]_i_1_n_0                                           | rst_IBUF_inst/O  |               25 |             84 |         3.36 |
+|  clk_IBUF_BUFG | in_metrics[5][49]_i_1_n_0                                           | rst_IBUF_inst/O  |               26 |             84 |         3.23 |
+|  clk_IBUF_BUFG | in_metrics[6][69]_i_1_n_0                                           | rst_IBUF_inst/O  |               37 |             84 |         2.27 |
+|  clk_IBUF_BUFG | in_metrics[7][79]_i_1_n_0                                           | rst_IBUF_inst/O  |               28 |             84 |         3.00 |
+|  clk_IBUF_BUFG | in_metrics[4][79]_i_1_n_0                                           | rst_IBUF_inst/O  |               26 |             84 |         3.23 |
+|  clk_IBUF_BUFG | in_metrics[6][49]_i_1_n_0                                           | rst_IBUF_inst/O  |               34 |             84 |         2.47 |
+|  clk_IBUF_BUFG | in_metrics[2][59]_i_1_n_0                                           | rst_IBUF_inst/O  |               34 |             84 |         2.47 |
+|  clk_IBUF_BUFG | in_metrics[7][49]_i_1_n_0                                           | rst_IBUF_inst/O  |               34 |             84 |         2.47 |
+|  clk_IBUF_BUFG | in_metrics[5][59]_i_1_n_0                                           | rst_IBUF_inst/O  |               32 |             84 |         2.62 |
+|  clk_IBUF_BUFG | in_metrics[7][59]_i_1_n_0                                           | rst_IBUF_inst/O  |               34 |             84 |         2.47 |
+|  clk_IBUF_BUFG | in_metrics[7][69]_i_1_n_0                                           | rst_IBUF_inst/O  |               34 |             84 |         2.47 |
+|  clk_IBUF_BUFG | in_metrics[6][79]_i_1_n_0                                           | rst_IBUF_inst/O  |               31 |             84 |         2.71 |
+|  clk_IBUF_BUFG | in_metrics[5][69]_i_1_n_0                                           | rst_IBUF_inst/O  |               31 |             84 |         2.71 |
+|  clk_IBUF_BUFG | dut/COSSET[2].unite_lists/genblk1_0.dut/E[0]_repN_8                 |                  |               46 |            108 |         2.35 |
+|  clk_IBUF_BUFG | dut/COSSET[2].unite_lists/genblk1_0.dut/E[0]_repN_25                |                  |               53 |            128 |         2.42 |
+|  clk_IBUF_BUFG | dut/COSSET[2].unite_lists/genblk1_0.dut/E[0]_repN_13                |                  |               54 |            135 |         2.50 |
+|  clk_IBUF_BUFG | dut/COSSET[2].unite_lists/genblk1_0.dut/E[0]_repN_21                |                  |               53 |            135 |         2.55 |
+|  clk_IBUF_BUFG | dut/COSSET[2].unite_lists/genblk1_0.dut/E[0]                        |                  |               58 |            140 |         2.41 |
+|  clk_IBUF_BUFG | dut/COSSET[2].unite_lists/genblk1_0.dut/E[0]_repN_14                |                  |               61 |            141 |         2.31 |
+|  clk_IBUF_BUFG | dut/COSSET[2].unite_lists/genblk1_0.dut/E[0]_repN_6                 |                  |               64 |            155 |         2.42 |
+|  clk_IBUF_BUFG | dut/COSSET[2].unite_lists/genblk1_0.dut/E[0]_repN_23                |                  |               74 |            166 |         2.24 |
+|  clk_IBUF_BUFG | dut/COSSET[2].unite_lists/genblk1_0.dut/E[0]_repN_20                |                  |               68 |            167 |         2.46 |
+|  clk_IBUF_BUFG | dut/COSSET[2].unite_lists/genblk1_0.dut/E[0]_repN_18                |                  |               62 |            169 |         2.73 |
+|  clk_IBUF_BUFG | dut/COSSET[2].unite_lists/genblk1_0.dut/E[0]_repN_16                |                  |               67 |            171 |         2.55 |
+|  clk_IBUF_BUFG | dut/COSSET[2].unite_lists/genblk1_0.dut/E[0]_repN_9                 |                  |               72 |            171 |         2.38 |
+|  clk_IBUF_BUFG | dut/COSSET[2].unite_lists/genblk1_0.dut/E[0]_repN_2                 |                  |               70 |            176 |         2.51 |
+|  clk_IBUF_BUFG | dut/COSSET[2].unite_lists/genblk1_0.dut/E[0]_repN_10                |                  |               67 |            187 |         2.79 |
+|  clk_IBUF_BUFG | dut/COSSET[2].unite_lists/genblk1_0.dut/E[0]_repN_17                |                  |               76 |            200 |         2.63 |
+|  clk_IBUF_BUFG | dut/COSSET[2].unite_lists/genblk1_0.dut/E[0]_repN_7                 |                  |               84 |            206 |         2.45 |
+|  clk_IBUF_BUFG | dut/COSSET[2].unite_lists/genblk1_0.dut/E[0]_repN_1                 |                  |               79 |            212 |         2.68 |
+|  clk_IBUF_BUFG | dut/COSSET[2].unite_lists/genblk1_0.dut/E[0]_repN_3                 |                  |               77 |            215 |         2.79 |
+|  clk_IBUF_BUFG | dut/COSSET[2].unite_lists/genblk1_0.dut/E[0]_repN_15                |                  |               83 |            218 |         2.63 |
+|  clk_IBUF_BUFG | dut/COSSET[2].unite_lists/genblk1_0.dut/E[0]_repN_26                |                  |               93 |            219 |         2.35 |
+|  clk_IBUF_BUFG | dut/COSSET[2].unite_lists/genblk1_0.dut/E[0]_repN_24                |                  |               89 |            225 |         2.53 |
+|  clk_IBUF_BUFG | dut/COSSET[2].unite_lists/genblk1_0.dut/E[0]_repN                   |                  |               80 |            229 |         2.86 |
+|  clk_IBUF_BUFG | dut/COSSET[2].unite_lists/genblk1_0.dut/E[0]_repN_19                |                  |               96 |            234 |         2.44 |
+|  clk_IBUF_BUFG | dut/COSSET[2].unite_lists/genblk1_0.dut/E[0]_repN_22                |                  |              100 |            246 |         2.46 |
+|  clk_IBUF_BUFG | dut/COSSET[2].unite_lists/genblk1_0.dut/E[0]_repN_5                 |                  |              100 |            248 |         2.48 |
+|  clk_IBUF_BUFG | dut/merge_tree/gen_layer[2].gen_node[0].merge_inst/E[0]             | rst_IBUF_inst/O  |              144 |            592 |         4.11 |
+|  clk_IBUF_BUFG |                                                                     |                  |             4508 |          29070 |         6.45 |
++----------------+---------------------------------------------------------------------+------------------+------------------+----------------+--------------+
+
+

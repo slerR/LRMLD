@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_top_comb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_top_comb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="46.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="267.001 ns"></ZoomEndTime>
+      <Cursor1Time time="95.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="281"></NameColumnWidth>
+      <ValueColumnWidth column_width="106"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="24" />
+   <wvobject fp_name="/tb_top_comb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_comb/i_valid" type="logic">
+      <obj_property name="ElementShortName">i_valid</obj_property>
+      <obj_property name="ObjectShortName">i_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_comb/i_metrics" type="array">
+      <obj_property name="ElementShortName">i_metrics[0:1][31:0]</obj_property>
+      <obj_property name="ObjectShortName">i_metrics[0:1][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_comb/i_labels" type="array">
+      <obj_property name="ElementShortName">i_labels[0:1][15:0]</obj_property>
+      <obj_property name="ObjectShortName">i_labels[0:1][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_comb/i_metrics1" type="array">
+      <obj_property name="ElementShortName">i_metrics1[0:1][31:0]</obj_property>
+      <obj_property name="ObjectShortName">i_metrics1[0:1][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_comb/i_labels1" type="array">
+      <obj_property name="ElementShortName">i_labels1[0:1][15:0]</obj_property>
+      <obj_property name="ObjectShortName">i_labels1[0:1][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_comb/o_metrics" type="array">
+      <obj_property name="ElementShortName">o_metrics[0:1][7:0]</obj_property>
+      <obj_property name="ObjectShortName">o_metrics[0:1][7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_comb/o_labels" type="array">
+      <obj_property name="ElementShortName">o_labels[0:1][7:0]</obj_property>
+      <obj_property name="ObjectShortName">o_labels[0:1][7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_top_comb/o_labels[0]" type="array">
+         <obj_property name="ElementShortName">[0][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][7:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_comb/o_labels[1]" type="array">
+         <obj_property name="ElementShortName">[1][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][7:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb_top_comb/o_valid" type="logic">
+      <obj_property name="ElementShortName">o_valid</obj_property>
+      <obj_property name="ObjectShortName">o_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_comb/L" type="array">
+      <obj_property name="ElementShortName">L[31:0]</obj_property>
+      <obj_property name="ObjectShortName">L[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_comb/N" type="array">
+      <obj_property name="ElementShortName">N[31:0]</obj_property>
+      <obj_property name="ObjectShortName">N[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_comb/N1" type="array">
+      <obj_property name="ElementShortName">N1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">N1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_comb/N_COS" type="array">
+      <obj_property name="ElementShortName">N_COS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">N_COS[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_comb/METRIC_W" type="array">
+      <obj_property name="ElementShortName">METRIC_W[31:0]</obj_property>
+      <obj_property name="ObjectShortName">METRIC_W[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_comb/LABEL_W" type="array">
+      <obj_property name="ElementShortName">LABEL_W[31:0]</obj_property>
+      <obj_property name="ObjectShortName">LABEL_W[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_comb/LABEL_W1" type="array">
+      <obj_property name="ElementShortName">LABEL_W1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">LABEL_W1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_comb/CONC_W" type="array">
+      <obj_property name="ElementShortName">CONC_W[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CONC_W[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_comb/N_LIM" type="array">
+      <obj_property name="ElementShortName">N_LIM[31:0]</obj_property>
+      <obj_property name="ObjectShortName">N_LIM[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_comb/N1_LIM" type="array">
+      <obj_property name="ElementShortName">N1_LIM[31:0]</obj_property>
+      <obj_property name="ObjectShortName">N1_LIM[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_comb/TOTAL_COMBO" type="array">
+      <obj_property name="ElementShortName">TOTAL_COMBO[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TOTAL_COMBO[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_comb/L_OUT" type="array">
+      <obj_property name="ElementShortName">L_OUT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">L_OUT[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_comb/N_OUT" type="array">
+      <obj_property name="ElementShortName">N_OUT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">N_OUT[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_comb/FF_P_W" type="array">
+      <obj_property name="ElementShortName">FF_P_W[31:0]</obj_property>
+      <obj_property name="ObjectShortName">FF_P_W[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_comb/FF_P" type="array">
+      <obj_property name="ElementShortName">FF_P[1:0]</obj_property>
+      <obj_property name="ObjectShortName">FF_P[1:0]</obj_property>
+   </wvobject>
+</wave_config>

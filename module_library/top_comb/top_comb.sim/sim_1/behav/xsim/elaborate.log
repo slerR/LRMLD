@@ -1,0 +1,22 @@
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_comb_behav xil_defaultlib.tb_top_comb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3823] variable 'valid' might have multiple concurrent drivers [C:/LRMLD/module_library/top_comb/top_comb.srcs/sources_1/new/top_comb.sv:68]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.comparator(DATA_W=9)
+Compiling module xil_defaultlib.sum_select(METRIC_W=8,LABEL_W=4,...
+Compiling module xil_defaultlib.unite_lists(L=2,N=4,N1=4,METRIC_...
+Compiling module xil_defaultlib.cas_l(LABEL_W=8,USE_FF=1'b1)
+Compiling module xil_defaultlib.delay_line(DELAY=1'b1,WIDTH=16,S...
+Compiling module xil_defaultlib.merge_2n_n(N_INPUTS=2,LABEL_W=8,...
+Compiling module xil_defaultlib.merge_tree(NUM_LISTS=2,N_INPUTS=...
+Compiling module xil_defaultlib.top_comb(L=2,N_COS=2,METRIC_W=8,...
+Compiling module xil_defaultlib.tb_top_comb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_comb_behav
