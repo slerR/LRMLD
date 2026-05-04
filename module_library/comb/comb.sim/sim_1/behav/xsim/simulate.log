@@ -1,10 +1,2 @@
 Time resolution is 1 ps
-Time:                35000 | COSSET:           0 | Phase: 0 | L_IDX: 0 | R_IDX: 1
-Time:                35000 | COSSET:           1 | Phase: 0 | L_IDX: 0 | R_IDX: 0
-Time:                45000 | COSSET:           0 | Phase: 1 | L_IDX: 1 | R_IDX: 0
-Time:                45000 | COSSET:           1 | Phase: 1 | L_IDX: 1 | R_IDX: 1
-Time:                55000 | COSSET:           0 | Phase: 0 | L_IDX: 0 | R_IDX: 1
-Time:                55000 | COSSET:           1 | Phase: 0 | L_IDX: 0 | R_IDX: 0
-Time:                65000 | COSSET:           0 | Phase: 1 | L_IDX: 1 | R_IDX: 0
-Time:                65000 | COSSET:           1 | Phase: 1 | L_IDX: 1 | R_IDX: 1
 $finish called at time : 255 ns : File "C:/LRMLD/module_library/comb/comb.srcs/sim_1/new/tb_comb.sv" Line 104

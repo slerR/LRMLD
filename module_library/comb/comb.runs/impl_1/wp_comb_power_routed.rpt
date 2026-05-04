@@ -1,0 +1,301 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date             : Mon May  4 03:14:30 2026
+| Host             : feduuk running 64-bit major release  (build 9200)
+| Command          : report_power -file wp_comb_power_routed.rpt -pb wp_comb_power_summary_routed.pb -rpx wp_comb_power_routed.rpx
+| Design           : wp_comb
+| Device           : xcku035-fbva676-1-i
+| Design State     : routed
+| Grade            : industrial
+| Process          : typical
+| Characterization : Production
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+--------------+
+| Total On-Chip Power (W)  | 8.483        |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 7.901        |
+| Device Static (W)        | 0.582        |
+| Effective TJA (C/W)      | 1.9          |
+| Max Ambient (C)          | 84.3         |
+| Junction Temperature (C) | 40.7         |
+| Confidence Level         | Low          |
+| Setting File             | ---          |
+| Simulation Activity File | ---          |
+| Design Nets Matched      | NA           |
++--------------------------+--------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++-------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
++-------------------------+-----------+----------+-----------+-----------------+
+| Clocks                  |     3.472 |        3 |       --- |             --- |
+| CLB Logic               |     2.092 |   309058 |       --- |             --- |
+|   LUT as Logic          |     1.102 |   119602 |    203128 |           58.88 |
+|   LUT as Shift Register |     0.891 |     6513 |    112800 |            5.77 |
+|   Register              |     0.098 |   159579 |    406256 |           39.28 |
+|   CARRY8                |     0.001 |     2384 |     30300 |            7.87 |
+|   F7/F8 Muxes           |    <0.001 |     2690 |    242400 |            1.11 |
+|   BUFG                  |    <0.001 |       23 |        80 |           28.75 |
+|   Others                |     0.000 |     4760 |       --- |             --- |
+| Signals                 |     2.251 |   192191 |       --- |             --- |
+| I/O                     |     0.086 |       98 |       312 |           31.41 |
+| Static Power            |     0.582 |          |           |                 |
+| Total                   |     8.483 |          |           |                 |
++-------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+| Source     | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
++------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+| Vccint     |       0.950 |     8.458 |       8.226 |      0.233 |       NA    | Unspecified | NA         |
+| Vccaux     |       1.800 |     0.101 |       0.000 |      0.101 |       NA    | Unspecified | NA         |
+| Vccaux_io  |       1.800 |     0.097 |       0.032 |      0.065 |       NA    | Unspecified | NA         |
+| Vccint_io  |       0.950 |     0.030 |       0.006 |      0.025 |       NA    | Unspecified | NA         |
+| Vcco33     |       3.300 |     0.003 |       0.003 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco25     |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco18     |       1.800 |     0.008 |       0.008 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco15     |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco135    |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco12     |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco10     |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccbram    |       0.950 |     0.014 |       0.000 |      0.014 |       NA    | Unspecified | NA         |
+| MGTAVcc    |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| MGTAVtt    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| MGTVccaux  |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccadc     |       1.800 |     0.014 |       0.000 |      0.014 |       NA    | Unspecified | NA         |
+| MGTYVccaux |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| MGTYAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| MGTYAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
++------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                     |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                            |
+| Clock nodes activity        | High       | User specified more than 95% of clocks                 |                                                                                                            |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view   |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
+| Device models               | High       | Device models are Production                           |                                                                                                            |
+|                             |            |                                                        |                                                                                                            |
+| Overall confidence level    | Low        |                                                        |                                                                                                            |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 1.9                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 3.4                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++-------------+--------+-----------------+
+| Clock       | Domain | Constraint (ns) |
++-------------+--------+-----------------+
+| sys_clk_pin | clk    |             1.0 |
++-------------+--------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++-------------------------------------------+-----------+
+| Name                                      | Power (W) |
++-------------------------------------------+-----------+
+| wp_comb                                   |     7.901 |
+|   clk_IBUF_inst                           |     0.011 |
+|   dut                                     |     7.360 |
+|     FSM.COSSET[0].DELAY[0].dl_labels      |     0.012 |
+|       dl_inst                             |     0.012 |
+|     FSM.COSSET[0].DELAY[0].dl_metrics     |     0.007 |
+|       dl_inst                             |     0.007 |
+|     FSM.COSSET[0].DELAY[1].dl_labels      |     0.015 |
+|       dl_inst                             |     0.015 |
+|     FSM.COSSET[0].DELAY[1].dl_metrics     |     0.010 |
+|       dl_inst                             |     0.010 |
+|     FSM.COSSET[0].DELAY[2].dl_labels      |     0.016 |
+|       dl_inst                             |     0.016 |
+|     FSM.COSSET[0].DELAY[2].dl_metrics     |     0.011 |
+|       dl_inst                             |     0.011 |
+|     FSM.COSSET[0].merge_tree              |     0.266 |
+|       gen_layer[0].gen_node[0].merge_inst |     0.077 |
+|       gen_layer[0].gen_node[1].merge_inst |     0.077 |
+|       gen_layer[1].gen_node[0].merge_inst |     0.071 |
+|     FSM.COSSET[0].unite_lists             |     0.594 |
+|       genblk1_1.dut                       |     0.588 |
+|     FSM.COSSET[1].DELAY[0].dl_labels      |     0.011 |
+|       dl_inst                             |     0.011 |
+|     FSM.COSSET[1].DELAY[0].dl_metrics     |     0.007 |
+|       dl_inst                             |     0.007 |
+|     FSM.COSSET[1].DELAY[1].dl_labels      |     0.014 |
+|       dl_inst                             |     0.014 |
+|     FSM.COSSET[1].DELAY[1].dl_metrics     |     0.009 |
+|       dl_inst                             |     0.009 |
+|     FSM.COSSET[1].DELAY[2].dl_labels      |     0.014 |
+|       dl_inst                             |     0.014 |
+|     FSM.COSSET[1].DELAY[2].dl_metrics     |     0.010 |
+|       dl_inst                             |     0.010 |
+|     FSM.COSSET[1].merge_tree              |     0.266 |
+|       gen_layer[0].gen_node[0].merge_inst |     0.077 |
+|       gen_layer[0].gen_node[1].merge_inst |     0.077 |
+|       gen_layer[1].gen_node[0].merge_inst |     0.070 |
+|     FSM.COSSET[1].unite_lists             |     0.580 |
+|       genblk1_1.dut                       |     0.573 |
+|     FSM.COSSET[2].DELAY[0].dl_labels      |     0.011 |
+|       dl_inst                             |     0.011 |
+|     FSM.COSSET[2].DELAY[0].dl_metrics     |     0.006 |
+|       dl_inst                             |     0.006 |
+|     FSM.COSSET[2].DELAY[1].dl_labels      |     0.013 |
+|       dl_inst                             |     0.013 |
+|     FSM.COSSET[2].DELAY[1].dl_metrics     |     0.008 |
+|       dl_inst                             |     0.008 |
+|     FSM.COSSET[2].DELAY[2].dl_labels      |     0.014 |
+|       dl_inst                             |     0.014 |
+|     FSM.COSSET[2].DELAY[2].dl_metrics     |     0.010 |
+|       dl_inst                             |     0.010 |
+|     FSM.COSSET[2].merge_tree              |     0.265 |
+|       gen_layer[0].gen_node[0].merge_inst |     0.077 |
+|       gen_layer[0].gen_node[1].merge_inst |     0.077 |
+|       gen_layer[1].gen_node[0].merge_inst |     0.070 |
+|     FSM.COSSET[2].unite_lists             |     0.599 |
+|       genblk1_1.dut                       |     0.593 |
+|     FSM.COSSET[3].DELAY[0].dl_labels      |     0.010 |
+|       dl_inst                             |     0.010 |
+|     FSM.COSSET[3].DELAY[0].dl_metrics     |     0.005 |
+|       dl_inst                             |     0.005 |
+|     FSM.COSSET[3].DELAY[1].dl_labels      |     0.011 |
+|       dl_inst                             |     0.011 |
+|     FSM.COSSET[3].DELAY[1].dl_metrics     |     0.007 |
+|       dl_inst                             |     0.007 |
+|     FSM.COSSET[3].DELAY[2].dl_labels      |     0.012 |
+|       dl_inst                             |     0.012 |
+|     FSM.COSSET[3].DELAY[2].dl_metrics     |     0.008 |
+|       dl_inst                             |     0.008 |
+|     FSM.COSSET[3].merge_tree              |     0.265 |
+|       gen_layer[0].gen_node[0].merge_inst |     0.077 |
+|       gen_layer[0].gen_node[1].merge_inst |     0.077 |
+|       gen_layer[1].gen_node[0].merge_inst |     0.070 |
+|     FSM.COSSET[3].unite_lists             |     0.560 |
+|       genblk1_1.dut                       |     0.554 |
+|     FSM.COSSET[4].DELAY[0].dl_labels      |     0.010 |
+|       dl_inst                             |     0.010 |
+|     FSM.COSSET[4].DELAY[0].dl_metrics     |     0.006 |
+|       dl_inst                             |     0.006 |
+|     FSM.COSSET[4].DELAY[1].dl_labels      |     0.011 |
+|       dl_inst                             |     0.011 |
+|     FSM.COSSET[4].DELAY[1].dl_metrics     |     0.008 |
+|       dl_inst                             |     0.008 |
+|     FSM.COSSET[4].DELAY[2].dl_labels      |     0.012 |
+|       dl_inst                             |     0.012 |
+|     FSM.COSSET[4].DELAY[2].dl_metrics     |     0.007 |
+|       dl_inst                             |     0.007 |
+|     FSM.COSSET[4].merge_tree              |     0.265 |
+|       gen_layer[0].gen_node[0].merge_inst |     0.077 |
+|       gen_layer[0].gen_node[1].merge_inst |     0.077 |
+|       gen_layer[1].gen_node[0].merge_inst |     0.070 |
+|     FSM.COSSET[4].unite_lists             |     0.558 |
+|       genblk1_1.dut                       |     0.552 |
+|     FSM.COSSET[5].DELAY[0].dl_labels      |     0.011 |
+|       dl_inst                             |     0.011 |
+|     FSM.COSSET[5].DELAY[0].dl_metrics     |     0.006 |
+|       dl_inst                             |     0.006 |
+|     FSM.COSSET[5].DELAY[1].dl_labels      |     0.013 |
+|       dl_inst                             |     0.013 |
+|     FSM.COSSET[5].DELAY[1].dl_metrics     |     0.007 |
+|       dl_inst                             |     0.007 |
+|     FSM.COSSET[5].DELAY[2].dl_labels      |     0.014 |
+|       dl_inst                             |     0.014 |
+|     FSM.COSSET[5].DELAY[2].dl_metrics     |     0.008 |
+|       dl_inst                             |     0.008 |
+|     FSM.COSSET[5].merge_tree              |     0.265 |
+|       gen_layer[0].gen_node[0].merge_inst |     0.077 |
+|       gen_layer[0].gen_node[1].merge_inst |     0.077 |
+|       gen_layer[1].gen_node[0].merge_inst |     0.070 |
+|     FSM.COSSET[5].unite_lists             |     0.575 |
+|       genblk1_1.dut                       |     0.569 |
+|     FSM.COSSET[6].DELAY[0].dl_labels      |     0.011 |
+|       dl_inst                             |     0.011 |
+|     FSM.COSSET[6].DELAY[0].dl_metrics     |     0.006 |
+|       dl_inst                             |     0.006 |
+|     FSM.COSSET[6].DELAY[1].dl_labels      |     0.014 |
+|       dl_inst                             |     0.014 |
+|     FSM.COSSET[6].DELAY[1].dl_metrics     |     0.009 |
+|       dl_inst                             |     0.009 |
+|     FSM.COSSET[6].DELAY[2].dl_labels      |     0.015 |
+|       dl_inst                             |     0.015 |
+|     FSM.COSSET[6].DELAY[2].dl_metrics     |     0.010 |
+|       dl_inst                             |     0.010 |
+|     FSM.COSSET[6].merge_tree              |     0.265 |
+|       gen_layer[0].gen_node[0].merge_inst |     0.077 |
+|       gen_layer[0].gen_node[1].merge_inst |     0.077 |
+|       gen_layer[1].gen_node[0].merge_inst |     0.070 |
+|     FSM.COSSET[6].unite_lists             |     0.565 |
+|       genblk1_1.dut                       |     0.559 |
+|     FSM.COSSET[7].DELAY[0].dl_labels      |     0.011 |
+|       dl_inst                             |     0.011 |
+|     FSM.COSSET[7].DELAY[0].dl_metrics     |     0.006 |
+|       dl_inst                             |     0.006 |
+|     FSM.COSSET[7].DELAY[1].dl_labels      |     0.014 |
+|       dl_inst                             |     0.014 |
+|     FSM.COSSET[7].DELAY[1].dl_metrics     |     0.009 |
+|       dl_inst                             |     0.009 |
+|     FSM.COSSET[7].DELAY[2].dl_labels      |     0.015 |
+|       dl_inst                             |     0.015 |
+|     FSM.COSSET[7].DELAY[2].dl_metrics     |     0.010 |
+|       dl_inst                             |     0.010 |
+|     FSM.COSSET[7].merge_tree              |     0.265 |
+|       gen_layer[0].gen_node[0].merge_inst |     0.077 |
+|       gen_layer[0].gen_node[1].merge_inst |     0.077 |
+|       gen_layer[1].gen_node[0].merge_inst |     0.070 |
+|     FSM.COSSET[7].unite_lists             |     0.580 |
+|       genblk1_1.dut                       |     0.574 |
++-------------------------------------------+-----------+
+
+

@@ -3,7 +3,7 @@
 module tb_comb;
 
     parameter L       = 4;
-    parameter logic IS_STM = 1;
+    parameter logic IS_FSM = 1;
     parameter N       = 4;
     parameter N1      = 4;
     parameter N_COS   = 2;
@@ -38,7 +38,7 @@ module tb_comb;
 
     comb #(
         .L       (L),
-        .IS_STM  (IS_STM),
+        .IS_FSM  (IS_FSM),
         .N       (N),
         .N1      (N1),
         .N_COS   (N_COS),

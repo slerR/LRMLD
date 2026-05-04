@@ -2,16 +2,16 @@
 
 module list_delay #(
     parameter DELAY = 16,
-    parameter N_OUT = 4,
-    parameter WIDTH = 10 
+    parameter N_OUT  = 4,
+    parameter WIDTH  = 10
 ) (
-    input  logic             clk,
-    input  logic [WIDTH-1:0] i_data [0 : N_OUT - 1],
-    output logic [WIDTH-1:0] o_data [0 : N_OUT - 1]
+    input  wire clk,
+    input  wire [WIDTH-1:0] i_data [0 : N_OUT - 1],
+    output wire [WIDTH-1:0] o_data [0 : N_OUT - 1]
 );
 
-    logic [N_OUT*WIDTH-1:0] flat_in;
-    logic [N_OUT*WIDTH-1:0] flat_out;
+    wire [N_OUT*WIDTH-1:0] flat_in;
+    wire [N_OUT*WIDTH-1:0] flat_out;
 
     genvar i;
     generate
@@ -32,3 +32,5 @@ module list_delay #(
     );
 
 endmodule
+
+`default_nettype wire

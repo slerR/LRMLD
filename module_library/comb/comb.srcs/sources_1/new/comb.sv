@@ -1,10 +1,10 @@
 `timescale 1ns / 1ps
 
-// Если IS_STM = 1, то i_valid раз в N_U тактов
+// Если IS_FSM = 1, то i_valid раз в N_U тактов
 module comb#(
     parameter L            = 4,
     // 0 - на каждое объединение списков по unite_lists, 1 - используется конечный автомат
-    parameter logic IS_STM = 0,
+    parameter logic IS_FSM = 0,
     parameter  N           = 4,                 
     parameter  N1          = 4,
     parameter  N_COS       = 4,                 
@@ -43,7 +43,7 @@ module comb#(
 );
     
     generate 
-        if(!IS_STM) begin : SEQUANTIAL
+        if(!IS_FSM) begin : SEQUANTIAL
             // unite_lists output
             logic [METRIC_W - 1 : 0] u_metrics [0 : N_COS - 1][0 : N_U - 1][0 : N_OUT - 1];
             logic [  CONC_W - 1 : 0] u_labels  [0 : N_COS - 1][0 : N_U - 1][0 : N_OUT - 1];
@@ -177,12 +177,15 @@ module comb#(
                 logic [ N*METRIC_W - 1 : 0] mux_metrics;
                 logic [  N*LABEL_W - 1 : 0] mux_labels;
                 logic [N1*METRIC_W - 1 : 0] mux_metrics1;
-                logic [N1*LABEL_W1 - 1 : 0] mux_labels1;   
+                logic [N1*LABEL_W1 - 1 : 0] mux_labels1;  
                 
-                always_comb begin
-                    automatic logic [$clog2(N_COS) - 1 : 0] L_IDX = TBL[i][cur_phase][2*$clog2(N_COS) - 1 -: $clog2(N_COS)];
-                    automatic logic [$clog2(N_COS) - 1 : 0] R_IDX = TBL[i][cur_phase][  $clog2(N_COS) - 1 -: $clog2(N_COS)]; 
-                    
+                logic [$clog2(N_COS) - 1 : 0] L_IDX; 
+                logic [$clog2(N_COS) - 1 : 0] R_IDX;
+                
+                assign L_IDX = TBL[i][cur_phase][2*$clog2(N_COS) - 1 -: $clog2(N_COS)]; 
+                assign R_IDX = TBL[i][cur_phase][  $clog2(N_COS) - 1 -: $clog2(N_COS)];
+                
+                always_comb begin      
                     mux_metrics  =  metrics_r [L_IDX];
                     mux_labels   =  labels_r  [L_IDX];
                     mux_metrics1 =  metrics1_r[R_IDX];
