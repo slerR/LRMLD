@@ -22,19 +22,35 @@ module merge_tree # (
     localparam logic [METRIC_W - 1 : 0] MAX_METRIC = {METRIC_W{1'b1}};
     localparam logic [ LABEL_W - 1 : 0] L_PAD      = {LABEL_W{1'b0}};
 
+    logic [METRIC_W - 1 : 0]        i_m_r [NUM_LISTS][N_INPUTS];
+    logic [ LABEL_W - 1 : 0]        i_l_r [NUM_LISTS][N_INPUTS];
+    logic                           i_valid_r;
+
+    always_ff @(posedge clk) begin
+        i_valid_r <= i_valid;
+        if (i_valid) begin
+            for (int i = 0; i < NUM_LISTS; i++) begin
+                for (int j = 0; j < N_INPUTS; j++) begin
+                    i_m_r[i][j] <= i_m[i][j];
+                    i_l_r[i][j] <= i_l[i][j];
+                end
+            end
+        end
+    end
+
     logic [METRIC_W - 1 : 0]        tree_m [TREE_DEPTH + 1][NUM_LISTS][P_INPUTS];
     logic [ LABEL_W - 1 : 0]        tree_l [TREE_DEPTH + 1][NUM_LISTS][P_INPUTS];
     logic                           tree_v [TREE_DEPTH + 1];
     logic                           layer_v[TREE_DEPTH][NUM_LISTS];
 
-    assign tree_v[0] = i_valid;
+    assign tree_v[0] = i_valid_r;
 
     generate
         for (genvar i = 0; i < NUM_LISTS; i = i + 1) begin : gen_pad
             for (genvar j = 0; j < P_INPUTS; j = j + 1) begin : gen_pad_inner
                 if (j < N_INPUTS) begin
-                    assign tree_m[0][i][j] = i_m[i][j];
-                    assign tree_l[0][i][j] = i_l[i][j];
+                    assign tree_m[0][i][j] = i_m_r[i][j];
+                    assign tree_l[0][i][j] = i_l_r[i][j];
                 end else begin
                     assign tree_m[0][i][j] = MAX_METRIC;
                     assign tree_l[0][i][j] = L_PAD;
