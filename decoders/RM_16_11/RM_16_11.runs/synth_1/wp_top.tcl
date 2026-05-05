@@ -129,6 +129,8 @@ read_xdc C:/LRMLD/module_library/all_modules/constraints.xdc
 set_property used_in_implementation false [get_files C:/LRMLD/module_library/all_modules/constraints.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental C:/LRMLD/decoders/RM_16_11/RM_16_11.srcs/utils_1/imports/synth_1/wp_top.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

@@ -2,11 +2,11 @@
 
 module tb_top;
     
-    parameter LLR_W = 6;
+    parameter LLR_W    = 6;
     parameter MLABEL_W = 4;
     parameter METRIC_W = LLR_W + 2;
-    parameter L = 2;
-    parameter IS_FSM = 0;
+    parameter L        = 8;
+    parameter IS_FSM   = 0;
     
     logic clk;
     logic i_v;

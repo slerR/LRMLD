@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-| Date             : Tue May  5 02:14:42 2026
+| Date             : Tue May  5 23:23:10 2026
 | Host             : feduuk running 64-bit major release  (build 9200)
 | Command          : report_power -file wp_top_power_routed.rpt -pb wp_top_power_summary_routed.pb -rpx wp_top_power_routed.rpx
 | Design           : wp_top
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 3.717        |
+| Total On-Chip Power (W)  | 10.222       |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 3.203        |
-| Device Static (W)        | 0.514        |
+| Dynamic (W)              | 9.610        |
+| Device Static (W)        | 0.612        |
 | Effective TJA (C/W)      | 1.9          |
-| Max Ambient (C)          | 93.1         |
-| Junction Temperature (C) | 31.9         |
+| Max Ambient (C)          | 81.0         |
+| Junction Temperature (C) | 44.0         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,18 +52,18 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Clocks                  |     0.512 |        3 |       --- |             --- |
-| CLB Logic               |     1.348 |    44916 |       --- |             --- |
-|   LUT as Logic          |     1.000 |    17914 |    203128 |            8.82 |
-|   LUT as Shift Register |     0.202 |      963 |    112800 |            0.85 |
-|   Register              |     0.128 |    18079 |    406256 |            4.45 |
-|   CARRY8                |     0.018 |     1649 |     30300 |            5.44 |
-|   F7/F8 Muxes           |    <0.001 |      630 |    242400 |            0.26 |
-|   Others                |     0.000 |     2299 |       --- |             --- |
-| Signals                 |     1.266 |    19811 |       --- |             --- |
-| I/O                     |     0.077 |       34 |       312 |           10.90 |
-| Static Power            |     0.514 |          |           |                 |
-| Total                   |     3.717 |          |           |                 |
+| Clocks                  |     1.944 |        3 |       --- |             --- |
+| CLB Logic               |     3.663 |   149067 |       --- |             --- |
+|   LUT as Logic          |     2.934 |    55554 |    203128 |           27.35 |
+|   Register              |     0.517 |    75192 |    406256 |           18.51 |
+|   LUT as Shift Register |     0.205 |     1445 |    112800 |            1.28 |
+|   CARRY8                |     0.008 |     1956 |     30300 |            6.46 |
+|   F7/F8 Muxes           |    <0.001 |       72 |    242400 |            0.03 |
+|   Others                |     0.000 |     3726 |       --- |             --- |
+| Signals                 |     3.924 |    80956 |       --- |             --- |
+| I/O                     |     0.079 |       34 |       312 |           10.90 |
+| Static Power            |     0.612 |          |           |                 |
+| Total                   |    10.222 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,18 +73,18 @@ Table of Contents
 +------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source     | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint     |       0.950 |     3.466 |       3.290 |      0.176 |       NA    | Unspecified | NA         |
-| Vccaux     |       1.800 |     0.098 |       0.000 |      0.098 |       NA    | Unspecified | NA         |
+| Vccint     |       0.950 |    10.291 |      10.033 |      0.258 |       NA    | Unspecified | NA         |
+| Vccaux     |       1.800 |     0.102 |       0.000 |      0.102 |       NA    | Unspecified | NA         |
 | Vccaux_io  |       1.800 |     0.076 |       0.011 |      0.065 |       NA    | Unspecified | NA         |
-| Vccint_io  |       0.950 |     0.022 |       0.004 |      0.019 |       NA    | Unspecified | NA         |
+| Vccint_io  |       0.950 |     0.031 |       0.004 |      0.027 |       NA    | Unspecified | NA         |
 | Vcco33     |       3.300 |     0.003 |       0.003 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco25     |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vcco18     |       1.800 |     0.025 |       0.025 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco18     |       1.800 |     0.026 |       0.026 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15     |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco135    |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco12     |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco10     |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vccbram    |       0.950 |     0.012 |       0.000 |      0.012 |       NA    | Unspecified | NA         |
+| Vccbram    |       0.950 |     0.015 |       0.000 |      0.015 |       NA    | Unspecified | NA         |
 | MGTAVcc    |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTAVtt    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTVccaux  |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -148,126 +148,108 @@ Table of Contents
 +---------------------------------------------------+-----------+
 | Name                                              | Power (W) |
 +---------------------------------------------------+-----------+
-| wp_top                                            |     3.203 |
+| wp_top                                            |     9.610 |
 |   clk_IBUF_inst                                   |     0.011 |
-|   dut                                             |     3.112 |
-|     comb_0                                        |     1.282 |
-|       SEQUANTIAL.COSSET[0].UNATION[0].unite_lists |     0.063 |
-|       SEQUANTIAL.COSSET[0].UNATION[1].unite_lists |     0.058 |
-|       SEQUANTIAL.COSSET[0].UNATION[2].unite_lists |     0.062 |
-|       SEQUANTIAL.COSSET[0].UNATION[3].unite_lists |     0.062 |
-|       SEQUANTIAL.COSSET[0].merge_tree             |     0.015 |
-|       SEQUANTIAL.COSSET[1].UNATION[0].unite_lists |     0.065 |
-|       SEQUANTIAL.COSSET[1].UNATION[1].unite_lists |     0.064 |
-|       SEQUANTIAL.COSSET[1].UNATION[2].unite_lists |     0.066 |
-|       SEQUANTIAL.COSSET[1].UNATION[3].unite_lists |     0.065 |
-|       SEQUANTIAL.COSSET[1].merge_tree             |     0.015 |
-|       SEQUANTIAL.COSSET[2].UNATION[0].unite_lists |     0.028 |
-|       SEQUANTIAL.COSSET[2].UNATION[1].unite_lists |     0.033 |
-|       SEQUANTIAL.COSSET[2].UNATION[2].unite_lists |     0.028 |
-|       SEQUANTIAL.COSSET[2].UNATION[3].unite_lists |     0.028 |
-|       SEQUANTIAL.COSSET[2].merge_tree             |     0.014 |
-|       SEQUANTIAL.COSSET[3].UNATION[0].unite_lists |     0.031 |
-|       SEQUANTIAL.COSSET[3].UNATION[1].unite_lists |     0.029 |
-|       SEQUANTIAL.COSSET[3].UNATION[2].unite_lists |     0.028 |
-|       SEQUANTIAL.COSSET[3].UNATION[3].unite_lists |     0.030 |
-|       SEQUANTIAL.COSSET[3].merge_tree             |     0.014 |
-|       SEQUANTIAL.COSSET[4].UNATION[0].unite_lists |     0.027 |
-|       SEQUANTIAL.COSSET[4].UNATION[1].unite_lists |     0.030 |
-|       SEQUANTIAL.COSSET[4].UNATION[2].unite_lists |     0.029 |
-|       SEQUANTIAL.COSSET[4].UNATION[3].unite_lists |     0.028 |
-|       SEQUANTIAL.COSSET[4].merge_tree             |     0.014 |
-|       SEQUANTIAL.COSSET[5].UNATION[0].unite_lists |     0.029 |
-|       SEQUANTIAL.COSSET[5].UNATION[1].unite_lists |     0.029 |
-|       SEQUANTIAL.COSSET[5].UNATION[2].unite_lists |     0.029 |
-|       SEQUANTIAL.COSSET[5].UNATION[3].unite_lists |     0.028 |
-|       SEQUANTIAL.COSSET[5].merge_tree             |     0.014 |
-|       SEQUANTIAL.COSSET[6].UNATION[0].unite_lists |     0.028 |
-|       SEQUANTIAL.COSSET[6].UNATION[2].unite_lists |     0.027 |
-|       SEQUANTIAL.COSSET[6].UNATION[3].unite_lists |     0.029 |
-|       SEQUANTIAL.COSSET[6].merge_tree             |     0.013 |
-|       SEQUANTIAL.COSSET[7].UNATION[0].unite_lists |     0.029 |
-|       SEQUANTIAL.COSSET[7].UNATION[1].unite_lists |     0.029 |
-|       SEQUANTIAL.COSSET[7].UNATION[2].unite_lists |     0.029 |
-|       SEQUANTIAL.COSSET[7].UNATION[3].unite_lists |     0.028 |
-|       SEQUANTIAL.COSSET[7].merge_tree             |     0.014 |
-|     comb_8                                        |     1.275 |
-|       SEQUANTIAL.COSSET[0].UNATION[0].unite_lists |     0.061 |
-|       SEQUANTIAL.COSSET[0].UNATION[1].unite_lists |     0.059 |
-|       SEQUANTIAL.COSSET[0].UNATION[2].unite_lists |     0.063 |
-|       SEQUANTIAL.COSSET[0].UNATION[3].unite_lists |     0.062 |
-|       SEQUANTIAL.COSSET[0].merge_tree             |     0.015 |
-|       SEQUANTIAL.COSSET[1].UNATION[0].unite_lists |     0.065 |
-|       SEQUANTIAL.COSSET[1].UNATION[1].unite_lists |     0.066 |
-|       SEQUANTIAL.COSSET[1].UNATION[2].unite_lists |     0.063 |
-|       SEQUANTIAL.COSSET[1].UNATION[3].unite_lists |     0.062 |
-|       SEQUANTIAL.COSSET[1].merge_tree             |     0.015 |
-|       SEQUANTIAL.COSSET[2].UNATION[0].unite_lists |     0.028 |
-|       SEQUANTIAL.COSSET[2].UNATION[1].unite_lists |     0.029 |
-|       SEQUANTIAL.COSSET[2].UNATION[2].unite_lists |     0.030 |
-|       SEQUANTIAL.COSSET[2].UNATION[3].unite_lists |     0.029 |
-|       SEQUANTIAL.COSSET[2].merge_tree             |     0.014 |
-|       SEQUANTIAL.COSSET[3].UNATION[0].unite_lists |     0.028 |
-|       SEQUANTIAL.COSSET[3].UNATION[1].unite_lists |     0.028 |
-|       SEQUANTIAL.COSSET[3].UNATION[2].unite_lists |     0.029 |
-|       SEQUANTIAL.COSSET[3].UNATION[3].unite_lists |     0.028 |
-|       SEQUANTIAL.COSSET[3].merge_tree             |     0.015 |
-|       SEQUANTIAL.COSSET[4].UNATION[0].unite_lists |     0.028 |
-|       SEQUANTIAL.COSSET[4].UNATION[1].unite_lists |     0.031 |
-|       SEQUANTIAL.COSSET[4].UNATION[2].unite_lists |     0.029 |
-|       SEQUANTIAL.COSSET[4].UNATION[3].unite_lists |     0.028 |
-|       SEQUANTIAL.COSSET[4].merge_tree             |     0.014 |
-|       SEQUANTIAL.COSSET[5].UNATION[0].unite_lists |     0.028 |
-|       SEQUANTIAL.COSSET[5].UNATION[1].unite_lists |     0.028 |
-|       SEQUANTIAL.COSSET[5].UNATION[2].unite_lists |     0.028 |
-|       SEQUANTIAL.COSSET[5].UNATION[3].unite_lists |     0.028 |
-|       SEQUANTIAL.COSSET[5].merge_tree             |     0.014 |
-|       SEQUANTIAL.COSSET[6].UNATION[0].unite_lists |     0.029 |
-|       SEQUANTIAL.COSSET[6].UNATION[2].unite_lists |     0.028 |
-|       SEQUANTIAL.COSSET[6].UNATION[3].unite_lists |     0.029 |
-|       SEQUANTIAL.COSSET[6].merge_tree             |     0.013 |
-|       SEQUANTIAL.COSSET[7].UNATION[0].unite_lists |     0.029 |
-|       SEQUANTIAL.COSSET[7].UNATION[1].unite_lists |     0.030 |
-|       SEQUANTIAL.COSSET[7].UNATION[2].unite_lists |     0.029 |
-|       SEQUANTIAL.COSSET[7].UNATION[3].unite_lists |     0.029 |
-|       SEQUANTIAL.COSSET[7].merge_tree             |     0.014 |
-|     make_0                                        |     0.055 |
-|       coset[0].codeword[0].n_adder                |     0.004 |
-|       coset[0].codeword[1].n_adder                |     0.004 |
+|   dut                                             |     9.504 |
+|     comb_0                                        |     1.943 |
+|       SEQUANTIAL.COSSET[0].UNATION[0].unite_lists |     0.050 |
+|       SEQUANTIAL.COSSET[0].UNATION[1].unite_lists |     0.061 |
+|       SEQUANTIAL.COSSET[0].UNATION[2].unite_lists |     0.045 |
+|       SEQUANTIAL.COSSET[0].UNATION[3].unite_lists |     0.047 |
+|       SEQUANTIAL.COSSET[0].merge_tree             |     0.071 |
+|       SEQUANTIAL.COSSET[1].UNATION[0].unite_lists |     0.049 |
+|       SEQUANTIAL.COSSET[1].UNATION[1].unite_lists |     0.050 |
+|       SEQUANTIAL.COSSET[1].UNATION[2].unite_lists |     0.049 |
+|       SEQUANTIAL.COSSET[1].UNATION[3].unite_lists |     0.047 |
+|       SEQUANTIAL.COSSET[1].merge_tree             |     0.066 |
+|       SEQUANTIAL.COSSET[2].UNATION[0].unite_lists |     0.041 |
+|       SEQUANTIAL.COSSET[2].UNATION[1].unite_lists |     0.042 |
+|       SEQUANTIAL.COSSET[2].UNATION[2].unite_lists |     0.041 |
+|       SEQUANTIAL.COSSET[2].UNATION[3].unite_lists |     0.044 |
+|       SEQUANTIAL.COSSET[2].merge_tree             |     0.063 |
+|       SEQUANTIAL.COSSET[3].UNATION[0].unite_lists |     0.046 |
+|       SEQUANTIAL.COSSET[3].UNATION[1].unite_lists |     0.046 |
+|       SEQUANTIAL.COSSET[3].UNATION[2].unite_lists |     0.045 |
+|       SEQUANTIAL.COSSET[3].UNATION[3].unite_lists |     0.047 |
+|       SEQUANTIAL.COSSET[3].merge_tree             |     0.062 |
+|       SEQUANTIAL.COSSET[4].UNATION[0].unite_lists |     0.044 |
+|       SEQUANTIAL.COSSET[4].UNATION[1].unite_lists |     0.047 |
+|       SEQUANTIAL.COSSET[4].UNATION[2].unite_lists |     0.044 |
+|       SEQUANTIAL.COSSET[4].UNATION[3].unite_lists |     0.045 |
+|       SEQUANTIAL.COSSET[4].merge_tree             |     0.066 |
+|       SEQUANTIAL.COSSET[5].UNATION[0].unite_lists |     0.045 |
+|       SEQUANTIAL.COSSET[5].UNATION[1].unite_lists |     0.041 |
+|       SEQUANTIAL.COSSET[5].UNATION[2].unite_lists |     0.044 |
+|       SEQUANTIAL.COSSET[5].UNATION[3].unite_lists |     0.043 |
+|       SEQUANTIAL.COSSET[5].merge_tree             |     0.067 |
+|       SEQUANTIAL.COSSET[6].UNATION[0].unite_lists |     0.046 |
+|       SEQUANTIAL.COSSET[6].UNATION[2].unite_lists |     0.047 |
+|       SEQUANTIAL.COSSET[6].UNATION[3].unite_lists |     0.047 |
+|       SEQUANTIAL.COSSET[6].merge_tree             |     0.065 |
+|       SEQUANTIAL.COSSET[7].UNATION[0].unite_lists |     0.042 |
+|       SEQUANTIAL.COSSET[7].UNATION[1].unite_lists |     0.043 |
+|       SEQUANTIAL.COSSET[7].UNATION[2].unite_lists |     0.043 |
+|       SEQUANTIAL.COSSET[7].UNATION[3].unite_lists |     0.043 |
+|       SEQUANTIAL.COSSET[7].merge_tree             |     0.067 |
+|     comb_8                                        |     1.940 |
+|       SEQUANTIAL.COSSET[0].UNATION[0].unite_lists |     0.048 |
+|       SEQUANTIAL.COSSET[0].UNATION[1].unite_lists |     0.047 |
+|       SEQUANTIAL.COSSET[0].UNATION[2].unite_lists |     0.047 |
+|       SEQUANTIAL.COSSET[0].UNATION[3].unite_lists |     0.045 |
+|       SEQUANTIAL.COSSET[0].merge_tree             |     0.066 |
+|       SEQUANTIAL.COSSET[1].UNATION[0].unite_lists |     0.047 |
+|       SEQUANTIAL.COSSET[1].UNATION[1].unite_lists |     0.049 |
+|       SEQUANTIAL.COSSET[1].UNATION[2].unite_lists |     0.046 |
+|       SEQUANTIAL.COSSET[1].UNATION[3].unite_lists |     0.048 |
+|       SEQUANTIAL.COSSET[1].merge_tree             |     0.063 |
+|       SEQUANTIAL.COSSET[2].UNATION[0].unite_lists |     0.042 |
+|       SEQUANTIAL.COSSET[2].UNATION[1].unite_lists |     0.042 |
+|       SEQUANTIAL.COSSET[2].UNATION[2].unite_lists |     0.044 |
+|       SEQUANTIAL.COSSET[2].UNATION[3].unite_lists |     0.044 |
+|       SEQUANTIAL.COSSET[2].merge_tree             |     0.071 |
+|       SEQUANTIAL.COSSET[3].UNATION[0].unite_lists |     0.049 |
+|       SEQUANTIAL.COSSET[3].UNATION[1].unite_lists |     0.043 |
+|       SEQUANTIAL.COSSET[3].UNATION[2].unite_lists |     0.047 |
+|       SEQUANTIAL.COSSET[3].UNATION[3].unite_lists |     0.048 |
+|       SEQUANTIAL.COSSET[3].merge_tree             |     0.061 |
+|       SEQUANTIAL.COSSET[4].UNATION[0].unite_lists |     0.044 |
+|       SEQUANTIAL.COSSET[4].UNATION[1].unite_lists |     0.042 |
+|       SEQUANTIAL.COSSET[4].UNATION[2].unite_lists |     0.043 |
+|       SEQUANTIAL.COSSET[4].UNATION[3].unite_lists |     0.045 |
+|       SEQUANTIAL.COSSET[4].merge_tree             |     0.066 |
+|       SEQUANTIAL.COSSET[5].UNATION[0].unite_lists |     0.045 |
+|       SEQUANTIAL.COSSET[5].UNATION[1].unite_lists |     0.047 |
+|       SEQUANTIAL.COSSET[5].UNATION[2].unite_lists |     0.045 |
+|       SEQUANTIAL.COSSET[5].UNATION[3].unite_lists |     0.045 |
+|       SEQUANTIAL.COSSET[5].merge_tree             |     0.065 |
+|       SEQUANTIAL.COSSET[6].UNATION[0].unite_lists |     0.046 |
+|       SEQUANTIAL.COSSET[6].UNATION[2].unite_lists |     0.043 |
+|       SEQUANTIAL.COSSET[6].UNATION[3].unite_lists |     0.044 |
+|       SEQUANTIAL.COSSET[6].merge_tree             |     0.064 |
+|       SEQUANTIAL.COSSET[7].UNATION[0].unite_lists |     0.049 |
+|       SEQUANTIAL.COSSET[7].UNATION[1].unite_lists |     0.049 |
+|       SEQUANTIAL.COSSET[7].UNATION[2].unite_lists |     0.047 |
+|       SEQUANTIAL.COSSET[7].UNATION[3].unite_lists |     0.050 |
+|       SEQUANTIAL.COSSET[7].merge_tree             |     0.063 |
+|     make_0                                        |     0.164 |
+|       coset[0].codeword[0].n_adder                |     0.006 |
+|       coset[0].codeword[1].n_adder                |     0.005 |
 |       coset[1].codeword[0].n_adder                |     0.001 |
-|       coset[1].codeword[1].n_adder                |     0.002 |
-|       coset[2].codeword[0].n_adder                |     0.002 |
-|       coset[2].codeword[1].n_adder                |     0.001 |
+|       coset[1].codeword[1].n_adder                |     0.001 |
+|       coset[2].codeword[0].n_adder                |     0.001 |
+|       coset[2].codeword[1].n_adder                |     0.002 |
 |       coset[3].codeword[0].n_adder                |     0.001 |
 |       coset[3].codeword[1].n_adder                |     0.001 |
 |       coset[4].codeword[0].n_adder                |     0.002 |
-|       coset[4].codeword[1].n_adder                |     0.002 |
-|       coset[5].codeword[0].n_adder                |     0.001 |
+|       coset[4].codeword[1].n_adder                |     0.001 |
+|       coset[5].codeword[0].n_adder                |     0.002 |
 |       coset[5].codeword[1].n_adder                |     0.001 |
 |       coset[6].codeword[0].n_adder                |     0.001 |
 |       coset[6].codeword[1].n_adder                |     0.001 |
 |       coset[7].codeword[0].n_adder                |     0.002 |
 |       coset[7].codeword[1].n_adder                |     0.002 |
-|       dut                                         |     0.017 |
-|     make_12                                       |     0.053 |
-|       coset[0].codeword[0].n_adder                |     0.004 |
-|       coset[0].codeword[1].n_adder                |     0.005 |
-|       coset[1].codeword[0].n_adder                |     0.001 |
-|       coset[1].codeword[1].n_adder                |     0.001 |
-|       coset[2].codeword[0].n_adder                |     0.001 |
-|       coset[2].codeword[1].n_adder                |     0.001 |
-|       coset[3].codeword[0].n_adder                |     0.001 |
-|       coset[3].codeword[1].n_adder                |     0.001 |
-|       coset[4].codeword[0].n_adder                |     0.001 |
-|       coset[4].codeword[1].n_adder                |     0.002 |
-|       coset[5].codeword[0].n_adder                |     0.001 |
-|       coset[5].codeword[1].n_adder                |     0.001 |
-|       coset[6].codeword[0].n_adder                |     0.001 |
-|       coset[6].codeword[1].n_adder                |     0.001 |
-|       coset[7].codeword[0].n_adder                |     0.001 |
-|       coset[7].codeword[1].n_adder                |     0.001 |
-|       dut                                         |     0.016 |
-|     make_4                                        |     0.054 |
+|       dut                                         |     0.130 |
+|     make_12                                       |     0.156 |
 |       coset[0].codeword[0].n_adder                |     0.005 |
 |       coset[0].codeword[1].n_adder                |     0.005 |
 |       coset[1].codeword[0].n_adder                |     0.002 |
@@ -276,43 +258,61 @@ Table of Contents
 |       coset[2].codeword[1].n_adder                |     0.001 |
 |       coset[3].codeword[0].n_adder                |     0.001 |
 |       coset[3].codeword[1].n_adder                |     0.001 |
-|       coset[4].codeword[0].n_adder                |     0.001 |
-|       coset[4].codeword[1].n_adder                |     0.001 |
-|       coset[5].codeword[0].n_adder                |     0.001 |
-|       coset[5].codeword[1].n_adder                |     0.001 |
+|       coset[4].codeword[0].n_adder                |     0.002 |
+|       coset[4].codeword[1].n_adder                |     0.002 |
+|       coset[5].codeword[0].n_adder                |     0.002 |
+|       coset[5].codeword[1].n_adder                |     0.002 |
 |       coset[6].codeword[0].n_adder                |     0.001 |
 |       coset[6].codeword[1].n_adder                |     0.001 |
-|       coset[7].codeword[0].n_adder                |     0.001 |
-|       coset[7].codeword[1].n_adder                |     0.001 |
-|       dut                                         |     0.017 |
-|     make_8                                        |     0.053 |
+|       coset[7].codeword[0].n_adder                |     0.002 |
+|       coset[7].codeword[1].n_adder                |     0.002 |
+|       dut                                         |     0.123 |
+|     make_4                                        |     0.145 |
 |       coset[0].codeword[0].n_adder                |     0.005 |
 |       coset[0].codeword[1].n_adder                |     0.005 |
 |       coset[1].codeword[0].n_adder                |     0.001 |
 |       coset[1].codeword[1].n_adder                |     0.001 |
-|       coset[2].codeword[0].n_adder                |     0.001 |
-|       coset[2].codeword[1].n_adder                |     0.001 |
+|       coset[2].codeword[0].n_adder                |     0.002 |
+|       coset[2].codeword[1].n_adder                |     0.002 |
 |       coset[3].codeword[0].n_adder                |     0.001 |
+|       coset[3].codeword[1].n_adder                |     0.001 |
+|       coset[4].codeword[0].n_adder                |     0.002 |
+|       coset[4].codeword[1].n_adder                |     0.002 |
+|       coset[5].codeword[0].n_adder                |     0.002 |
+|       coset[5].codeword[1].n_adder                |     0.002 |
+|       coset[6].codeword[0].n_adder                |     0.001 |
+|       coset[6].codeword[1].n_adder                |     0.002 |
+|       coset[7].codeword[0].n_adder                |     0.002 |
+|       coset[7].codeword[1].n_adder                |     0.002 |
+|       dut                                         |     0.111 |
+|     make_8                                        |     0.159 |
+|       coset[0].codeword[0].n_adder                |     0.005 |
+|       coset[0].codeword[1].n_adder                |     0.005 |
+|       coset[1].codeword[0].n_adder                |     0.002 |
+|       coset[1].codeword[1].n_adder                |     0.002 |
+|       coset[2].codeword[0].n_adder                |     0.002 |
+|       coset[2].codeword[1].n_adder                |     0.002 |
+|       coset[3].codeword[0].n_adder                |     0.002 |
 |       coset[3].codeword[1].n_adder                |     0.001 |
 |       coset[4].codeword[0].n_adder                |     0.001 |
 |       coset[4].codeword[1].n_adder                |     0.001 |
 |       coset[5].codeword[0].n_adder                |     0.001 |
 |       coset[5].codeword[1].n_adder                |     0.001 |
 |       coset[6].codeword[0].n_adder                |     0.001 |
-|       coset[6].codeword[1].n_adder                |     0.001 |
-|       coset[7].codeword[0].n_adder                |     0.001 |
-|       coset[7].codeword[1].n_adder                |     0.001 |
-|       dut                                         |     0.016 |
-|     top_comb                                      |     0.341 |
-|       COSSET[0].unite_lists                       |     0.037 |
-|       COSSET[1].unite_lists                       |     0.038 |
-|       COSSET[2].unite_lists                       |     0.037 |
-|       COSSET[3].unite_lists                       |     0.041 |
-|       COSSET[4].unite_lists                       |     0.037 |
-|       COSSET[5].unite_lists                       |     0.040 |
-|       COSSET[6].unite_lists                       |     0.039 |
-|       COSSET[7].unite_lists                       |     0.039 |
-|       merge_tree                                  |     0.034 |
+|       coset[6].codeword[1].n_adder                |     0.002 |
+|       coset[7].codeword[0].n_adder                |     0.002 |
+|       coset[7].codeword[1].n_adder                |     0.002 |
+|       dut                                         |     0.126 |
+|     top_comb                                      |     4.302 |
+|       COSSET[0].unite_lists                       |     0.476 |
+|       COSSET[1].unite_lists                       |     0.461 |
+|       COSSET[2].unite_lists                       |     0.499 |
+|       COSSET[3].unite_lists                       |     0.468 |
+|       COSSET[4].unite_lists                       |     0.463 |
+|       COSSET[5].unite_lists                       |     0.487 |
+|       COSSET[6].unite_lists                       |     0.460 |
+|       COSSET[7].unite_lists                       |     0.492 |
+|       merge_tree                                  |     0.497 |
 +---------------------------------------------------+-----------+
 
 

@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="583.001 ns"></ZoomEndTime>
-      <Cursor1Time time="105.000 ns"></Cursor1Time>
+      <ZoomStartTime time="205.834 ns"></ZoomStartTime>
+      <ZoomEndTime time="720.834 ns"></ZoomEndTime>
+      <Cursor1Time time="535.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="221"></NameColumnWidth>
-      <ValueColumnWidth column_width="91"></ValueColumnWidth>
+      <ValueColumnWidth column_width="86"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="6" />
+   <WVObjectSize size="9" />
    <wvobject fp_name="/tb_top/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -33,17 +33,147 @@
       <obj_property name="ObjectShortName">i_llr[0:15][5:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_top/o_m" type="array">
-      <obj_property name="ElementShortName">o_m[0:1][7:0]</obj_property>
-      <obj_property name="ObjectShortName">o_m[0:1][7:0]</obj_property>
+      <obj_property name="ElementShortName">o_m[0:7][7:0]</obj_property>
+      <obj_property name="ObjectShortName">o_m[0:7][7:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_top/o_l" type="array">
-      <obj_property name="ElementShortName">o_l[0:1][15:0]</obj_property>
-      <obj_property name="ObjectShortName">o_l[0:1][15:0]</obj_property>
+      <obj_property name="ElementShortName">o_l[0:7][15:0]</obj_property>
+      <obj_property name="ObjectShortName">o_l[0:7][15:0]</obj_property>
       <obj_property name="Radix">BINARYRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_top/o_v" type="logic">
       <obj_property name="ElementShortName">o_v</obj_property>
       <obj_property name="ObjectShortName">o_v</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/dut/comb_0/\SEQUANTIAL.m_metrics " type="array">
+      <obj_property name="ElementShortName">\SEQUANTIAL.m_metrics [0:7][0:3][7:0]</obj_property>
+      <obj_property name="ObjectShortName">\SEQUANTIAL.m_metrics [0:7][0:3][7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_top/dut/comb_0/\SEQUANTIAL.m_metrics [0]" type="array">
+         <obj_property name="ElementShortName">[0][0:3][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][0:3][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/dut/comb_0/\SEQUANTIAL.m_metrics [1]" type="array">
+         <obj_property name="ElementShortName">[1][0:3][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][0:3][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/dut/comb_0/\SEQUANTIAL.m_metrics [2]" type="array">
+         <obj_property name="ElementShortName">[2][0:3][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][0:3][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/dut/comb_0/\SEQUANTIAL.m_metrics [3]" type="array">
+         <obj_property name="ElementShortName">[3][0:3][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][0:3][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/dut/comb_0/\SEQUANTIAL.m_metrics [4]" type="array">
+         <obj_property name="ElementShortName">[4][0:3][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][0:3][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/dut/comb_0/\SEQUANTIAL.m_metrics [5]" type="array">
+         <obj_property name="ElementShortName">[5][0:3][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][0:3][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/dut/comb_0/\SEQUANTIAL.m_metrics [6]" type="array">
+         <obj_property name="ElementShortName">[6][0:3][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[6][0:3][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/dut/comb_0/\SEQUANTIAL.m_metrics [7]" type="array">
+         <obj_property name="ElementShortName">[7][0:3][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[7][0:3][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb_top/dut/comb_8/\SEQUANTIAL.m_metrics " type="array">
+      <obj_property name="ElementShortName">\SEQUANTIAL.m_metrics [0:7][0:3][7:0]</obj_property>
+      <obj_property name="ObjectShortName">\SEQUANTIAL.m_metrics [0:7][0:3][7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_top/dut/comb_8/\SEQUANTIAL.m_metrics [0]" type="array">
+         <obj_property name="ElementShortName">[0][0:3][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][0:3][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/dut/comb_8/\SEQUANTIAL.m_metrics [1]" type="array">
+         <obj_property name="ElementShortName">[1][0:3][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][0:3][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/dut/comb_8/\SEQUANTIAL.m_metrics [2]" type="array">
+         <obj_property name="ElementShortName">[2][0:3][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][0:3][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/dut/comb_8/\SEQUANTIAL.m_metrics [3]" type="array">
+         <obj_property name="ElementShortName">[3][0:3][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][0:3][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/dut/comb_8/\SEQUANTIAL.m_metrics [4]" type="array">
+         <obj_property name="ElementShortName">[4][0:3][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][0:3][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/dut/comb_8/\SEQUANTIAL.m_metrics [5]" type="array">
+         <obj_property name="ElementShortName">[5][0:3][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][0:3][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/dut/comb_8/\SEQUANTIAL.m_metrics [6]" type="array">
+         <obj_property name="ElementShortName">[6][0:3][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[6][0:3][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/dut/comb_8/\SEQUANTIAL.m_metrics [7]" type="array">
+         <obj_property name="ElementShortName">[7][0:3][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[7][0:3][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb_top/dut/top_comb/u_metrics" type="array">
+      <obj_property name="ElementShortName">u_metrics[0:7][0:7][7:0]</obj_property>
+      <obj_property name="ObjectShortName">u_metrics[0:7][0:7][7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <wvobject fp_name="/tb_top/dut/top_comb/u_metrics[0]" type="array">
+         <obj_property name="ElementShortName">[0][0:7][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][0:7][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/dut/top_comb/u_metrics[1]" type="array">
+         <obj_property name="ElementShortName">[1][0:7][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][0:7][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/dut/top_comb/u_metrics[2]" type="array">
+         <obj_property name="ElementShortName">[2][0:7][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][0:7][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/dut/top_comb/u_metrics[3]" type="array">
+         <obj_property name="ElementShortName">[3][0:7][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][0:7][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/dut/top_comb/u_metrics[4]" type="array">
+         <obj_property name="ElementShortName">[4][0:7][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][0:7][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/dut/top_comb/u_metrics[5]" type="array">
+         <obj_property name="ElementShortName">[5][0:7][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][0:7][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/dut/top_comb/u_metrics[6]" type="array">
+         <obj_property name="ElementShortName">[6][0:7][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[6][0:7][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/dut/top_comb/u_metrics[7]" type="array">
+         <obj_property name="ElementShortName">[7][0:7][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[7][0:7][7:0]</obj_property>
+      </wvobject>
    </wvobject>
 </wave_config>

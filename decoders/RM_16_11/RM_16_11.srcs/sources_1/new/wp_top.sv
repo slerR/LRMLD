@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 
 module wp_top #(
-    parameter L          = 2,
+    parameter L          = 8,
     parameter IS_FSM     = 0,
     parameter LLR_W      = 6,
     localparam MLABEL_W  = 4,

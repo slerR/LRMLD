@@ -113,7 +113,7 @@ module top #(
         .o_valid  (v_m12         )
     );
     
-    parameter N_OUT  = L;
+    parameter N_OUT  = 4;
     parameter CONC_W = 2*MLABEL_W;
     
     logic [N_OUT*METRIC_W - 1 : 0] m_c0 [0 : N_COS - 1];
