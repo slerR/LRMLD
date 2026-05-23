@@ -506,7 +506,6 @@ end
         end
         
         lines{end+1} = sprintf('endmodule');
-        lines{end+1} = sprintf('`default_nettype none');
         lines{end+1} = sprintf('');
         lines{end+1} = sprintf('`timescale 1ns / 1ps');
 
