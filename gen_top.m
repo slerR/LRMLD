@@ -267,62 +267,44 @@ end
         end
     end
 
-    function Lat = comb_latency(FSM, n, n1, L, N_COS, N_U)
+   function Lat = comb_latency(FSM, n, n1, L, N_COS, N_U)
         [nout, total_comb] = comb_out_count(n, n1, L);
-        if FSM == 0
-            if (n >= L) && (n1 >= L)
-                n_blocks = ceil(L/4);
-                Lat = 1+1+ceil(log2(N_U))*ceil(log2(2*nout));
-                if n_blocks == 1
-                    Lat = Lat+3;
-                elseif n_blocks == 2
-                    Lat = Lat+7;
-                elseif n_blocks == 3
-                    Lat = Lat+11;
-                else
-                    Lat = Lat+13;
-                end
-            else        
-                Lat = 4+ceil(log2(total_comb))*(ceil(log2(total_comb))+1)/2+...
-                      1+ceil(log2(N_U))*ceil(log2(2*nout));
-            end
-        elseif FSM == 1
-            if (n >= L) && (n1 >= L)
-                n_blocks = ceil(L/4);
-                Lat = 1+1+ceil(log2(N_U))*ceil(log2(2*nout))+N_U;
-                if n_blocks == 1
-                    Lat = Lat+3;
-                elseif n_blocks == 2
-                    Lat = Lat+7;
-                elseif n_blocks == 3
-                    Lat = Lat+11;
-                else
-                    Lat = Lat+13;
-                end
+        
+        if (n >= L) && (n1 >= L)
+            n_blocks = ceil(L/4);
+            if n_blocks == 1
+                ss_lat = 3;
+            elseif n_blocks == 2
+                ss_lat = 7;
+            elseif n_blocks == 3
+                ss_lat = 11;
             else
-                Lat = 4+ceil(log2(total_comb))*(ceil(log2(total_comb))+1)/2+...
-                      1+ceil(log2(N_U))*ceil(log2(2*nout)) + N_U;
+                ss_lat = 13;
             end
+            base_lat = 1 + ss_lat; 
         else
-            if (n >= L) && (n1 >= L)
-                n_blocks = ceil(L/4);
-                Lat = 1+1+ceil(log2(N_U))*ceil(log2(2*nout))+ N_COS + 1;
-                if n_blocks == 1
-                    Lat = Lat+3;
-                elseif n_blocks == 2
-                    Lat = Lat+7;
-                elseif n_blocks == 3
-                    Lat = Lat+11;
-                else
-                    Lat = Lat+13;
-                end
+            if total_comb <= 2
+                sort_lat = 1;
+            elseif total_comb <= 4
+                sort_lat = 2; 
+            elseif total_comb <= 8
+                sort_lat = 6;
             else
-                Lat = 4+ceil(log2(total_comb))*(ceil(log2(total_comb))+1)/2+...
-                      1+ceil(log2(N_U))*ceil(log2(2*nout)) + N_COS + 1;
+                sort_lat = ceil(log2(total_comb)) * (ceil(log2(total_comb)) + 1) / 2;
             end
+            base_lat = 1 + sort_lat;
+        end
+        
+        mt_lat = 1 + ceil(log2(N_U))*ceil(log2(2*nout));
+        
+        if FSM == 0
+            Lat = base_lat + mt_lat;
+        elseif FSM == 1
+            Lat = base_lat + mt_lat + N_U;
+        else 
+            Lat = base_lat + mt_lat + N_COS + 1;
         end 
     end
-
     
     % help function for assign_params - calculating L_OUT for comb
     function [nout, total_comb] = comb_out_count(n, n1, L)
