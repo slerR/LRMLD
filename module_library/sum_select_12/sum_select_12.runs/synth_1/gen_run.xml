@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xcku035-fbva676-1-i" LaunchTime="1777327604" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/SS12_wrapper.dcp">
   <File Type="PA-TCL" Name="SS12_wrapper.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="SS12_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="SS12_wrapper_reports.tcl"/>
   <File Type="RDS-RDS" Name="SS12_wrapper.vds"/>
   <File Type="RDS-UTIL" Name="SS12_wrapper_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="SS12_wrapper_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="SS12_wrapper.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="SS12_wrapper_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="SS12_wrapper_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/bitonic_merge_4_4_ir.sv">

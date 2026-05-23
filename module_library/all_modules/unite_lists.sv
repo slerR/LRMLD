@@ -1,5 +1,12 @@
 `timescale 1ns / 1ps
 
+
+// Latency, cycles: (N >= L && N1 >= L) ? (1 + (N_BLOCKS == 1) ? 3 : (N_BLOCKS == 2) ? 7 : (N_BLOCKS == 3) ? 
+// 11 : 13) : 4 + log(TOTAL_COMBO) * (log(TOTAL_COMBO) + 1) / 2)
+// Note about TOTAL_COMBO:  
+// localparam N_LIM       = (N * N1 < L) ? N  : ( (L <= 4) ? 2 : (L <= 6) ? 2 : (L <= 9) ? 3 : (L <= 12) ? 3 : 4 ),
+// localparam N1_LIM      = (N * N1 < L) ? N1 : ( (L <= 4) ? 2 : (L <= 6) ? 3 : (L <= 9) ? 3 : (L <= 12) ? 4 : 4 ),
+// localparam TOTAL_COMBO = N_LIM * N1_LIM,
 module unite_lists#(
     parameter  L           = 7,
     parameter  N           = 7,

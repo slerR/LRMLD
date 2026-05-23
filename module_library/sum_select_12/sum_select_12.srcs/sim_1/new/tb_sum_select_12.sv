@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module tb_sum_select_16;
+module tb_sum_select_12;
     parameter M_W = 10;
     parameter L_W = 6;
     parameter L_W1 = 6;

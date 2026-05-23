@@ -1,5 +1,6 @@
 `timescale 1ns / 1ps
 
+// Latency, cycles: (N < 3) ? 1 : (N < 5) ? : 2 : 6
 module sml_list_sort #(
     parameter METRIC_W = 10,
     parameter LABEL_W  = 8,

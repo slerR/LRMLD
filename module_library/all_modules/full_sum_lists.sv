@@ -35,12 +35,12 @@ module full_sum_lists#(
     
     always_comb begin
         for(int i = 0; i < N_LIM; i++) begin
-            unpacked_m[i] = i_metrics[(i + 1) * METRIC_W - 1 -: METRIC_W];
-            unpacked_l[i] = i_labels [  (i + 1) * LABEL_W - 1 -: LABEL_W];
+            unpacked_m[i] = i_metrics[N*METRIC_W - 1 - i*METRIC_W -: METRIC_W];
+            unpacked_l[i] = i_labels [  N*LABEL_W - 1 - i*LABEL_W -: LABEL_W ];
         end
         for(int i = 0; i < N1_LIM; i++) begin
-            unpacked_m1[i] = i_metrics1[(i + 1) * METRIC_W - 1 -: METRIC_W];
-            unpacked_l1[i] = i_labels1 [(i + 1) * LABEL_W1 - 1 -: LABEL_W1];
+            unpacked_m1[i] = i_metrics1[N1*METRIC_W - 1 - i*METRIC_W -: METRIC_W];
+            unpacked_l1[i] = i_labels1 [ N*LABEL_W1 - 1 - i*LABEL_W1 -: LABEL_W1];
         end
     end
     

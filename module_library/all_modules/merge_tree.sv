@@ -1,3 +1,5 @@
+// Latency, cycles: 1 + log(NUM_LISTS)*$countones({log(2*N_INPUTS){1'b1}})
+// Default Latency, cycles: 1 + log(NUM_LISTS)*log(2*N_INPUTS)
 module merge_tree # (
     parameter                       NUM_LISTS = 5,
     parameter                       N_INPUTS  = 4,

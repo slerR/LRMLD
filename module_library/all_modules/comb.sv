@@ -1,5 +1,13 @@
 `timescale 1ns / 1ps
 
+// Total Latency, cycles:
+// 1) IS_FSM = 0: (N >= L && N1 >= L) ? (1 + (N_BLOCKS == 1) ? 3 : (N_BLOCKS == 2) ? 7 : (N_BLOCKS == 3) ? 
+// 11 : 13) : 4 + log(TOTAL_COMBO) * (log(TOTAL_COMBO) + 1) / 2) +  1 + log(N_U)*$countones({log(2*N_OUT){1'b1}})
+
+// 2) IS_FSM = 1: (N >= L && N1 >= L) ? (1 + (N_BLOCKS == 1) ? 3 : (N_BLOCKS == 2) ? 7 : (N_BLOCKS == 3) ? 
+// 11 : 13) : 4 + log(TOTAL_COMBO) * (log(TOTAL_COMBO) + 1) / 2) +  1 + log(N_U)*$countones({log(2*N_OUT){1'b1}}) + N_U
+
+// Default merge tree Latency, cycles: 1 + log(N_U)*log(2*N_OUT)
 // Если IS_FSM = 1, то i_valid раз в N_U тактов, при этом задержка + N_U cycles
 module comb#(
     parameter L            = 4,

@@ -1,5 +1,6 @@
 `timescale 1ns / 1ps
 
+// Total Latency: log2(LABEL_W) + 2 + (N < 3) ? 1 : (N < 5) ? : 2 : 6
 module make#(
     parameter LLR_W   = 6,
     parameter LABEL_W = 4,
@@ -98,7 +99,7 @@ module make#(
         .LABEL_W (LABEL_W ),
         .N_COS   (N_COS   ),
         .N       (N       )
-    )dut (
+    )table_sort (
         .clk      (clk      ),
         .i_valid  (m_valid  ),
         .i_metrics(sum      ),
