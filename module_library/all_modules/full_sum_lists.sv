@@ -9,8 +9,10 @@ module full_sum_lists#(
     parameter  LABEL_W     = 2,
     parameter  LABEL_W1    = 3,
     localparam CONC_W      = LABEL_W + LABEL_W1,
-    localparam N_LIM       = (N * N1 < L) ? N  : ( (L <= 4) ? 2 : (L <= 6) ? 2 : (L <= 9) ? 3 : (L <= 12) ? 3 : 4 ),
-    localparam N1_LIM      = (N * N1 < L) ? N1 : ( (L <= 4) ? 2 : (L <= 6) ? 3 : (L <= 9) ? 3 : (L <= 12) ? 4 : 4 ),
+    localparam B_N  = (L <= 4) ? 2 : (L <= 6) ? 2 : (L <= 9) ? 3 : (L <= 12) ? 3 : 4,
+    localparam B_N1 = (L <= 4) ? 2 : (L <= 6) ? 3 : (L <= 9) ? 3 : (L <= 12) ? 4 : 4,
+    localparam N_LIM  = (N * N1 < L) ? N  : (N < B_N) ? N : (N1 < B_N1) ? ((L + N1 - 1) / N1) : B_N,
+    localparam N1_LIM = (N * N1 < L) ? N1 : (N1 < B_N1) ? N1 : (N < B_N)  ? ((L +  N - 1) / N)  : B_N1,
     localparam TOTAL_COMBO = N_LIM * N1_LIM,
     parameter  L_OUT       = (TOTAL_COMBO < L) ? TOTAL_COMBO : L,
     localparam [METRIC_W-1 : 0] MAX_METRIC = {METRIC_W{1'b1}}
@@ -40,7 +42,7 @@ module full_sum_lists#(
         end
         for(int i = 0; i < N1_LIM; i++) begin
             unpacked_m1[i] = i_metrics1[N1*METRIC_W - 1 - i*METRIC_W -: METRIC_W];
-            unpacked_l1[i] = i_labels1 [ N*LABEL_W1 - 1 - i*LABEL_W1 -: LABEL_W1];
+            unpacked_l1[i] = i_labels1 [N1*LABEL_W1 - 1 - i*LABEL_W1 -: LABEL_W1];
         end
     end
     
@@ -64,46 +66,46 @@ module full_sum_lists#(
         end 
     end
     
-    logic [ TOTAL_COMBO * METRIC_W - 1 : 0 ] sum_packed;
-    logic [ TOTAL_COMBO * CONC_W   - 1 : 0 ] conc_packed;
-    logic                                    v_sum;
+    logic [METRIC_W - 1 : 0 ] sum  [0 : TOTAL_COMBO - 1];
+    logic [CONC_W   - 1 : 0 ] conc [0 : TOTAL_COMBO - 1];
+    logic                     v_sum;
     
-    always_ff @(posedge clk) begin
-        v_sum <= v_rep;
+    always_comb begin
+        v_sum = v_rep;
         for(int i = 0; i < N_LIM; i++) begin
             for(int j = 0; j < N1_LIM; j++) begin
                 automatic logic [METRIC_W : 0] full_sum = m_rep[i][j] + m1_rep[i][j];
-                sum_packed [(TOTAL_COMBO - (i * N1_LIM + j)) * METRIC_W - 1 -: METRIC_W ] <= full_sum[METRIC_W] ? MAX_METRIC : full_sum[METRIC_W - 1 : 0];
-                conc_packed[(TOTAL_COMBO - (i * N1_LIM + j)) * CONC_W   - 1 -: CONC_W   ] <= {l_rep[i][j], l1_rep[i][j]};
+                sum [i*N1_LIM + j] = full_sum[METRIC_W] ? MAX_METRIC : full_sum[METRIC_W - 1 : 0];
+                conc[i*N1_LIM + j] = {l_rep[i][j], l1_rep[i][j]};
             end
         end
     end
     
-    logic [TOTAL_COMBO * METRIC_W - 1 : 0] sorted_m_packed;
-    logic [TOTAL_COMBO * CONC_W   - 1 : 0] sorted_c_packed;
-    logic                                  v_sort;
+    logic [METRIC_W - 1 : 0 ] s_sum  [0 : TOTAL_COMBO - 1];
+    logic [CONC_W   - 1 : 0 ] s_conc [0 : TOTAL_COMBO - 1];
+    logic                     s_valid;
     
-    bitonic_sort_fp #(
-        .METRIC_W (METRIC_W   ),
-        .LABEL_W  (CONC_W     ),
-        .N        (TOTAL_COMBO)
-    ) sort_inst (
-        .clk       (clk             ),
-        .i_valid   (v_sum           ),
-        .i_metrics (sum_packed      ),
-        .i_labels  (conc_packed     ),
-        .o_valid   (v_sort          ),
-        .o_metrics (sorted_m_packed ),
-        .o_labels  (sorted_c_packed )
+    sml_list_sort#(
+        .METRIC_W(METRIC_W   ),
+        .LABEL_W (CONC_W     ),
+        .N       (TOTAL_COMBO)
+    )sort (
+        .clk      (clk    ),
+        .i_valid  (v_sum  ),
+        .i_metrics(sum    ),
+        .i_labels (conc   ),
+        .o_metrics(s_sum  ),
+        .o_labels (s_conc ),
+        .o_valid  (s_valid)
     );
     
     always_comb begin
         for(int i = 0; i < L_OUT; i++) begin
-            o_metrics[i] = sorted_m_packed[(TOTAL_COMBO - i) * METRIC_W - 1 -: METRIC_W];
-            o_labels [i] = sorted_c_packed[ (TOTAL_COMBO - i) * CONC_W   - 1 -: CONC_W ];
+            o_metrics[i] = s_sum [i];
+            o_labels [i] = s_conc[i];
         end
-    end
+    end  
     
-    assign o_valid = v_sort;
+    assign o_valid = s_valid;
     
 endmodule

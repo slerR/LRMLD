@@ -290,7 +290,8 @@ end
             elseif total_comb <= 8
                 sort_lat = 6;
             else
-                sort_lat = ceil(log2(total_comb)) * (ceil(log2(total_comb)) + 1) / 2;
+                stgs = ceil(log2(total_comb));
+                sort_lat = 1 + (stgs * (stgs + 1)) / 2;
             end
             base_lat = 1 + sort_lat;
         end
@@ -319,24 +320,30 @@ end
             return;
         end
         
-        if L <=4
-            n_lim  = 2;
-            n1_lim = 2;
-        elseif L <=6
-            n_lim  = 2;
-            n1_lim = 3;
-        elseif L <=9
-            n_lim  = 3;
-            n1_lim = 3;
-        elseif L <=12
-            n_lim  = 3;
-            n1_lim = 4;
+        if L <= 4
+            b_n  = 2; b_n1 = 2;
+        elseif L <= 6
+            b_n  = 2; b_n1 = 3;
+        elseif L <= 9
+            b_n  = 3; b_n1 = 3;
+        elseif L <= 12
+            b_n  = 3; b_n1 = 4;
         else
-            n_lim  = 4;
-            n1_lim = 4;
+            b_n  = 4; b_n1 = 4;
         end
         
-        total_comb = n_lim*n1_lim;
+        if n < b_n
+            n_lim = n;
+            n1_lim = ceil(L / n);
+        elseif n1 < b_n1
+            n1_lim = n1;
+            n_lim = ceil(L / n1);
+        else
+            n_lim = b_n;
+            n1_lim = b_n1;
+        end
+        
+        total_comb = n_lim * n1_lim;
         if total_comb > L
             nout = L;
         else

@@ -1,12 +1,5 @@
 `timescale 1ns / 1ps
 
-
-// Latency, cycles: (N >= L && N1 >= L) ? (1 + (N_BLOCKS == 1) ? 3 : (N_BLOCKS == 2) ? 7 : (N_BLOCKS == 3) ? 
-// 11 : 13) : 4 + log(TOTAL_COMBO) * (log(TOTAL_COMBO) + 1) / 2)
-// Note about TOTAL_COMBO:  
-// localparam N_LIM       = (N * N1 < L) ? N  : ( (L <= 4) ? 2 : (L <= 6) ? 2 : (L <= 9) ? 3 : (L <= 12) ? 3 : 4 ),
-// localparam N1_LIM      = (N * N1 < L) ? N1 : ( (L <= 4) ? 2 : (L <= 6) ? 3 : (L <= 9) ? 3 : (L <= 12) ? 4 : 4 ),
-// localparam TOTAL_COMBO = N_LIM * N1_LIM,
 module unite_lists#(
     parameter  L           = 7,
     parameter  N           = 7,
@@ -15,8 +8,10 @@ module unite_lists#(
     parameter  LABEL_W     = 16,
     parameter  LABEL_W1    = 16,  
     parameter  CONC_W      = LABEL_W + LABEL_W1,
-    localparam N_LIM       = (N * N1 < L) ? N  : ( (L <= 4) ? 2 : (L <= 6) ? 2 : (L <= 9) ? 3 : (L <= 12) ? 3 : 4 ),
-    localparam N1_LIM      = (N * N1 < L) ? N1 : ( (L <= 4) ? 2 : (L <= 6) ? 3 : (L <= 9) ? 3 : (L <= 12) ? 4 : 4 ),
+    localparam B_N  = (L <= 4) ? 2 : (L <= 6) ? 2 : (L <= 9) ? 3 : (L <= 12) ? 3 : 4,
+    localparam B_N1 = (L <= 4) ? 2 : (L <= 6) ? 3 : (L <= 9) ? 3 : (L <= 12) ? 4 : 4,
+    localparam N_LIM  = (N * N1 < L) ? N  : (N < B_N) ? N : (N1 < B_N1) ? ((L + N1 - 1) / N1) : B_N,
+    localparam N1_LIM = (N * N1 < L) ? N1 : (N1 < B_N1) ? N1 : (N < B_N)  ? ((L +  N - 1) / N)  : B_N1,
     localparam TOTAL_COMBO = N_LIM * N1_LIM,
     localparam L_OUT       = (TOTAL_COMBO < L) ? TOTAL_COMBO : L,    
     parameter  N_OUT       = (N >= L & N1 >= L) ? L : L_OUT              
@@ -66,13 +61,13 @@ module unite_lists#(
                         labels  [  (N_PADDED*LABEL_W - 1) -i*LABEL_W -: LABEL_W ] <= i_labels  [  (N*LABEL_W - 1) -i*LABEL_W -: LABEL_W ];
                                                
                         metrics1[(N_PADDED*METRIC_W - 1) -i*METRIC_W -: METRIC_W] <= i_metrics1[(N1*METRIC_W - 1) -i*METRIC_W -: METRIC_W];
-                        labels1 [  (N_PADDED*LABEL_W - 1) -i*LABEL_W -: LABEL_W ] <= i_labels1 [  (N1*LABEL_W - 1) -i*LABEL_W -: LABEL_W ];
+                        labels1 [  (N_PADDED*LABEL_W1 - 1) -i*LABEL_W1 -: LABEL_W1 ] <= i_labels1 [  (N1*LABEL_W1 - 1) -i*LABEL_W1 -: LABEL_W1 ];
                     end else begin
                         metrics [(N_PADDED*METRIC_W - 1) -i*METRIC_W -: METRIC_W] <= MAX_METRIC;
                         labels  [  (N_PADDED*LABEL_W - 1) -i*LABEL_W -: LABEL_W ] <= L_PAD;
                                                                             
                         metrics1[(N_PADDED*METRIC_W - 1) -i*METRIC_W -: METRIC_W] <= MAX_METRIC;
-                        labels1 [  (N_PADDED*LABEL_W - 1) -i*LABEL_W -: LABEL_W ] <= L1_PAD;
+                        labels1 [  (N_PADDED*LABEL_W1 - 1) -i*LABEL_W1 -: LABEL_W1 ] <= L1_PAD;
                     end
                 end
             end  
@@ -88,7 +83,7 @@ module unite_lists#(
                     sum_select #(
                         .METRIC_W(METRIC_W), 
                         .LABEL_W (LABEL_W ), 
-                        .LABEL_W1(LABEL_W )
+                        .LABEL_W1(LABEL_W1 )
                     )dut (
                         .clk       (clk     ),
                         .i_metrics (metrics ),

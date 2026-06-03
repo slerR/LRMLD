@@ -15,17 +15,13 @@ module sum_select #(
     output logic [    CONC_W - 1 : 0] o_labels  [0 : 3]
 );
     
-    // ������� �����
     logic [           2 : 0] idx_l     [0 : 7];
-    // �������� ����� �� 3 �����
     logic [  CONC_W - 1 : 0] conc_d    [0 : 2][0 : 7];
-    // �������� ���������� �����
     logic [    METRIC_W : 0] summ0_d   [0 : 1];
    
     logic [    METRIC_W : 0] sig_summ  [0 : 7];
     logic [  CONC_W - 1 : 0] sig_conc  [0 : 7];
     
-    // ����������� ���� � �������
     logic [    METRIC_W : 0] sig_summ_r[0 : 7];
     logic [           2 : 0] idx_l_r   [0 : 7];
    
@@ -109,7 +105,6 @@ module sum_select #(
         sig_conc[7] = {i_labels[1*LABEL_W - 1 : 0*LABEL_W], i_labels1[4*LABEL_W1 - 1 : 3*LABEL_W1]};
     end
     
-    // �������� �����
     always_ff @(posedge clk) begin
         for(int i = 0; i < 8; i++) begin
             conc_d[0][i] <= sig_conc[i];

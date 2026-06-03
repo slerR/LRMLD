@@ -3,7 +3,7 @@ module merge_2n_n # (
     parameter                       METRIC_W = 8,
     parameter                       LABEL_W  = 2,
     localparam                      FF_P_W = $clog2(2*N_INPUTS),
-    parameter [0 : FF_P_W - 1]      FF_P   = {FF_P_W{1'b1}}
+    parameter [0:FF_P_W-1]          FF_P = {FF_P_W/2{2'b10}}
 ) (
     input  logic                    clk,
     input  logic                    i_valid,

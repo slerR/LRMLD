@@ -1,7 +1,8 @@
 `timescale 1ns / 1ps
 
-// Total Latency: log2(LABEL_W) + 2 + (N < 3) ? 1 : (N < 5) ? : 2 : 6
 module make#(
+    parameter IS_PAD  = 0,
+    parameter L       = 8,
     parameter LLR_W   = 6,
     parameter LABEL_W = 4,
     parameter N_COS   = 8,
@@ -15,17 +16,21 @@ module make#(
                {4'b0101, 4'b1010},
                {4'b0011, 4'b1100},
                {4'b1000, 4'b0111}},
-    parameter                METRIC_W    = LLR_W + $clog2(LABEL_W),                                     
-    localparam logic signed  MIN_LLR     = 1 << (LLR_W - 1),          
-    localparam               LATENCY     = $clog2(LABEL_W) + 2
+    parameter                    METRIC_W    = LLR_W + $clog2(LABEL_W),  
+    parameter                    L_OUT       = IS_PAD ? L : N, 
+    localparam                   SUM_W       = LLR_W + $clog2(LABEL_W),                                  
+    localparam logic signed      MIN_LLR     = 1 << (LLR_W - 1),          
+    localparam                   LATENCY     = $clog2(LABEL_W) + 2,
+    localparam [ METRIC_W-1 : 0] MAX_METRIC = {METRIC_W{1'b1}},
+    localparam [LABEL_W - 1 : 0] PAD_LABEL  = {LABEL_W{1'b0}}
 )(
-    input  logic                               clk,
-    input  logic                               i_valid,
-    input  logic signed [     LLR_W - 1 : 0]   i_llr     [0 : LABEL_W - 1],
+    input  logic                                   clk,
+    input  logic                                   i_valid,
+    input  logic signed [         LLR_W - 1 : 0]   i_llr     [0 : LABEL_W - 1],
     
-    output logic        [N*METRIC_W - 1 : 0]   o_metrics [0 : N_COS - 1  ],
-    output logic        [ N*LABEL_W - 1 : 0]   o_labels  [0 : N_COS - 1  ],
-    output logic                               o_valid
+    output logic        [L_OUT*METRIC_W - 1 : 0]   o_metrics [0 : N_COS - 1  ],
+    output logic        [ L_OUT*LABEL_W - 1 : 0]   o_labels  [0 : N_COS - 1  ],
+    output logic                                   o_valid
     );
     
     logic [  LATENCY - 1 : 0] valid_d;  
@@ -33,10 +38,10 @@ module make#(
     logic [    LLR_W - 1 : 0] abs_llr   [0 : LABEL_W - 1];
     logic [  LABEL_W - 1 : 0] mismath   [0 : N_COS - 1  ][0 : N - 1];
     logic [    LLR_W - 1 : 0] summand   [0 : N_COS - 1  ][0 : N - 1][LABEL_W - 1 : 0];
-    logic [ METRIC_W - 1 : 0] sum       [0 : N_COS - 1  ][0 : N - 1]; 
+    logic [    SUM_W - 1 : 0] sum       [0 : N_COS - 1  ][0 : N - 1]; 
     logic                     m_valid;
     // table_sort output
-    logic [ METRIC_W - 1 : 0] s_metrics [0 : N_COS - 1  ][0 : N - 1];
+    logic [    SUM_W - 1 : 0] s_metrics [0 : N_COS - 1  ][0 : N - 1];
     logic [  LABEL_W - 1 : 0] s_labels  [0 : N_COS - 1  ][0 : N - 1];
     logic                     s_valid;
     
@@ -80,9 +85,9 @@ module make#(
         for(genvar c = 0; c < N_COS; c++) begin : coset
             for(genvar w = 0; w < N; w++) begin : codeword
                 n_adder#(
-                    .N  (LABEL_W ),
-                    .I_W(LLR_W   ),
-                    .O_W(METRIC_W)
+                    .N  (LABEL_W),
+                    .I_W(LLR_W  ),
+                    .O_W(SUM_W  )
                 )n_adder ( 
                     .clk   (clk          ),
                     .i_data(summand[c][w]),
@@ -95,10 +100,10 @@ module make#(
     assign m_valid = valid_d[LATENCY-1];
     
     table_sort #(
-        .METRIC_W(METRIC_W),
-        .LABEL_W (LABEL_W ),
-        .N_COS   (N_COS   ),
-        .N       (N       )
+        .METRIC_W(SUM_W  ),
+        .LABEL_W (LABEL_W),
+        .N_COS   (N_COS  ),
+        .N       (N      )
     )table_sort (
         .clk      (clk      ),
         .i_valid  (m_valid  ),
@@ -109,11 +114,17 @@ module make#(
         .o_valid  (s_valid  )
     );         
         
+    
     always_comb begin
         for(int c = 0; c < N_COS; c++) begin 
-            for(int w = 0; w < N; w++) begin 
-                o_metrics[c][N*METRIC_W - 1 - w*METRIC_W -: METRIC_W] = s_metrics[c][w];
-                o_labels [c][ N*LABEL_W - 1 - w*LABEL_W  -: LABEL_W ] = s_labels [c][w];
+            for(int w = 0; w < L_OUT; w++) begin 
+                if(w < N) begin
+                    o_metrics[c][L_OUT*METRIC_W - 1 - w*METRIC_W -: METRIC_W] = {{(METRIC_W-SUM_W){1'b0}},s_metrics[c][w]};
+                    o_labels [c][ L_OUT*LABEL_W - 1 - w*LABEL_W  -: LABEL_W ] = s_labels [c][w];
+                end else begin
+                    o_metrics[c][L_OUT*METRIC_W - 1 - w*METRIC_W -: METRIC_W] = MAX_METRIC;
+                    o_labels [c][ L_OUT*LABEL_W - 1 - w*LABEL_W  -: LABEL_W ] = PAD_LABEL; 
+                end
             end    
         end
     end 

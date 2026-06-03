@@ -25,7 +25,7 @@ module bitonic_sort_fp#(
     logic [METRIC_W-1 : 0] pipe_metrics [0 : NUM_STEPS][0 : N_EXT-1];
     logic [  IDX_W-1 : 0]  pipe_indices [0 : NUM_STEPS][0 : N_EXT-1];
     
-    (* srl_style = "srl" *) 
+    (* srl_style = "reg" *) 
     logic [ LABEL_W-1 : 0] pipe_labels_raw [0 : NUM_STEPS][0 : N_EXT-1];
     
     always_ff @(posedge clk) begin

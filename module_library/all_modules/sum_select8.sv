@@ -1,4 +1,3 @@
-
 // Total Latency, cycles: 7
 module sum_select8#(
     parameter METRIC_W = 10,

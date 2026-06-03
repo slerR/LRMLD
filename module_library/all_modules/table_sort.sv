@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-// Latency, cycles: (N < 3) ? 1 : (N < 5) ? : 2 : 6
+// Latency, cycles: (N < 3) ? 1 : (N < 5) ? : 2 : (N < 9) ? : 6 : bitonic latecy
 module table_sort#(
     parameter METRIC_W = 10,
     parameter LABEL_W  = 4,
